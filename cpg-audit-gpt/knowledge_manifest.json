@@ -1,0 +1,83 @@
+{
+  "project": "cpg-audit-gpt",
+  "knowledge_files": [
+    {
+      "number": "01",
+      "file": "01_methodological_core.md",
+      "title": "Methodological Core",
+      "role": "Core audit question, gates, and fair-use boundaries."
+    },
+    {
+      "number": "02",
+      "file": "02_red_flag_dictionary.md",
+      "title": "Red Flag Dictionary",
+      "role": "Reusable defect and risk patterns."
+    },
+    {
+      "number": "03",
+      "file": "03_output_templates.md",
+      "title": "Output Templates",
+      "role": "Required output shapes."
+    },
+    {
+      "number": "04",
+      "file": "04_operational_workflow.md",
+      "title": "Operational Workflow",
+      "role": "Audit sequence and working process."
+    },
+    {
+      "number": "05",
+      "file": "05_benchmarking_and_evaluation.md",
+      "title": "Benchmarking and Evaluation",
+      "role": "Evaluation rules and benchmark behavior."
+    },
+    {
+      "number": "06",
+      "file": "06_source_manifest.md",
+      "title": "Source Manifest",
+      "role": "Reference standards and source-use boundaries."
+    },
+    {
+      "number": "07",
+      "file": "07_claim_gated_audit_rule.md",
+      "title": "Claim Gated Audit Rule",
+      "role": "Claim-status classification before criticism."
+    },
+    {
+      "number": "08",
+      "file": "08_regression_tests_and_acceptance_criteria.md",
+      "title": "Regression Tests and Acceptance Criteria",
+      "role": "Acceptance criteria and regression scenarios."
+    },
+    {
+      "number": "09",
+      "file": "09_japanese_guideline_slicing_rules.md",
+      "title": "Japanese Guideline Slicing Rules",
+      "role": "Japanese guideline segmentation and label handling."
+    },
+    {
+      "number": "10",
+      "file": "10_page_based_cluster_assembly_rules.md",
+      "title": "Page Based Cluster Assembly Rules",
+      "role": "Page and cluster assembly for distributed materials."
+    },
+    {
+      "number": "11",
+      "file": "11_project_reorientation_rules.md",
+      "title": "Project Reorientation Rules",
+      "role": "Project-level reorientation and failure-mode corrections."
+    },
+    {
+      "number": "12",
+      "file": "12_whole_guideline_triage_output_control.md",
+      "title": "Whole Guideline Triage Output Control",
+      "role": "Whole-guideline triage output and rating control."
+    },
+    {
+      "number": "13",
+      "file": "13_deep_audit_rating_and_phase_control.md",
+      "title": "Deep Audit Rating and Phase Control",
+      "role": "Deep audit phases and final rating control."
+    }
+  ]
+}
