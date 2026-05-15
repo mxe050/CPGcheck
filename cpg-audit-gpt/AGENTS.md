@@ -58,6 +58,7 @@ For every requested fix:
 6. Update `CHANGELOG.md`.
 7. Add or update a regression test under `tests/regression_cases/` when appropriate.
 8. Summarize changed files and rationale.
+9. Always tell the user exactly what to update manually in GPT Builder.
 
 Do not rewrite all Knowledge files unless explicitly asked.
 
@@ -318,11 +319,21 @@ Potential conflicts checked:
 Regression test added or updated:
 - ...
 
-Next manual GPT Builder step:
-- Copy instructions/00_CUSTOM_GPT_INSTRUCTIONS.md into Instructions.
-- Upload updated knowledge/*.md.
-- Remove obsolete old Knowledge files.
+GPT Builder update instructions:
+- Instructions field: changed / unchanged. If changed, paste
+  instructions/00_CUSTOM_GPT_INSTRUCTIONS.md into the Instructions field.
+- Knowledge files to re-upload: list only the active knowledge/*.md files that
+  changed. If no Knowledge files changed, say "none".
+- Knowledge files to remove: list obsolete uploaded files only when applicable.
+- CHANGELOG.md: repository record only; do not upload it as Knowledge unless
+  the user explicitly asks.
+- Tests: repository-only regression cases; do not upload them as Knowledge.
+- Release package: mention only if a release file was rebuilt.
 ```
+
+When answering planning questions without editing files, still say which files
+would be changed, whether Instructions would change, which Knowledge files would
+need re-uploading, and what would happen to CHANGELOG.md.
 
 ## Things Codex must not do
 

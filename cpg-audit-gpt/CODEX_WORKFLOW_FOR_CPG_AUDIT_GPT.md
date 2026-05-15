@@ -106,6 +106,15 @@ Check whether Codex:
 - Remove old conflicting Knowledge files.
 - Run Preview regression tests.
 
+Codex should explicitly tell you after every task:
+
+- whether the Instructions field changed;
+- exactly which `knowledge/*.md` files need to be re-uploaded;
+- whether any old Knowledge files should be removed from GPT Builder;
+- that `CHANGELOG.md` is a Git/repository record and is not uploaded as Knowledge unless you explicitly request it;
+- whether regression tests changed, and that tests are not uploaded as Knowledge;
+- whether a release package was rebuilt.
+
 ## Common failure modes and likely file to edit
 
 | Failure mode | Likely repair target |
