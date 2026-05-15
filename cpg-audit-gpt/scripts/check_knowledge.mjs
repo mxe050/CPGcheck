@@ -56,9 +56,9 @@ function check() {
   }
 
   const numbers = manifest.map((item) => item.number);
-  const expectedNumbers = Array.from({ length: 13 }, (_, index) => String(index + 1).padStart(2, "0"));
+  const expectedNumbers = Array.from({ length: 12 }, (_, index) => String(index + 1).padStart(2, "0"));
   if (JSON.stringify(numbers) !== JSON.stringify(expectedNumbers)) {
-    errors.push(`Manifest numbers must be exactly 01-13, got ${JSON.stringify(numbers)}`);
+    errors.push(`Manifest numbers must be exactly 01-12, got ${JSON.stringify(numbers)}`);
   }
 
   let combinedText = "";
@@ -112,4 +112,4 @@ if (errors.length > 0) {
   process.exit(1);
 }
 
-console.log("Knowledge check passed: 13 files, manifest, headings, and core consistency look OK.");
+console.log("Knowledge check passed: 12 files, manifest, headings, and core consistency look OK.");

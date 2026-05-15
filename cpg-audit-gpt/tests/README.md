@@ -1,6 +1,6 @@
 # Regression Tests
 
-Use this folder for prompts and expected behavior that protect the 01-13
+Use this folder for prompts and expected behavior that protect the 01-12
 knowledge files from drift.
 
 Suggested convention:

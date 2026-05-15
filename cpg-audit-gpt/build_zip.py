@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a zip archive for uploading the CPG Audit GPT knowledge package."""
+"""Build a zip archive for the active GPT Builder package."""
 
 from __future__ import annotations
 
@@ -9,22 +9,21 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT.parent / "cpg-audit-gpt.zip"
-INCLUDE_SUFFIXES = {".txt", ".md", ".json", ".py"}
 
 
-def should_include(path: Path) -> bool:
-    if path.name.startswith("."):
-        return False
-    if "__pycache__" in path.parts:
-        return False
-    return path.suffix in INCLUDE_SUFFIXES
+def active_files() -> list[tuple[Path, str]]:
+    files = [
+        (ROOT / "instructions" / "00_CUSTOM_GPT_INSTRUCTIONS.md", "00_CUSTOM_GPT_INSTRUCTIONS.md"),
+        (ROOT / "CHANGELOG.md", "CHANGELOG.md"),
+    ]
+    files.extend((path, f"knowledge/{path.name}") for path in sorted((ROOT / "knowledge").glob("*.md")))
+    return files
 
 
 def main() -> None:
     with zipfile.ZipFile(OUT, "w", compression=zipfile.ZIP_DEFLATED) as archive:
-        for path in sorted(ROOT.rglob("*")):
-            if path.is_file() and should_include(path):
-                archive.write(path, path.relative_to(ROOT.parent))
+        for path, arcname in active_files():
+            archive.write(path, arcname)
     print(f"Built {OUT}")
 
 

@@ -26,7 +26,6 @@ cpg-audit-gpt/
     10_page_based_cluster_assembly_rules.md
     11_project_reorientation_rules.md
     12_whole_guideline_triage_output_control.md
-    13_deep_audit_rating_and_phase_control.md
   tests/
     regression_cases/
   releases/
@@ -72,8 +71,8 @@ Please update this repository according to the following repair specification.
 
 Constraints:
 - Keep instructions/00_CUSTOM_GPT_INSTRUCTIONS.md under 8000 Japanese characters.
-- Preserve the 01–13 Knowledge structure.
-- 11, 12, 13 remain highest priority.
+- Preserve the 01–12 Knowledge structure.
+- 11 and 12 remain highest priority.
 - Do not mix Instructions into knowledge/.
 - Do not restore old archived rules.
 - Generalize specific CPG/CQ failures before editing; do not commit CPG names,
@@ -91,7 +90,7 @@ Repair specification:
 Check whether Codex:
 
 - edited the intended file;
-- accidentally weakened 11/12/13;
+- accidentally weakened 11/12;
 - reintroduced banned logic;
 - left a specific CPG name, disease name, society name, or CQ number in active Instructions, Knowledge, or regression tests;
 - exceeded the Instructions character limit;
@@ -119,13 +118,13 @@ Codex should explicitly tell you after every task:
 
 | Failure mode | Likely repair target |
 |---|---|
-| Stops at initial triage | `knowledge/13_deep_audit_rating_and_phase_control.md` |
-| Rates CPG A because it claims Minds/GRADE | `knowledge/12` and `knowledge/13` |
-| Rates down because evidence is very low certainty | `instructions/` and `knowledge/13` |
-| Requires perfect reproducibility | `knowledge/13` |
+| Stops at initial triage | `knowledge/12_whole_guideline_triage_output_control.md` |
+| Rates CPG A because it claims Minds/GRADE | `knowledge/12` |
+| Rates down because evidence is very low certainty | `instructions/` and `knowledge/12` |
+| Requires perfect reproducibility | `knowledge/12` |
 | Fails Web-distributed CPG cross-check | `knowledge/12` |
 | Treats non-GRADE COR/LOE as GRADE | `knowledge/07` and `knowledge/11` |
-| Confuses COI disclosure with COI management | `knowledge/11` and `knowledge/13` |
+| Confuses COI disclosure with COI management | `knowledge/11` and `knowledge/12` |
 | Misses hidden recommendation in figure/algorithm | `knowledge/09`, `knowledge/10`, `knowledge/12` |
 | Output format is confusing | `knowledge/03` |
 

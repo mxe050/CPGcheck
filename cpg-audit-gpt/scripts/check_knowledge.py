@@ -65,8 +65,8 @@ def check() -> list[str]:
         )
 
     numbers = [item["number"] for item in manifest]
-    if numbers != [f"{i:02d}" for i in range(1, 14)]:
-        errors.append(f"Manifest numbers must be exactly 01-13, got {numbers}")
+    if numbers != [f"{i:02d}" for i in range(1, 13)]:
+        errors.append(f"Manifest numbers must be exactly 01-12, got {numbers}")
 
     combined_text = ""
     for item in manifest:
@@ -109,7 +109,7 @@ def main() -> int:
             print(f"- {error}")
         return 1
 
-    print("Knowledge check passed: 13 files, manifest, headings, and core consistency look OK.")
+    print("Knowledge check passed: 12 files, manifest, headings, and core consistency look OK.")
     return 0
 
 

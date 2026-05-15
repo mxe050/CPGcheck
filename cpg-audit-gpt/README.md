@@ -8,7 +8,7 @@ clinical practice guideline trustworthiness and traceability.
 - `AGENTS.md`: repository instructions for Codex work in this project.
 - `CODEX_WORKFLOW_FOR_CPG_AUDIT_GPT.md`: user workflow for ChatGPT, Codex, Git, and GPT Builder.
 - `instructions/00_CUSTOM_GPT_INSTRUCTIONS.md`: top-level GPT instruction text.
-- `knowledge/`: numbered knowledge files loaded in order from 01 to 13.
+- `knowledge/`: numbered knowledge files loaded in order from 01 to 12.
 - `knowledge_manifest.json`: expected file list, titles, and roles.
 - `scripts/check_knowledge.py`: consistency check for the knowledge set.
 - `tests/regression_cases/`: regression scenarios and expected behavior.

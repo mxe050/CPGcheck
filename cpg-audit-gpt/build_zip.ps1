@@ -5,25 +5,20 @@ if (Test-Path -LiteralPath $Out) {
   Remove-Item -LiteralPath $Out
 }
 
-$Items = Get-ChildItem -LiteralPath $Root -Recurse -File |
-  Where-Object {
-    $_.Name -notlike ".*" -and
-    $_.FullName -notmatch "__pycache__" -and
-    $_.Extension -in @(".txt", ".md", ".json", ".py", ".mjs", ".ps1")
-  }
-
 $Temp = Join-Path ([System.IO.Path]::GetTempPath()) ("cpg-audit-gpt-" + [System.Guid]::NewGuid())
 New-Item -ItemType Directory -Force -Path $Temp | Out-Null
 
 try {
-  foreach ($Item in $Items) {
-    $Relative = $Item.FullName.Substring((Split-Path -Parent $Root).Length + 1)
-    $Destination = Join-Path $Temp $Relative
-    New-Item -ItemType Directory -Force -Path (Split-Path -Parent $Destination) | Out-Null
-    Copy-Item -LiteralPath $Item.FullName -Destination $Destination
-  }
+  Copy-Item -LiteralPath (Join-Path $Root "instructions\00_CUSTOM_GPT_INSTRUCTIONS.md") -Destination (Join-Path $Temp "00_CUSTOM_GPT_INSTRUCTIONS.md")
+  Copy-Item -LiteralPath (Join-Path $Root "CHANGELOG.md") -Destination (Join-Path $Temp "CHANGELOG.md")
+  New-Item -ItemType Directory -Force -Path (Join-Path $Temp "knowledge") | Out-Null
+  Get-ChildItem -LiteralPath (Join-Path $Root "knowledge") -Filter "*.md" -File |
+    Sort-Object Name |
+    ForEach-Object {
+      Copy-Item -LiteralPath $_.FullName -Destination (Join-Path $Temp "knowledge\$($_.Name)")
+    }
 
-  Compress-Archive -LiteralPath (Join-Path $Temp "cpg-audit-gpt") -DestinationPath $Out
+  Compress-Archive -LiteralPath (Join-Path $Temp "00_CUSTOM_GPT_INSTRUCTIONS.md"),(Join-Path $Temp "CHANGELOG.md"),(Join-Path $Temp "knowledge") -DestinationPath $Out
   Write-Host "Built $Out"
 }
 finally {

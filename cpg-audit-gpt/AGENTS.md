@@ -16,7 +16,7 @@ cpg-audit-gpt/
   knowledge/
     01_methodological_core.md           # uploaded as GPT Knowledge
     ...
-    13_deep_audit_rating_and_phase_control.md
+    12_whole_guideline_triage_output_control.md
   tests/
     regression_cases/                   # preview/test cases; not uploaded as Knowledge
   releases/                             # packaged versions
@@ -31,18 +31,16 @@ cpg-audit-gpt/
 
 ## Priority of Knowledge files
 
-If Knowledge 01–13 exist, preserve this priority:
+If Knowledge 01–12 exist, preserve this priority:
 
 1. `knowledge/11_project_reorientation_rules.md`
 2. `knowledge/12_whole_guideline_triage_output_control.md`
-3. `knowledge/13_deep_audit_rating_and_phase_control.md`
-4. `knowledge/01`–`10` as auxiliary rules
+3. `knowledge/01`–`10` as auxiliary rules
 
-Never weaken or bypass 11–13 when editing other files.
+Never weaken or bypass 11–12 when editing other files.
 
 - 11 returns the project to whole-CPG trustworthiness rather than isolated CQ commentary.
-- 12 controls whole-guideline triage, Web-distributed CPG handling, inventory, red flags, and priority queue.
-- 13 prevents stopping at triage and controls sentinel deep audit, rating, and final CPG conclusion.
+- 12 controls whole-guideline triage, Web-distributed CPG handling, inventory, red flags, priority queue, sentinel deep audit, rating, and final CPG conclusion.
 
 ## What Codex should do
 
@@ -51,9 +49,9 @@ Codex should edit repository files only. It should not claim to directly update 
 For every requested fix:
 
 1. Identify the failure mode.
-2. Decide whether the fix belongs in `instructions/`, `knowledge/11`, `knowledge/12`, `knowledge/13`, or another Knowledge file.
+2. Decide whether the fix belongs in `instructions/`, `knowledge/11`, `knowledge/12`, or another Knowledge file.
 3. Make the smallest coherent edit.
-4. Preserve the existing 01–13 structure.
+4. Preserve the existing 01–12 structure.
 5. Check for conflicting or obsolete wording elsewhere.
 6. Update `CHANGELOG.md`.
 7. Add or update a regression test under `tests/regression_cases/` when appropriate.
@@ -70,8 +68,8 @@ When adding material:
 
 - Put high-level control rules in Instructions.
 - Put detailed triage rules in Knowledge 12.
-- Put detailed rating/deep-audit rules in Knowledge 13.
-- Put claim-gating rules in Knowledge 07 unless already covered by 11–13.
+- Put detailed rating/deep-audit rules in Knowledge 12.
+- Put claim-gating rules in Knowledge 07 unless already covered by 11–12.
 - Put regression examples in Knowledge 08 or `tests/`, not in Instructions.
 
 ## Non-negotiable audit principles
@@ -258,8 +256,8 @@ Do not immediately rewrite everything. Follow this triage:
 
 1. Is this a conceptual rule problem? → likely Instructions or Knowledge 11.
 2. Is this whole-guideline/Web triage? → Knowledge 12.
-3. Is this sentinel deep audit/rating/rubric? → Knowledge 13.
-4. Is this claim-gating? → Knowledge 07, unless 11–13 already cover it.
+3. Is this sentinel deep audit/rating/rubric? → Knowledge 12.
+4. Is this claim-gating? → Knowledge 07, unless 11–12 already cover it.
 5. Is this an output format problem? → Knowledge 03.
 6. Is this a regression test need? → Knowledge 08 or `tests/`.
 

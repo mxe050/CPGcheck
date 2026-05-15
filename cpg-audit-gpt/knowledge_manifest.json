@@ -70,14 +70,8 @@
     {
       "number": "12",
       "file": "12_whole_guideline_triage_output_control.md",
-      "title": "Whole Guideline Triage Output Control",
-      "role": "Whole-guideline triage output and rating control."
-    },
-    {
-      "number": "13",
-      "file": "13_deep_audit_rating_and_phase_control.md",
-      "title": "Deep Audit Rating and Phase Control",
-      "role": "Deep audit phases and final rating control."
+      "title": "Whole Guideline Triage and Deep Audit Control",
+      "role": "Whole-guideline triage, sentinel deep audit, rating, and final conclusion control."
     }
   ]
 }
