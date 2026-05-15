@@ -326,7 +326,9 @@ GPT Builder update instructions:
 - CHANGELOG.md: repository record only; do not upload it as Knowledge unless
   the user explicitly asks.
 - Tests: repository-only regression cases; do not upload them as Knowledge.
-- Release package: mention only if a release file was rebuilt.
+- Release package: do not rebuild or provide a zip unless the user explicitly
+  asks for a release/package. The user normally takes files directly from the
+  local `knowledge/` folder.
 ```
 
 When answering planning questions without editing files, still say which files
@@ -352,3 +354,6 @@ Codex edits repository files. The user must still manually:
 2. upload active `knowledge/*.md` files;
 3. remove old conflicting Knowledge files;
 4. run GPT Builder Preview regression tests.
+
+By default, finish by saying "終了しました" and listing the exact Instructions
+and Knowledge files to update. Do not create a zip for routine edits.

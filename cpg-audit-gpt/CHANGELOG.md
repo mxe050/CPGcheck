@@ -2,6 +2,7 @@
 
 ## 2026-05-16
 
+- Added a routine-edit rule: do not rebuild or provide zip packages unless explicitly requested; tell the user "終了しました" and list exact GPT Builder files to update.
 - Changed active GPT Builder Knowledge from 13 files to 12 files by merging deep audit/rating control into `knowledge/12_whole_guideline_triage_output_control.md` and archiving the old `knowledge/13`.
 - Updated Instructions and repository checks for the 01-12 Knowledge structure.
 - Updated zip builders and added `releases/v0.4` so GPT Builder replacement packages contain only active Instructions, CHANGELOG, and the 12 active Knowledge files.

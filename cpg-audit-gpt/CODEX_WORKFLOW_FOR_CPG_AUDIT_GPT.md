@@ -58,7 +58,7 @@ Use this prompt:
 This output is a failure. Expected behavior is ...
 First generalize the failure so it does not depend on a CPG name, disease name,
 society name, or CQ number. Then identify whether the cause is in Instructions,
-Knowledge 11, 12, 13, or another Knowledge file. Then produce a Codex-ready
+Knowledge 11, 12, or another Knowledge file. Then produce a Codex-ready
 repair specification.
 ```
 
@@ -112,7 +112,8 @@ Codex should explicitly tell you after every task:
 - whether any old Knowledge files should be removed from GPT Builder;
 - that `CHANGELOG.md` is a Git/repository record and is not uploaded as Knowledge unless you explicitly request it;
 - whether regression tests changed, and that tests are not uploaded as Knowledge;
-- whether a release package was rebuilt.
+- whether a release package was rebuilt. Routine edits do not require a zip;
+  the user can take files directly from the local `knowledge/` folder.
 
 ## Common failure modes and likely file to edit
 
@@ -142,7 +143,7 @@ Every Codex edit should add an entry like:
 
 ## Release discipline
 
-When a stable version is ready, package:
+When the user explicitly asks for a stable version or release package, package:
 
 ```text
 releases/vX.Y/
