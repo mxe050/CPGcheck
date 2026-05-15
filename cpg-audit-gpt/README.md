@@ -5,12 +5,14 @@ clinical practice guideline trustworthiness and traceability.
 
 ## Layout
 
-- `00_CUSTOM_GPT_INSTRUCTIONS.txt`: top-level GPT instruction text.
+- `instructions/00_CUSTOM_GPT_INSTRUCTIONS.md`: top-level GPT instruction text.
 - `knowledge/`: numbered knowledge files loaded in order from 01 to 13.
 - `knowledge_manifest.json`: expected file list, titles, and roles.
 - `scripts/check_knowledge.py`: consistency check for the knowledge set.
-- `tests/`: regression scenarios and expected behavior.
-- `changelog.md`: intentional rule and structure changes.
+- `tests/regression_cases/`: regression scenarios and expected behavior.
+- `releases/v0.3/`: frozen v0.3 release package.
+- `archive/old_versions/`: superseded files retained for reference.
+- `CHANGELOG.md`: intentional rule and structure changes.
 
 ## Maintenance
 
@@ -20,5 +22,5 @@ After editing `knowledge/*.md`, run:
 node scripts/check_knowledge.mjs
 ```
 
-Then update `changelog.md` and, when behavior changes, add or revise files in
-`tests/cases/` and `tests/expected/`.
+Then update `CHANGELOG.md` and, when behavior changes, add or revise files in
+`tests/regression_cases/`.
