@@ -67,6 +67,9 @@ Acceptable rating reasons:
 Look for:
 - explanation text saying high certainty while evidence table has downgrades;
 - strong recommendation despite low/very low certainty without exception rationale;
+- study-design counts used as evidence appraisal or recommendation justification;
+- Minds/GRADE claims accepted without outcome-specific traceability;
+- observational meta-analysis used without confounding and adjusted-effect checks;
 - benefit emphasis while harms/QOL/burden are ignored;
 - relative effect only or misleading absolute effect;
 - NMA ranking used without uncertainty/credibility;
@@ -78,13 +81,73 @@ Look for:
 
 ## Certainty calculation checks
 For GRADE/Minds/Core GRADE claims, do not accept final certainty at face value. Check:
+- prespecified PICO and outcome-specific study selection;
 - RCT starts high; observational evidence starts low;
+- design-appropriate RoB, including non-randomized-study RoB when observational evidence is used;
 - RoB, inconsistency, indirectness, imprecision, and publication bias downgrades match final certainty;
 - upgrade reasons are justified;
+- SoF/Evidence Profile or equivalent is outcome-specific;
+- EtD shows how benefits, harms, burden, values/preferences, resources,
+  acceptability, and feasibility connect to recommendation direction and strength;
 - multiple outcome certainty is summarized transparently;
 - RCT, phase III trial, or statistical significance alone is not used as certainty.
 
 Downgrade arithmetic mismatch is a major red flag. Low or very low certainty itself is not a rating penalty.
+
+## Study-design count audit
+For all clinical practice guidelines, reporting the number of RCTs,
+observational studies, and case series is not a defect by itself. It becomes a
+methodological problem only when the count is used as a substitute for
+SR/GRADE/EtD appraisal.
+
+During sentinel audit, check whether design counts are connected to:
+- outcome-specific eligibility and study selection;
+- design-appropriate RoB and confounding assessment;
+- directness, precision, inconsistency, and publication bias judgments;
+- SoF/Evidence Profile or equivalent;
+- EtD explanation of how the evidence affects direction and strength.
+
+If the recommendation relies on the count alone, or places RCTs,
+observational studies, and case series on the same evidentiary level without
+certainty logic, treat this as low substantive traceability even if the
+literature search is described.
+
+## Minds/GRADE claim audit
+For all clinical practice guidelines, "Minds-compliant", "GRADE-based", or
+"certainty was evaluated" is a claim requiring verification. It does not itself
+raise the rating.
+
+Treat the claim as partial/incomplete or failed when the sentinel evidence chain
+lacks any major element needed for the claimed method: prespecified PICO,
+outcome-specific selection, design-appropriate RoB, GRADE domain judgments,
+outcome-specific SoF/Evidence Profile, EtD domains, certainty-strength
+alignment, or transparent recommendation linkage.
+
+Do not allow literature search, study-design counts, narrative rationale,
+formal recommendation tables, voting, or agreement rate to replace GRADE/Minds
+certainty assessment or EtD.
+
+## Observational meta-analysis audit
+For all clinical practice guidelines, observational meta-analysis must be
+audited for confounding and appropriate effect estimates before it is treated
+as trustworthy recommendation evidence.
+
+Check:
+- whether the question is confounding-sensitive;
+- whether crude event counts, crude means, SDs, or unadjusted totals were
+  pooled when adjusted estimates are needed;
+- whether adjusted RR/OR/HR or equivalent estimates were used;
+- whether different adjustment sets across studies are acknowledged;
+- whether ROBINS-I or equivalent non-randomized-study RoB is used;
+- whether observational estimates are separated from RCT evidence or combined
+  with a transparent rationale;
+- whether observational meta-analysis is overused to support strong
+  recommendation or high certainty.
+
+Crude observational meta-analysis used as recommendation justification is a
+major red flag. An observational meta-analysis should not be downgraded
+automatically when adjusted estimates, confounding, RoB, directness, precision,
+and inconsistency are transparently handled.
 
 ---
 
@@ -140,6 +203,9 @@ Do not penalize for reporting agreement rates. Penalize only when voting or agre
 ### Block or lower A for:
 - important judgment not practically verifiable even after accessible linked materials;
 - source materials internally inconsistent;
+- study-design counts used as a substitute for SR/GRADE/EtD appraisal;
+- formal Minds/GRADE/SR/meta-analysis claims not supported by outcome-specific traceability;
+- crude observational meta-analysis used as recommendation justification for a confounding-sensitive question;
 - low/very low certainty with strong recommendation and no exception rationale;
 - search strategy clearly missing the PICO;
 - downgrade/final certainty inconsistency;
@@ -179,6 +245,10 @@ B−: Methods are broadly present, but multiple important judgments are difficul
 B/C boundary: Some recommendations are trustworthy, but guideline-level recommendation formation is substantially opaque or heterogeneous; GRADE vs non-GRADE separation may be incomplete.
 
 C+ or below: Consider when downgrade/final certainty is inconsistent, search misses PICO, recommendation conflicts with evidence materials, major harms/costs/values are not reflected, NMA ranking is misused, vote replaces EtD, or relevant COI management is not traceable in a high-risk recommendation.
+
+Also consider C+ or below when design counts, name-only SR/Minds/GRADE claims,
+or crude observational meta-analysis are used as the main bridge from evidence
+to recommendation without outcome-specific appraisal and EtD linkage.
 
 D/E: Use for major evidence-recommendation rupture, serious misrepresentation, unjustifiable recommendation, or severe COI/methodology failure.
 
