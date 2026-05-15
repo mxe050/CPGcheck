@@ -141,7 +141,9 @@ Formal traceability is not enough. Practical traceability requires consistency a
 
 If only some CQs use GRADE/SR/EtD, do not generalize that method to all recommendations.
 
-For example, if CQ1–3 use SR/EtD but recommendation tables 1–88 use a COR/LOE system, classify as mixed or heterogeneous and do not rate the entire CPG as A based on the CQ subset.
+For example, if only a small subset of questions uses SR/EtD but the larger
+recommendation set uses another evidence system, classify as mixed or
+heterogeneous and do not rate the entire CPG as A based on the subset.
 
 ### 5. Claim-gated audit
 
@@ -157,7 +159,8 @@ Classify first:
 
 ### 6. Non-GRADE systems are not automatically bad
 
-AHA/ACC/JCS/COR-LOE-like systems must not be collapsed into GRADE terminology.
+COR/LOE-like and other non-GRADE evidence systems must not be collapsed into
+GRADE terminology.
 
 Class I + C-EO is not “strong GRADE recommendation + low certainty.”
 Use the system's own language unless explicit GRADE mapping is provided.
@@ -261,6 +264,37 @@ Do not immediately rewrite everything. Follow this triage:
 
 Then make the smallest edit.
 
+## Generalize before adding rules
+
+Rules that go into Instructions, Knowledge, or regression tests must be general
+CPG-audit rules, not case notes about one named guideline, disease, society, or
+CQ number.
+
+When a failure is reported from a specific CPG, convert it before editing:
+
+```text
+Failure example:
+In a specific CPG or CQ, the GPT produced output like X.
+
+Generalized problem:
+For any CPG, the GPT is mistaking condition X for condition Y.
+
+Generalized correction rule:
+Regardless of CPG name, disease name, society name, or CQ number, when condition
+Z is present, treat it as Z.
+
+Text for Instructions/Knowledge:
+Write the rule as "For all clinical practice guidelines, ..." or an equivalent
+general formulation.
+
+Regression test:
+Do not preserve the individual CPG name, disease name, society name, or CQ
+number in the test title, file name, or case text.
+```
+
+If a real example is needed for internal reasoning, keep it in the chat only or
+convert it into a synthetic generic scenario before committing it.
+
 ## Expected Codex output after each task
 
 When Codex edits files, report:
@@ -309,4 +343,3 @@ Codex edits repository files. The user must still manually:
 2. upload active `knowledge/*.md` files;
 3. remove old conflicting Knowledge files;
 4. run GPT Builder Preview regression tests.
-

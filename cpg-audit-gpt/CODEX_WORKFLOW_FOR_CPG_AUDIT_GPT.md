@@ -57,7 +57,10 @@ Use this prompt:
 
 ```text
 This output is a failure. Expected behavior is ...
-Please identify whether the cause is in Instructions, Knowledge 11, 12, 13, or another Knowledge file. Then produce a Codex-ready repair specification.
+First generalize the failure so it does not depend on a CPG name, disease name,
+society name, or CQ number. Then identify whether the cause is in Instructions,
+Knowledge 11, 12, 13, or another Knowledge file. Then produce a Codex-ready
+repair specification.
 ```
 
 ### Step 3: Give the repair specification to Codex
@@ -73,6 +76,8 @@ Constraints:
 - 11, 12, 13 remain highest priority.
 - Do not mix Instructions into knowledge/.
 - Do not restore old archived rules.
+- Generalize specific CPG/CQ failures before editing; do not commit CPG names,
+  disease names, society names, or CQ numbers as rules or regression cases.
 - Update CHANGELOG.md.
 - Add or update a regression case if appropriate.
 - Show changed files and summarize conflicts checked.
@@ -88,9 +93,11 @@ Check whether Codex:
 - edited the intended file;
 - accidentally weakened 11/12/13;
 - reintroduced banned logic;
+- left a specific CPG name, disease name, society name, or CQ number in active Instructions, Knowledge, or regression tests;
 - exceeded the Instructions character limit;
 - updated changelog;
 - added a regression test when needed.
+- ran `node scripts/check_repository_policy.mjs`.
 
 ### Step 5: Manually update GPT Builder
 
@@ -136,4 +143,3 @@ releases/vX.Y/
   CHANGELOG.md
   cpg-audit-gpt-vX.Y.zip
 ```
-

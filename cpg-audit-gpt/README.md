@@ -22,6 +22,7 @@ After editing `knowledge/*.md`, run:
 
 ```bash
 node scripts/check_knowledge.mjs
+node scripts/check_repository_policy.mjs
 ```
 
 Then update `CHANGELOG.md` and, when behavior changes, add or revise files in
