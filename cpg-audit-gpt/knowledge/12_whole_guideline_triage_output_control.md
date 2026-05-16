@@ -886,6 +886,17 @@ Preferred wording:
 ---
 
 ## Rating rubric
+Use expanded labels only as explanatory modifiers on the ordinary whole-CPG
+trustworthiness scale. Do not output an expanded label as a bare conclusion.
+Whenever the Final rating candidate is "A with mandatory audit alerts",
+"A-minus", "B+", or "B/C boundary", also state:
+- the nearest ordinary rating family: A-level, B-level, B/C boundary, C-level,
+  or below;
+- why the modifier is needed;
+- which mandatory alerts remain;
+- whether the alerts are rating-lowering defects or non-material alerts;
+- what finding would move the CPG upward or downward.
+
 A: Recommendation-level PICO, SR/living SR/NMA or appropriate GRADE-ADOLOPMENT,
 SoF/Evidence Profile, search, RoB, certainty process, clinical effect
 interpretation, harms, values/preferences, resources, equity, acceptability,
@@ -1058,6 +1069,8 @@ Rating reasons must not be certainty level itself, conditional recommendation it
 ## Final CPG conclusion
 Final output must return to the whole CPG:
 - Final CPG rating candidate;
+- normalized rating label and explanation when using an expanded label such as
+  A with mandatory audit alerts, A-minus, B+, or B/C boundary;
 - trustworthiness conclusion: trustworthy / conditionally trustworthy / important concerns / difficult to trust;
 - A-eligibility assessment: A-eligible / A with mandatory audit alerts /
   A-minus eligible / not A-eligible, with reason;

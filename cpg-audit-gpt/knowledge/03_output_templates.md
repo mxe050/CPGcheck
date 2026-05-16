@@ -116,6 +116,10 @@ Use tables. Avoid long narrative summaries. Always distinguish: found at locatio
 
 ## 9. Final CPG trustworthiness conclusion
 - Final CPG rating candidate:
+  - Normalized rating label:
+  - If using an expanded label such as A with mandatory audit alerts, A-minus,
+    B+, or B/C boundary, state how it relates to the ordinary A/B/C/D/E rating
+    scale and why a plain unqualified label would be misleading.
 - Trustworthiness conclusion:
 - A-eligibility assessment:
 - What can be trusted:
@@ -211,6 +215,12 @@ Final alerts must never be one-line labels. For every mandatory alert, write
 what was detected, why it matters, how it connects to certainty/recommendation
 or governance, and the rating impact. Alerts can coexist with A, A with
 mandatory audit alerts, or A-minus when whole-guideline materiality is low.
+
+When using expanded rating labels, do not let the label replace the rationale.
+Explain whether the expanded label means an A-level CPG with non-material alerts,
+an A-eligible CPG with residual confirmation needs, a mostly B-level CPG near
+the A boundary, or a B/C-boundary CPG with major unresolved concerns. The Final
+must make clear what would change the label upward or downward.
 
 For no-meta-analysis / non-quantitative synthesis alerts, do not stop at "no
 meta-analysis." State whether inconsistency, imprecision, certainty, and overall

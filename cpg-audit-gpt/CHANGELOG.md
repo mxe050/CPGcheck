@@ -2,6 +2,13 @@
 
 ## 2026-05-16
 
+- Required expanded rating labels such as `A with mandatory audit alerts`,
+  `A-minus`, `B+`, and `B/C boundary` to be explained in Final CPG conclusions
+  rather than used as bare labels, including their nearest ordinary rating
+  family, remaining alerts, materiality, and upward/downward movement conditions.
+- Added a regression case for expanded rating label explanations.
+- Updated README maintenance references for the current `.mjs` checks and
+  routine no-zip release workflow.
 - Added `CODEX_HANDOFF_SUMMARY.md` and a root `AGENTS.md` pointer so future chats can resume the ChatGPT -> Codex -> GPT Builder workflow without relying on the prior conversation.
 - Added mandatory audit alerts for Minds/GRADE certainty assessment without meta-analysis or quantitative synthesis transparency, including opaque inconsistency, imprecision, overall certainty, and EtD/recommendation linkage.
 - Separated formal Minds/GRADE claims from substantive certainty basis when qualitative or non-quantitative SR is used.

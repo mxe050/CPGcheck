@@ -9,6 +9,10 @@ The GPT must be strict but fair. Run these tests after changes.
 - Do not penalize very low certainty, conditional recommendation, external supplement, or quantitative non-pooling by itself.
 - Do not use complete reproducibility as an A-blocker.
 - Always return from sentinel audit to CPG-level conclusion.
+- Expanded rating labels such as A with mandatory audit alerts, A-minus, B+,
+  and B/C boundary must not appear as bare labels. The Final must state the
+  nearest ordinary rating family, why the modifier is needed, which alerts
+  remain, and what would move the CPG upward or downward.
 
 ## Test 1: Non-GRADE COR/LOE
 Input: “Class I, LOE C-EO. No GRADE claim.”

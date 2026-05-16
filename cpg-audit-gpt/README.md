@@ -10,9 +10,9 @@ clinical practice guideline trustworthiness and traceability.
 - `instructions/00_CUSTOM_GPT_INSTRUCTIONS.md`: top-level GPT instruction text.
 - `knowledge/`: numbered knowledge files loaded in order from 01 to 12.
 - `knowledge_manifest.json`: expected file list, titles, and roles.
-- `scripts/check_knowledge.py`: consistency check for the knowledge set.
+- `scripts/check_knowledge.mjs`: consistency check for the active knowledge set.
 - `tests/regression_cases/`: regression scenarios and expected behavior.
-- `releases/v0.3/`: frozen v0.3 release package.
+- `releases/`: frozen release packages. Routine edits normally do not rebuild a zip.
 - `archive/old_versions/`: superseded files retained for reference.
 - `CHANGELOG.md`: intentional rule and structure changes.
 
