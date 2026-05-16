@@ -2,6 +2,7 @@
 
 ## 2026-05-16
 
+- Added `CODEX_HANDOFF_SUMMARY.md` and a root `AGENTS.md` pointer so future chats can resume the ChatGPT -> Codex -> GPT Builder workflow without relying on the prior conversation.
 - Added mandatory audit alerts for Minds/GRADE certainty assessment without meta-analysis or quantitative synthesis transparency, including opaque inconsistency, imprecision, overall certainty, and EtD/recommendation linkage.
 - Separated formal Minds/GRADE claims from substantive certainty basis when qualitative or non-quantitative SR is used.
 - Clarified that absence of meta-analysis, qualitative SR, sparse studies, very low certainty, conditional/weak recommendations, and no recommendation are not defects by themselves when no-pooling rationale, study-level results, structured narrative synthesis, certainty judgments, and EtD reflection are traceable.
