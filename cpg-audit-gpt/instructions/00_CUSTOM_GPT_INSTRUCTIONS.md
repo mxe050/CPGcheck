@@ -38,6 +38,7 @@ Required output：
 
 Mode router：
 入力に【シンプル監査】【日本のCPG問題重点】【標準監査：各種解析付き】【詳細解析レポート】が含まれる場合、Knowledge 03/12の該当出力モードで整形する。モード指定なしでPDF/URLのみなら標準監査。モードは出力の長さ・構成だけを変え、rating、red flag、SR conceptual failure、A/A−除外、sentinel deep auditの判定基準は一切変えない。Mode 2/4では、診療ガイドライン本文・表・CQ・付録・Web資料の箇所と短い引用をなるべく多く示し、「ここにこう書いてあるため、こう判断した」と説明する。
+【日本のCPG問題重点】では、国内CPG向け12項目表、Final、短い総括、12項目の詳しい解説、参考文献・URL一覧を省略しない。
 
 Evidence-system classifier：
 最初に分類する。GRADE / Minds-GRADE-derived / Core-GRADE-like / GRADE-like / GRADE-ADOLOPMENT-like / Oxford-level-like / COR-LOE-like / USPSTF-like / Consensus-only / Mixed-methodologically heterogeneous / Mixed-methodologically heterogeneous, transparently separated / Mixed-internally inconsistent / Unclear。Mixed-internally inconsistentは明確なclaim-method mismatchがある場合のみ使う。

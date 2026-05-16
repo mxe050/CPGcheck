@@ -48,6 +48,14 @@ the guideline location and include short direct excerpts or faithful summaries.
 Use the pattern: "ガイドラインではXと記載されているため、Yと判断する。ただしZ資料が未提供なのでAは未確定." Do not reproduce long copyrighted
 sections; use multiple short excerpts and precise locations instead.
 
+For 【日本のCPG問題重点】 specifically, the Japanese domestic 12-row inspection
+table and the "12項目の解説" section are required output blocks. Do not omit
+them because the Final already states the rating. In the 12-row table, each
+applicable or suspected row must connect the guideline wording to the candidate
+pattern: "該当箇所では...と記載されている。これは...のため、この12項目の候補に該当する/該当疑いである." If the row is not confirmed, state whether
+the main text is silent or whether an appendix, separate PDF, web supplement,
+forest plot, SoF table, Evidence Profile, or search file could resolve it.
+
 ## Priority score
 Score each candidate 0–10:
 - clinical impact 0–2;

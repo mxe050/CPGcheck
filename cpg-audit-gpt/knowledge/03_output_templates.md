@@ -95,6 +95,17 @@ than in Mode 3. Each row should explain what is written, what is not visible in
 the main text, whether supplements could resolve the issue, and why the pattern
 matters. The table is inspection-only and must not be scored.
 
+For the Japanese 12-row inspection table in Mode 2, avoid generic checklist
+phrases. Each applicable or suspected row should include concrete evidence from
+the guideline:
+- the exact page/section/CQ/table/appendix/web source when available;
+- a short quote or close paraphrase of the guideline wording;
+- a sentence explaining why that wording fits the candidate pattern, using
+  "ここにこう書いてあるので、この12項目の候補に当てはまる / 当てはまる疑いがある";
+- whether a supplement, separate PDF, evidence table, forest plot, SoF/Evidence
+  Profile, or web file could resolve the uncertainty.
+Use many small, location-specific snippets rather than long quotations.
+
 ## Mode 3: 標準監査：各種解析付き
 
 Use when the message contains 【標準監査：各種解析付き】 or no mode is selected.
@@ -143,67 +154,82 @@ Title:
 Opening:
 以下の12項目は、ratingを決めるための採点基準ではありません。日本の学会作成CPGを読むときに、形式的には「Mindsに従った」「GRADEを用いた」「SRを行った」と書かれていても、実際には推奨の根拠が十分に追跡できないことがあります。ここでは、そのような「形式と実質のズレ」を理解するための代表的なパターンを説明します。
 
-Use short form in Mode 2 when the report is already long. Use full form in Mode
-4 unless the user asks for brevity.
+Mode 2 should normally include this full article unless the user asks for a very
+short answer. Mode 4 should include the full article. Keep it educational:
+these 12 items explain patterns, but they are not rating criteria and are not a
+checklist score.
 
-1. Minds/GRADE/SRと書いてあるが、中身が伴っていない問題: Method names
-do not establish trust. Check whether PICO, study selection, RoB,
-outcome-specific certainty, SoF/Evidence Profile, EtD, and direction/strength
-are actually traceable.
+1. Minds/GRADE/SRと書いてあるが、中身が伴っていない問題
 
-2. メタ分析やforest plotが見えないままcertaintyを決めている問題: No
-meta-analysis is not a defect by itself. The issue is whether study effects,
-uncertainty, inconsistency, imprecision, and overall certainty are traceable
-without pooled estimates or forest plots.
+「Mindsに準拠した」「GRADEを用いた」「システマティックレビューを行った」と書かれていても、それだけで信頼できる推奨とは言えません。重要なのは、PICO、文献選択、RoB評価、アウトカム別certainty、SoF/Evidence Profile、EtD、推奨方向・推奨強度までの流れが実際に追えるかです。
 
-3. SRではなく、文献集になっている問題: SR is not a list of papers. It
-requires PICO, eligibility, study selection, RoB, outcome-level synthesis, and
-connection to recommendation judgments.
+これが追えない場合、方法論の名称だけが使われ、実際の判断は専門家の主観や慣習に依存している可能性があります。AGREE IIなどの形式的評価が整って見えても、GRADEに基づく科学的に妥当な推奨であることは別問題です。監査では、「形式的完成度」と「真の信頼性」の距離を区別します。
 
-4. SR/NMA、RCT、観察研究、症例集積を同列に扱う問題: Existing SRs/NMAs are
-review-level evidence; RCTs and observational studies are primary studies. If
-they are counted or interpreted at the same level, evidence units and duplicate
-primary-study risk become unclear.
+2. メタ分析やforest plotが見えないままcertaintyを決めている問題
 
-5. 観察研究をraw dataでメタ分析する問題: Crude group totals from
-observational studies can reflect confounding, severity, treatment selection,
-or facility differences. Statistical poolability is not the same as valid
-causal inference.
+メタ分析がないこと自体は欠陥ではありません。研究数が少ない、アウトカム定義が異なる、異質性が大きい、希少疾患であるなど、メタ分析を行わないことが妥当な場合はあります。
 
-6. 観察研究のcertaintyを不自然に高くする問題: Large sample size or small
-p-values do not remove bias. High or moderate certainty from observational
-evidence requires traceable upgrade logic or an explicit ROBINS-I/high-start
-framework with downgrades.
+問題は、メタ分析もforest plotもなく、各研究の効果推定値や95%信頼区間も十分に示されないまま、非一貫性・不精確性・overall certaintyが決められている場合です。この場合、どの情報に基づいて「非一貫性に問題なし」「不精確性で格下げ」などと判断したのかが分かりません。つまり、certainty評価が再現可能な方法論的判断ではなく、作成者の印象評価になってしまいます。
 
-7. アウトカムが同じ方向だから最高certaintyを採る問題: Same direction does
-not automatically justify using the highest certainty as overall certainty.
-Identify the decision-driving outcome and explain how its certainty affects the
-recommendation.
+3. SRではなく、文献集になっている問題
 
-8. サロゲートアウトカムを都合よく使う問題: Surrogates are sometimes
-necessary. The concern is using favorable biomarkers, imaging, scores, or lab
-values without explaining indirectness or connection to patient-important
-outcomes.
+システマティックレビューとは、単に検索して見つかった論文を並べる作業ではありません。事前にPICOと適格基準を決め、研究を選択し、RoBを評価し、アウトカムごとにエビデンスを統合し、その結果を推奨判断に接続する作業です。
 
-9. 有意差あり／なしだけで判断する問題: Statistical significance is not
-clinical importance, and non-significance is not equivalence or non-inferiority.
-Equivalence/non-inferiority requires a prespecified margin and confidence
-interval interpretation.
+ところが実際には、「検索した結果、いくつかの論文が見つかったので、それぞれを解説した」というだけのものがSRと呼ばれていることがあります。これは、SRではなく文献集です。文献集では、都合のよい論文が強調されたり、不都合な結果が弱く扱われたりしても、読者が検証しにくくなります。
 
-10. 相対効果だけで推奨する問題: RR or OR can look impressive while absolute
-benefit is small. Check baseline risk, absolute risk difference, NNT/NNH, MID,
-and clinically meaningful thresholds.
+4. SR/NMA、RCT、観察研究、症例集積を同列に扱う問題
 
-11. EtDを使ったと書くが、判断過程が見えない問題: EtD is not decorative.
-Benefits, harms, certainty, patient values/preferences, burden, and contextual
-factors must connect to recommendation direction and strength. Cost/resources/
-equity/feasibility may be context-dependent, but benefit-harm and patient
-values are central.
+既存SRやNMA、RCT、観察研究、症例集積、レビュー論文は、同じ種類のエビデンスではありません。既存SRやNMAは二次研究であり、RCTや観察研究は一次研究です。症例集積は比較効果の推定にはさらに大きな限界があります。
 
-12. エビデンス要約の直後に推奨が突然出る問題: A trustworthy recommendation
-explains why evidence leads to a particular direction and strength. If a
-recommendation appears immediately after evidence summaries without judgment
-logic, readers cannot verify the recommendation formation.
+これらを階層化せずに、「SRではこうだった、RCTではこうだった、観察研究ではこうだった」と横並びに比較すると、エビデンスの単位が混乱します。さらに、既存SRに含まれるRCTを、別の一次研究として再び数えてしまう重複カウントの危険もあります。異なる研究デザインを同じ重みで扱えば、推奨の根拠が実際より強く見えることがあります。
+
+5. 観察研究をraw dataでメタ分析する問題
+
+観察研究では、治療を受けた群と受けなかった群の背景が最初から違います。重症度、年齢、併存疾患、施設、治療選択の理由などが異なるため、単純なイベント数の比較は治療効果ではなく、患者背景の違いを反映している可能性があります。
+
+それにもかかわらず、観察研究から症例数とイベント数だけを抜き出し、RCTと同じようにORやRRを計算してメタ分析する例があります。これは統計ソフトでは計算できますが、疫学的には危険です。調整済みOR/RR/HR、傾向スコア、多変量調整などを考慮しなければ、交絡によって作られた見かけの効果を、治療効果と誤解することになります。
+
+6. 観察研究のcertaintyを不自然に高くする問題
+
+観察研究は、たとえ症例数が多くても、交絡や選択バイアスの問題を避けられません。p値が小さい、症例数が多い、有意差がある、という理由だけでcertaintyを「中」以上にするのは誤りです。
+
+ここで混同されやすいのは、「精度」と「妥当性」です。症例数が多ければ信頼区間は狭くなりますが、バイアスが小さくなるわけではありません。大きなデータであっても、交絡が残っていれば、間違った推定値を非常に精密に出しているだけかもしれません。観察研究のcertaintyを上げるには、GRADEの正当なupgrade理由や、ROBINS-I等による妥当なバイアス評価が必要です。
+
+7. アウトカムが同じ方向だから最高certaintyを採る問題
+
+複数の重大アウトカムがあり、それぞれcertaintyが異なる場合、「同じ方向だから一番高いcertaintyをoverall certaintyにする」という処理は危険です。たとえば、検査値は高certaintyで改善していても、死亡、QOL、重大有害事象は低certaintyかもしれません。
+
+推奨にとって重要なのは、どのアウトカムが意思決定を主導しているかです。すべての重大アウトカムを同じ重みで扱い、都合よく高いcertaintyだけを採用すると、推奨の不確実性が隠れてしまいます。逆に、常に最低certaintyに合わせればよいという単純な話でもありません。必要なのは、decision-driving outcomeを明示し、そのcertaintyと推奨判断の関係を説明することです。
+
+8. サロゲートアウトカムを都合よく使う問題
+
+サロゲートアウトカムを使うこと自体は悪くありません。疾患領域によっては、死亡、発症、QOL、機能などの患者重要アウトカムを直接評価することが難しく、検査値、画像所見、疾患活動性スコア、バイオマーカーなどを使わざるを得ない場合があります。
+
+問題は、サロゲートが患者にとって本当に重要なアウトカムにつながるのかを説明せず、都合のよいサロゲートだけを選んで推奨根拠にすることです。検査値が改善しても、患者の症状、生活の質、生命予後、有害事象が改善するとは限りません。サロゲートを使うなら、その間接性を認め、患者重要アウトカムとの関係を説明し、必要ならcertaintyで非直接性として扱う必要があります。
+
+9. 有意差あり／なしだけで判断する問題
+
+「有意差あり」は「臨床的に重要」という意味ではありません。大規模研究では、患者にとってほとんど意味のない小さな差でもp値が有意になることがあります。一方で、「有意差なし」は「効果がない」「差がない」「同等」「非劣性」を意味しません。
+
+この誤解は、推奨を大きく歪めます。有意差がない研究でも、信頼区間が大きな利益と大きな害の両方を含んでいれば、結論は「分からない」です。同等性や非劣性を主張するには、事前に決めたマージンと信頼区間に基づく評価が必要です。p値だけで推奨方向を決めるのは、臨床判断として不十分です。
+
+10. 相対効果だけで推奨する問題
+
+RR 0.50やOR 0.35のような相対効果は、効果を大きく見せることがあります。しかし、患者にとって重要なのは、多くの場合、絶対効果です。もともとのリスクが非常に低ければ、相対リスクが半分になっても、実際に利益を受ける患者はごく少数かもしれません。
+
+たとえば、発症リスクが0.2%から0.1%になる場合、相対的には50%低下ですが、絶対差は0.1%です。推奨を決めるには、ベースラインリスク、絶対リスク差、NNT/NNH、MID、患者にとって意味のある差を考える必要があります。相対効果だけを強調すると、利益が過大評価されやすくなります。
+
+11. EtDを使ったと書くが、判断過程が見えない問題
+
+EtDは、単に「考慮した」と書くための飾りではありません。エビデンスの確実性、利益と害のバランス、患者の価値観・意向、負担、必要に応じて費用、資源、公平性、実行可能性などを整理し、なぜその推奨方向・推奨強度になったのかを説明するための枠組みです。
+
+Core GRADEの観点では、費用、資源、公平性、実行可能性などは文脈によって扱いが変わり、常に詳細な記載が必須というわけではありません。しかし、患者の価値観・意向や、利益と害のバランスが推奨判断にどうつながったのかは中核的です。方法章でEtDやMinds/GRADEを使ったと書きながら、本文では論文結果だけを示して突然推奨が出るなら、EtDは実質的に機能していません。
+
+12. エビデンス要約の直後に推奨が突然出る問題
+
+信頼できるCPGでは、「エビデンスがこうだった」だけでなく、「だからなぜその推奨になったのか」が説明されます。推奨は、効果の大きさ、害、certainty、患者価値観、負担、臨床的文脈を踏まえた判断だからです。
+
+ところが、論文結果を数段落で説明したあと、突然「したがって推奨する」と書かれているCPGがあります。この場合、読者は、推奨方向や推奨強度がどの判断に基づくのかを検証できません。「パネルで合意した」「投票で決めた」という記載も、理由の説明にはなりません。合意形成は重要ですが、合意に至った論理が見えなければ、実質的には専門家意見の追認に近くなります。
 
 ## Template A: Whole-guideline triage plus sentinel audit
 

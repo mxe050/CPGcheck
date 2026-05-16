@@ -330,6 +330,16 @@ Expected: when the user selects 【日本のCPG問題重点】 for a Japanese do
 output includes minimum audit summary, detailed Japanese domestic inspection
 table, Final, short summary, 12-item educational explanation, and references.
 The table is inspection-only and does not alter rating by item count.
+Each applicable or suspected row must cite the guideline location and short
+wording, then explain why that wording fits the relevant 12-item candidate
+pattern. The 12-item explanation should be the full educational article unless
+the user explicitly asks for brevity.
+
+## Test 57a: mode_japanese_cpg_full_article_and_annotated_references
+Expected: 【日本のCPG問題重点】 includes the full 12-item educational article and
+an annotated reference list. It must not stop after the inspection table and
+Final. References should include short explanations of why each source is
+methodologically relevant.
 
 ## Test 58: mode_standard_regression_no_output_drift
 Expected: when the user selects 【標準監査：各種解析付き】 or no mode, current

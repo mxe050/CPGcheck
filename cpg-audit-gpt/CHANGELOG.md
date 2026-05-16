@@ -2,6 +2,9 @@
 
 ## 2026-05-16
 
+- Expanded Mode 2/4 Japanese CPG educational output so the 12-item explanation
+  uses the full detailed article, table rows must connect guideline wording to
+  candidate patterns, and references include methodological annotations.
 - Added Conversation Starter mode routing for simple audit, Japanese CPG focus,
   standard audit, and detailed analytic report, with reporting-only mode
   behavior that preserves existing rating logic.
