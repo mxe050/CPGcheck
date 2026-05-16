@@ -2,6 +2,9 @@
 
 ## 2026-05-16
 
+- Strengthened Japanese domestic inspection table placement so it must render as
+  a Markdown table immediately before Final CPG trustworthiness conclusion and
+  cannot be replaced by a post-Final prose SR conceptual failure scan.
 - Added an inspection-only Japanese domestic CPG table immediately before the
   Final CPG trustworthiness conclusion to show formal SR/GRADE/Minds claims
   versus operational substance without changing rating calculations.

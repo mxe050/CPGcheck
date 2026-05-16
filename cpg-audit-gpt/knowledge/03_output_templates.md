@@ -118,6 +118,8 @@ Use tables. Avoid long narrative summaries. Always distinguish: found at locatio
 Use this section only for Japanese domestic CPGs or when the user explicitly
 requests it. Place it immediately before the Final CPG trustworthiness
 conclusion. This is an inspection-only table, not a rating calculation table.
+Render it as a Markdown table with the five columns below. Do not replace it
+with a prose paragraph, bullet list, or post-Final SR conceptual failure scan.
 
 日本の学会作成CPG向け：形式的SR/GRADE/Minds claimと実質的運用の乖離チェック
 ※この表はratingを直接変更する採点表ではなく、Final conclusionの前に置くinspection-only checklistである。

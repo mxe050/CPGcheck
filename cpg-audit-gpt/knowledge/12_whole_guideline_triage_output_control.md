@@ -22,6 +22,7 @@ Control output when a full guideline PDF or distributed web CPG is provided. Tri
 16. Treat SR conceptual failure, critical-outcome weighting opacity, and overall-certainty shortcuts as mandatory final alerts when detected.
 17. For Japanese-language or domestically produced CPGs, always perform and report a high-sensitivity SR conceptual failure scan in the Final CPG conclusion; do not treat Japanese/domestic origin itself as a defect.
 18. When Minds/GRADE certainty is claimed without meta-analysis or quantitative synthesis, audit how inconsistency, imprecision, overall certainty, and EtD/recommendation judgments were made.
+19. For Japanese domestic CPGs, render the inspection-only SR/GRADE/Minds claim-vs-operation checklist as a Markdown table immediately before the Final CPG trustworthiness conclusion.
 
 ## Priority score
 Score each candidate 0–10:
@@ -190,6 +191,12 @@ reader. If the same finding is independently verified in the ordinary audit as
 SR conceptual failure, EtD failure, certainty inflation, recommendation
 traceability failure, or another existing defect, handle that finding under the
 existing rules; the table itself remains inspection-only.
+
+Render the checklist as the five-column Markdown table below. Do not replace it
+with narrative text, bullets, or an SR conceptual failure scan after the Final
+conclusion. The domestic inspection table comes before Final; the Final may then
+summarize any independently verified SR conceptual failure, EtD, certainty, or
+traceability implications under the normal rules.
 
 Use these columns:
 | チェック項目 | このCPGでの確認箇所・記載 | パターン判定 | 補足資料確認 | コメント |
@@ -498,7 +505,8 @@ Whole-guideline triage is preparation, not endpoint. Unless the user explicitly 
 4. sentinel deep audit;
 5. evidence-to-recommendation traceability assessment;
 6. sentinel methodological rating;
-7. Final CPG trustworthiness conclusion.
+7. Japanese domestic CPG inspection-only table, if applicable;
+8. Final CPG trustworthiness conclusion.
 
 Do not stop after “next deep audit target is ...”. Continue: “Sentinel target selected. Proceeding to sentinel deep audit.”
 

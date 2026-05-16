@@ -311,5 +311,12 @@ separately using existing SR conceptual failure, certainty, EtD, and
 recommendation-traceability rules; do not say rating is C because the table has
 a certain number of items.
 
+## Test 55: Japanese table must precede Final and be a table
+Expected: for a Japanese domestic CPG, the inspection-only checklist must appear
+as a Markdown table immediately before Final CPG trustworthiness conclusion. A
+prose SR conceptual failure scan placed after Final does not satisfy this test.
+The table cannot be skipped merely because Final includes an SR conceptual
+failure scan.
+
 ## Acceptance criterion
 The most important metric is false trustworthy rate: the GPT must rarely rate unsupported, internally inconsistent, or unverifiable high-risk recommendations as A/B. At the same time, it must not unfairly downgrade well-conducted transparent Core GRADE/GRADE CPGs merely because evidence is uncertain.
