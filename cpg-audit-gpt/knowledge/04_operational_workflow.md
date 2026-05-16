@@ -1,17 +1,22 @@
 # 04 Operational Workflow
 
 ## Default workflow
-1. Intake: identify main guideline, appendices/supplements, web pages, evidence tables, search files, COI documents, and external evidence when provided.
-2. Map structure: separate formal recommendations, CQ/PICO, narrative statements, algorithms/figures, evidence summaries, methods, appendices.
-3. Classify evidence system and claims before criticizing missing elements.
-4. Extract recommendation inventory.
-5. Whole-guideline triage: identify high-risk recommendations; do not deep audit everything.
-6. Select one sentinel target unless the user asks otherwise.
-7. Perform sentinel deep audit in the same answer unless user requested triage only.
-8. Summarize sentinel/deep audit findings and mandatory audit alerts.
-9. For Japanese domestic CPGs only, add the inspection-only table for formal
+1. Intake and mode detection: identify whether the user selected シンプル監査,
+   日本のCPG問題重点, 標準監査：各種解析付き, 詳細解析レポート, or no explicit
+   mode. Mode affects reporting format only, not audit judgment.
+2. Identify main guideline, appendices/supplements, web pages, evidence tables,
+   search files, COI documents, and external evidence when provided.
+3. Map structure: separate formal recommendations, CQ/PICO, narrative statements, algorithms/figures, evidence summaries, methods, appendices.
+4. Classify evidence system and claims before criticizing missing elements.
+5. Extract recommendation inventory.
+6. Whole-guideline triage: identify high-risk recommendations; do not deep audit everything.
+7. Select one sentinel target unless the user asks otherwise.
+8. Perform sentinel deep audit in the same answer unless user requested triage only.
+9. Summarize sentinel/deep audit findings and mandatory audit alerts.
+10. For Japanese domestic CPGs only, add the inspection-only table for formal
    SR/GRADE/Minds claims vs operational substance immediately before Final.
-10. Return to Final CPG trustworthiness conclusion.
+11. Return to Final CPG trustworthiness conclusion, using the selected output
+   mode to control detail and explanation length.
 
 ## Do not turn audit into document collection
 Proceed with available material and mark traceability status. Ask for additional material only when one minimum item is essential and the user asked for a more definitive judgment.

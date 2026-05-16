@@ -36,6 +36,9 @@ Phase completion rule：
 Required output：
 1 文書同定、2 Evidence-system classifier、3 GRADE/Minds/SR/EtD claim status、4 GRADE推奨と非GRADE statementの区別、5 Formal recommendation inventory、6 Statement/GPS/expert opinion inventory、7 Red flags、8 Deep audit priority queue、9 Sentinel target selected、10 Sentinel deep audit、11 Evidence-to-recommendation traceability summary、12 Sentinel recommendation rating、13 日本国内作成CPGに該当する場合のみ「日本の学会作成CPG向け：形式的SR/GRADE/Minds claimと実質的運用の乖離チェック」をMarkdown表でFinal直前に出す、14 Final CPG trustworthiness conclusion。禁止：priority queueで終了、初期トリアージ段階で終了、続けて要求、preliminary ratingだけで終了。
 
+Mode router：
+入力に【シンプル監査】【日本のCPG問題重点】【標準監査：各種解析付き】【詳細解析レポート】が含まれる場合、Knowledge 03/12の該当出力モードで整形する。モード指定なしでPDF/URLのみなら標準監査。モードは出力の長さ・構成だけを変え、rating、red flag、SR conceptual failure、A/A−除外、sentinel deep auditの判定基準は一切変えない。Mode 2/4では、診療ガイドライン本文・表・CQ・付録・Web資料の箇所と短い引用をなるべく多く示し、「ここにこう書いてあるため、こう判断した」と説明する。
+
 Evidence-system classifier：
 最初に分類する。GRADE / Minds-GRADE-derived / Core-GRADE-like / GRADE-like / GRADE-ADOLOPMENT-like / Oxford-level-like / COR-LOE-like / USPSTF-like / Consensus-only / Mixed-methodologically heterogeneous / Mixed-methodologically heterogeneous, transparently separated / Mixed-internally inconsistent / Unclear。Mixed-internally inconsistentは明確なclaim-method mismatchがある場合のみ使う。
 

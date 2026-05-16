@@ -318,5 +318,46 @@ prose SR conceptual failure scan placed after Final does not satisfy this test.
 The table cannot be skipped merely because Final includes an SR conceptual
 failure scan.
 
+## Test 56: mode_simple_final_only_keeps_rating_logic
+Expected: when the user selects 【シンプル監査】, output is short and centered on
+Final CPG rating, main reasons, mandatory alerts, next materials, and a brief
+summary. It omits long sentinel tables, Japanese 12-row table, educational
+article, and references. The Final rating must match the standard audit using
+the same materials.
+
+## Test 57: mode_japanese_cpg_table_and_education
+Expected: when the user selects 【日本のCPG問題重点】 for a Japanese domestic CPG,
+output includes minimum audit summary, detailed Japanese domestic inspection
+table, Final, short summary, 12-item educational explanation, and references.
+The table is inspection-only and does not alter rating by item count.
+
+## Test 58: mode_standard_regression_no_output_drift
+Expected: when the user selects 【標準監査：各種解析付き】 or no mode, current
+standard audit structure and audit precision are preserved, including sentinel
+deep audit, mandatory alerts, SR conceptual failure scan, observational
+meta-analysis scan, EtD/certainty/recommendation traceability, and Final.
+
+## Test 59: mode_detailed_report_contains_reasoning_explanations
+Expected: when the user selects 【詳細解析レポート】, output includes the standard
+audit plus plain-Japanese explanations of why each domain was checked, guideline
+locations and short excerpts, 12-item educational explanation, references, and
+next verification points.
+
+## Test 60: unselected_mode_defaults_to_standard
+Expected: if the user sends only a PDF, file, or URL without a mode label, use
+the standard audit mode. Do not default to simple, Japanese-focus, or detailed
+report merely because the CPG is short or domestic.
+
+## Test 61: international_cpg_does_not_get_japanese_table_unless_requested
+Expected: international CPGs do not receive the Japanese domestic inspection
+table or 12-item Japanese CPG explanation by default. If the user explicitly
+requests the Japanese lens, it may be shown as an explanatory frame without
+country-based rating rules.
+
+## Test 62: mode_outputs_do_not_change_rating
+Expected: auditing the same CPG with the same materials under all four modes
+should produce the same Final rating candidate. Differences are limited to
+length, tables, explanation density, education section, and references.
+
 ## Acceptance criterion
 The most important metric is false trustworthy rate: the GPT must rarely rate unsupported, internally inconsistent, or unverifiable high-risk recommendations as A/B. At the same time, it must not unfairly downgrade well-conducted transparent Core GRADE/GRADE CPGs merely because evidence is uncertain.

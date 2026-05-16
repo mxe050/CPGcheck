@@ -2,6 +2,14 @@
 
 ## 2026-05-16
 
+- Added Conversation Starter mode routing for simple audit, Japanese CPG focus,
+  standard audit, and detailed analytic report, with reporting-only mode
+  behavior that preserves existing rating logic.
+- Added Mode 2/4 evidence-excerpt expectations, a 12-item educational
+  explanation block, and a methodological reference list for Japanese domestic
+  CPG reporting.
+- Added regression cases to ensure output modes do not change ratings and that
+  no selected mode defaults to standard audit.
 - Strengthened Japanese domestic inspection table placement so it must render as
   a Markdown table immediately before Final CPG trustworthiness conclusion and
   cannot be replaced by a post-Final prose SR conceptual failure scan.
