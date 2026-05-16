@@ -14,6 +14,13 @@ PICO, outcome-specific selection, primary-study independence, design-specific
 RoB, confounding assessment, outcome-specific certainty, SoF/Evidence Profile,
 or EtD connection is not traceable.
 
+RF-02b Formal SR claim without substantive SR validity: "SR was performed,"
+"Minds-compliant," "GRADE-based," search databases, study counts, forest plots,
+or effect estimates establish only formal existence. They do not support the SR
+claim unless primary-study units, existing-review use, duplicate-study risk,
+design-specific RoB, observational confounding, outcome-specific certainty, and
+EtD connection are substantively traceable.
+
 RF-03 Literature catalog instead of certainty: SRs, RCTs, and observational studies are listed in parallel without certainty assessment or linkage to recommendation strength.
 
 RF-03a Study-design counting used as evidence appraisal: counts such as RCTs,
@@ -77,6 +84,25 @@ primary-study organization, duplicate-study handling, design-specific RoB,
 outcome-specific certainty, SoF/Evidence Profile, and EtD connection. When this
 pattern affects major recommendations or repeats across multiple targets, treat
 it as a basic SR concept failure, not merely a missing detail.
+
+RF-06f Possible SR conceptual failure: the available materials suggest mixed
+evidence units, unclear primary-study independence, unclear review-level
+evidence handling, or absent outcome-specific certainty/EtD connection, but
+materials are insufficient to confirm full SR conceptual failure. This still
+requires a Final alert when relevant to the audited CPG.
+
+RF-06g Review-level evidence confused with primary-study evidence: existing
+SRs, NMAs, meta-analysis reports, reviews, or guideline summaries are treated as
+if they were primary studies or counted inside "included studies" without
+separating review-level evidence from primary-study evidence, assessing overlap,
+or specifying adoption/adaptation/ADOLOPMENT/overview/supplementary citation.
+
+RF-06h Japanese domestic CPG requires high-sensitivity SR conceptual failure
+scan: for Japanese-language guidelines or guidelines produced through domestic
+professional, research-group, public-institution, or Minds-related processes,
+perform and report an SR conceptual failure scan in the Final conclusion. This
+flag means "scan required," not "defect present," and must not lower rating by
+itself.
 
 ## Recommendation formation red flags
 RF-07 Strong recommendation with low/very low certainty and no exceptional EtD rationale.
@@ -199,8 +225,10 @@ while evidence-unit independence, duplicate review-level evidence,
 design-specific RoB, observational confounding, imprecision, indirectness, or
 outcome-specific certainty remains unresolved.
 
-RF-24d Mandatory final alert omitted: SR conceptual failure, evidence-unit
-confusion, adjustment-unclear observational meta-analysis, unclear critical
+RF-24d Mandatory final alert omitted: SR conceptual failure, possible SR
+conceptual failure, formal SR claim without substantive SR validity,
+evidence-unit confusion, review-level evidence confused with primary-study
+evidence, adjustment-unclear observational meta-analysis, unclear critical
 outcome weighting, decision-driving outcome uncertainty, or same-direction /
 highest-certainty shortcut is detected but absent from the Final CPG
 trustworthiness conclusion.
@@ -235,3 +263,8 @@ Do not flag by itself: classifying all outcomes as critical, omitting numeric
 utility modeling, or noting patient-value variability. Flag when relative
 importance, decision-driving outcomes, outcome-specific certainty, and EtD
 weighting are not traceable.
+
+Do not flag by itself: Japanese language or domestic guideline production.
+Japanese/domestic status requires a high-sensitivity SR conceptual failure scan
+and explicit Final reporting, but rating impact depends on the substantive
+evidence-unit, RoB, certainty, and EtD findings.

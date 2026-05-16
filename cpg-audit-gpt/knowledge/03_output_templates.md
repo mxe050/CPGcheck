@@ -46,6 +46,8 @@ Use tables. Avoid long narrative summaries. Always distinguish: found at locatio
 | SR/NMA/search |  |  |  |
 | SR claim judgment: formal claim |  |  |  |
 | SR claim judgment: substantive validity |  |  |  |
+| SR claim judgment: SR conceptual failure alert | yes / no / unclear |  |  |
+| SR claim judgment: Final mandatory alert required | yes / no / unclear |  |  |
 | Observational meta-analysis scan: present | yes / no / unclear |  |  |
 | Observational meta-analysis scan: adjusted estimates used | adjusted / unadjusted / unclear / not applicable |  |  |
 | Observational meta-analysis scan: confounding handling |  |  |  |
@@ -61,7 +63,11 @@ Use tables. Avoid long narrative summaries. Always distinguish: found at locatio
 | SR conceptual failure: evidence unit hierarchy |  |  |  |
 | SR conceptual failure: existing SR/NMA and primary-study mixing |  |  |  |
 | SR conceptual failure: primary-study independence / duplicate evidence |  |  |  |
+| SR conceptual failure: review-level evidence confused with primary-study evidence |  |  |  |
+| SR conceptual failure: study design handling |  |  |  |
 | SR conceptual failure: outcome-specific certainty and EtD connection |  |  |  |
+| Japanese/domestic CPG SR conceptual failure scan required | yes / no / unclear |  |  |
+| Japanese/domestic CPG SR conceptual failure scan result | present / possible / not found / not assessable / not applicable |  |  |
 | SR conceptual failure alert required | yes / no / unclear |  |  |
 | Critical outcomes listed |  |  |  |
 | Relative importance among critical outcomes |  |  |  |
@@ -94,6 +100,14 @@ Use tables. Avoid long narrative summaries. Always distinguish: found at locatio
 - What can be trusted:
 - What lowers trust:
 - Mandatory methodological alerts:
+  - SR conceptual failure scan:
+    - Result: Present / Possible / Not found / Not assessable
+    - Evidence unit hierarchy:
+    - Primary-study independence:
+    - Study design handling:
+    - Outcome-specific certainty:
+    - EtD connection:
+    - Final warning required:
   - SR conceptual failure / evidence unit confusion:
   - Observational meta-analysis confounding alert:
   - Critical outcome weighting / decision-driving outcome alert:
@@ -115,6 +129,10 @@ observational meta-analysis, SR conceptual failure, evidence-unit confusion,
 possible non-significance/equivalence confusion, and high certainty despite
 unresolved methodological limitations when present. A rating can be B while
 still carrying mandatory methodological alerts.
+
+For Japanese-language or domestically produced CPGs, the SR conceptual failure
+scan line is mandatory even when the result is "not found" or "not assessable."
+Do not leave the Final conclusion silent on this scan.
 
 ## Template B: Partial excerpt / page-based cluster assembly
 

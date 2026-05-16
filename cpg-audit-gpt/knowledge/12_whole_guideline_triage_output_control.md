@@ -20,6 +20,7 @@ Control output when a full guideline PDF or distributed web CPG is provided. Tri
 14. Separate formal SR claim existence from substantive SR validity before judging SR/NMA support.
 15. Scan every sentinel target for observational or non-randomized-study meta-analysis and report adjustment/confounding status.
 16. Treat SR conceptual failure, critical-outcome weighting opacity, and overall-certainty shortcuts as mandatory final alerts when detected.
+17. For Japanese-language or domestically produced CPGs, always perform and report a high-sensitivity SR conceptual failure scan in the Final CPG conclusion; do not treat Japanese/domestic origin itself as a defect.
 
 ## Priority score
 Score each candidate 0–10:
@@ -95,6 +96,60 @@ independence, design-specific RoB, outcome-specific certainty, and EtD
 connection are not adequately traceable."
 
 Japanese wording may state: "SRを行ったという形式的記載はあるが、観察研究メタ解析の交絡調整、一次研究単位の独立性、研究デザイン別RoB、アウトカム別certainty、EtD接続が追跡できず、実質的なSR妥当性には重大な懸念が残る。"
+
+## Japanese/domestic CPG SR conceptual failure scan
+For Japanese-language CPGs, or CPGs produced through domestic professional,
+research-group, public-institution, or Minds-related processes, the Final CPG
+trustworthiness conclusion must include an SR conceptual failure scan. This is a
+high-sensitivity scan requirement, not an automatic defect or rating penalty.
+
+Priority scan trigger terms and structures include:
+- "SRを行った";
+- "Mindsに準拠";
+- "GRADEで評価";
+- "エビデンス評価";
+- "採用論文";
+- "メタアナリシス";
+- "レビュー論文";
+- "既存SR";
+- "NMA";
+- "RCT";
+- "観察研究";
+- "症例集積";
+- "文献数";
+- "研究デザイン";
+- "エビデンスの確実性";
+- "推奨作成関連資料";
+- "バイアスのリスク";
+- "エビデンスプロファイル";
+- "フォレストプロット".
+
+When any of these are relevant, check:
+- **Evidence unit hierarchy**: primary studies, existing SR/NMA,
+  meta-analysis reports, and review articles are separated.
+- **Primary-study independence**: duplicate counting through overlapping
+  reviews is assessed or avoided.
+- **PICO alignment**: selected primary studies match the PICO and outcomes.
+- **Study design handling**: RCTs, observational studies, case series, reviews,
+  and review-level evidence have distinct roles.
+- **RoB by design**: design-appropriate RoB, including observational
+  confounding, is assessed.
+- **Outcome-specific certainty**: certainty is outcome-specific and not inferred
+  from labels or counts.
+- **EtD connection**: evidence, limitations, judgment, direction, and strength
+  are traceable.
+- **Existing SR/NMA handling**: classify as de novo SR, existing SR adoption,
+  guideline adaptation, GRADE-ADOLOPMENT, overview/umbrella review, or
+  supplementary narrative citation.
+
+For Japanese/domestic CPGs, the Final conclusion must include one of:
+- "SR conceptual failure / SRの基本概念の破綻疑い：あり";
+- "SR conceptual failure scan：実施。現時点で、既存SR/NMA・一次研究・研究デザイン・outcome別certainty・EtD接続の混同は主要な警告としては確認されない。";
+- "SR conceptual failure scan：実施。ただし、PICO・一次研究単位・RoB・outcome別certainty・EtD接続を確認する資料が不足しており、SRの実質的妥当性は未確定である。"
+
+Do not write "SR claim supported" and stop. Formal SR claim, substantive SR
+validity, SR conceptual failure alert status, and whether a Final mandatory
+alert is required must be separated.
 
 ## Study-design counting triage
 For all clinical practice guidelines, statements such as "RCTs, observational
@@ -346,7 +401,9 @@ classify and assess the following when relevant:
 
 ## SR conceptual failure gate
 For all clinical practice guidelines, treat repeated or major confusion of
-evidence units as **SR conceptual failure**, not merely incomplete traceability,
+evidence units as **SR conceptual failure**, not merely incomplete traceability.
+Treat partial but concerning evidence as **Possible SR conceptual failure** when
+materials are insufficient to confirm or dismiss the problem. Apply this gate
 when the evidence chain:
 1. places existing SR/NMA, primary RCTs, observational studies, case series, and
    review articles in the same hierarchy;
@@ -358,7 +415,11 @@ when the evidence chain:
 7. lacks outcome-specific certainty or fails to reflect design, RoB,
    confounding, and imprecision;
 8. lacks SoF/Evidence Profile or equivalent transparent evidence summary;
-9. connects directly to recommendation direction/strength without EtD.
+9. connects directly to recommendation direction/strength without EtD;
+10. includes meta-analysis reports or review articles in included-study counts
+    without separating review-level evidence from primary-study evidence;
+11. claims SR/GRADE/Minds but does not make PICO, primary-study unit, RoB,
+    outcome-specific certainty, and EtD connection practically traceable.
 
 Use this judgment sentence when supported:
 "既存SR/NMA、RCT、観察研究、症例集積、レビュー論文を、PICO・一次研究単位・RoB・outcome別certainty・EtD接続なしに混ぜて扱っている場合、それは単なるtraceability不足ではなく、SRの基本概念の破綻である。"
@@ -372,8 +433,10 @@ Rating cap:
   or D.
 
 SR conceptual failure or strong suspicion must appear in the Final CPG
-trustworthiness conclusion even when rating is not lowered. Use a warning such
-as: "本CPGでは、既存SR/NMA、一次研究、RCT、観察研究、症例集積、レビュー論文の扱いが、PICO・一次研究単位・研究デザイン別RoB・outcome別certainty・EtD接続の観点で十分に整理されていない箇所がある。これは単なる記載不足ではなく、SRの基本概念が破綻している、またはその疑いがある重要な方法論的警告である。"
+trustworthiness conclusion even when rating is not lowered. A B or B− rating may
+remain possible for an isolated, limitation-aware problem, but a "clean B"
+without the SR conceptual failure alert is not allowed. Use a warning such as:
+"本CPGでは、既存SR/NMA、メタ解析論文、一次研究、RCT、観察研究、症例集積、レビュー論文の扱いが、PICO・一次研究単位・研究デザイン別RoB・outcome別certainty・EtD接続の観点で十分に整理されていない箇所がある。これは単なる記載不足ではなく、SRの基本概念が破綻している、またはその疑いがある重要な方法論的警告である。"
 
 ## Outcome importance and certainty calibration audit
 For all clinical practice guidelines, all critical outcomes are not
@@ -678,8 +741,18 @@ publication bias, or duplicate evidence. This is especially important when the
 flawed synthesis directly affects recommendation direction or strength and EtD
 does not explain the limitation.
 
+Mandatory final alert, rating impact optional: SR conceptual failure, Possible
+SR conceptual failure, formal SR claim without substantive SR validity,
+evidence-unit confusion, existing SR/NMA mixed with primary studies,
+review-level evidence confused with primary-study evidence, and study-design
+counting substituted for SR appraisal must be reported in the Final conclusion
+when detected. For Japanese-language or domestically produced CPGs, the Final
+conclusion must report the SR conceptual failure scan even when the result is
+"not found" or "not assessable." This alert requirement is separate from rating
+impact.
+
 SR conceptual failure should not remain clean B when it affects major
-recommendations or repeats across the guideline. Use B−/B-C boundary only when
+recommendations or repeats across the guideline. Use B− or B/C boundary only when
 the problem is isolated and limitations are explicitly reflected in EtD; use C
 or below when evidence-unit confusion, duplicate review-level evidence,
 unadjusted observational pooling, absent design-specific RoB, absent
@@ -695,12 +768,14 @@ explicitly explains limitations and connects them to weak, conditional, no
 recommendation, or limited practice wording, record the alert without
 mechanically lowering the whole CPG.
 
-Do not lower rating for these alone: observational evidence, existing SR or
-meta-analysis reference, observational meta-analysis presence, study-design
-count reporting, meta-analysis presence, non-significant findings, external
-meta-analysis location, very low certainty, weak/conditional recommendation, no
-recommendation, all outcomes being classified as critical, lack of numeric
-utility analysis, existing SR/NMA reference, or incomplete full reproducibility.
+Do not lower rating for these alone: Japanese language or domestic production,
+observational evidence, existing SR/NMA reference, meta-analysis article
+reference, observational meta-analysis presence, study-design count reporting,
+meta-analysis presence, non-significant findings, SR details being outside the
+main text but accessible, external meta-analysis location, very low certainty,
+weak/conditional recommendation, no recommendation, all outcomes being
+classified as critical, lack of numeric utility analysis, or incomplete full
+reproducibility.
 
 Preferred wording:
 - "Non-significance does not establish equivalence or non-inferiority. Without
@@ -730,6 +805,8 @@ Final output must return to the whole CPG:
 - Final CPG rating candidate;
 - trustworthiness conclusion: trustworthy / conditionally trustworthy / important concerns / difficult to trust;
 - SR/NMA claim judgment;
+- SR conceptual failure scan: Result: Present / Possible / Not found / Not
+  assessable; Basis; Impact on trustworthiness; Rating impact; Final warning;
 - GRADE/Minds/Core GRADE consistency;
 - GRADE vs non-GRADE separation;
 - EtD traceability;
@@ -745,6 +822,9 @@ Final output must return to the whole CPG:
   certainty-to-overall certainty calibration is not traceable;
 - overall certainty calibration alert when same-direction/highest-certainty
   shortcut may have overestimated certainty;
+- for Japanese-language or domestically produced CPGs, the SR conceptual
+  failure scan field is mandatory even when no major alert is found or materials
+  are not assessable;
 - sentinel implication;
 - COI judgment;
 - practical interpretation;

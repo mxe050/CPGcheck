@@ -2,6 +2,9 @@
 
 ## 2026-05-16
 
+- Strengthened SR conceptual failure handling for Japanese-language and domestically produced CPGs: Final conclusions must show an SR conceptual failure scan status even when rating is unchanged, and Japanese/domestic origin is not a rating defect by itself.
+- Added review-level evidence confused with primary-study evidence, possible SR conceptual failure, and formal SR claim without substantive SR validity to the mandatory alert workflow.
+- Added regression cases for Japanese/domestic mandatory SR conceptual failure scan, non-silent SR failure alerts, mixed review/primary evidence, and "B but not clean B" handling.
 - Added mandatory Final alerts for SR conceptual failure and outcome-weighting/overall-certainty calibration concerns, including critical-outcome relative importance, decision-driving outcomes, same-direction/highest-certainty shortcuts, and values/preferences reduced to variability only.
 - Added formal-vs-substantive SR claim judgment, mandatory observational meta-analysis scan and final alerts, SR conceptual failure rating caps, evidence-unit duplication checks, and related regression cases.
 - Added generalized red flags, sentinel audit domains, output template fields, rating guardrails, and regression cases for non-significance/equivalence errors, existing meta-analysis table misuse, evidence-unit duplication, unadjusted observational pooling, subgroup overinterpretation, and certainty overestimation.

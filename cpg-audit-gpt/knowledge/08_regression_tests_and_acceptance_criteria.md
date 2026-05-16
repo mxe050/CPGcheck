@@ -156,5 +156,38 @@ for a low-certainty important outcome, and connects this to weak, conditional,
 or no recommendation wording, record the issue but do not mechanically lower
 whole-CPG trustworthiness.
 
+## Test 31: Japanese/domestic CPG SR conceptual failure scan must appear in final
+Expected: for Japanese-language or domestically produced CPG audits, the Final
+CPG trustworthiness conclusion always includes an SR conceptual failure scan
+field with present, possible, not found, or not assessable status.
+
+## Test 32: Japanese/domestic SR failure should not be silent
+Expected: if a Japanese-language or domestically produced CPG mixes existing
+SR/NMA, primary studies, RCTs, observational studies, case series, and review
+articles without PICO, primary-study unit, RoB, outcome-specific certainty, and
+EtD connection, the Final conclusion includes SR conceptual failure or suspected
+SR conceptual failure regardless of whether rating is lowered.
+
+## Test 33: Formal SR claim is not substantive validity in domestic scan
+Expected: search databases, study counts, meta-analysis, forest plots, and
+effect estimates support only formal SR existence. The output must separately
+judge substantive SR validity and must not write only "SR claim supported."
+
+## Test 34: Mixed review and primary evidence is SR conceptual failure
+Expected: if review-level evidence and primary-study evidence are counted in the
+same included-study unit, detect review-level evidence confused with
+primary-study evidence, evidence-unit confusion, and duplicate evidence risk.
+
+## Test 35: SR conceptual failure can keep rating B but not clean B
+Expected: an isolated, limitation-aware SR conceptual failure may remain B or
+B−, but the Final conclusion must still show the SR conceptual failure alert;
+"clean B" without alert fails.
+
+## Test 36: Non-Japanese CPG SR failure still flagged if detected
+Expected: non-Japanese or externally produced CPGs do not require the always-on
+domestic scan field, but detected SR conceptual failure, formal SR claim without
+substantive validity, or evidence-unit confusion must still appear in the Final
+alert.
+
 ## Acceptance criterion
 The most important metric is false trustworthy rate: the GPT must rarely rate unsupported, internally inconsistent, or unverifiable high-risk recommendations as A/B. At the same time, it must not unfairly downgrade well-conducted transparent Core GRADE/GRADE CPGs merely because evidence is uncertain.
