@@ -21,6 +21,7 @@ Control output when a full guideline PDF or distributed web CPG is provided. Tri
 15. Scan every sentinel target for observational or non-randomized-study meta-analysis and report adjustment/confounding status.
 16. Treat SR conceptual failure, critical-outcome weighting opacity, and overall-certainty shortcuts as mandatory final alerts when detected.
 17. For Japanese-language or domestically produced CPGs, always perform and report a high-sensitivity SR conceptual failure scan in the Final CPG conclusion; do not treat Japanese/domestic origin itself as a defect.
+18. When Minds/GRADE certainty is claimed without meta-analysis or quantitative synthesis, audit how inconsistency, imprecision, overall certainty, and EtD/recommendation judgments were made.
 
 ## Priority score
 Score each candidate 0–10:
@@ -187,6 +188,42 @@ materials, or traceable. Check whether the materials show:
 Do not treat literature search, study-design counts, narrative explanation, or
 voting/agreement rates as substitutes for GRADE/Minds appraisal.
 
+## Non-quantitative synthesis / no meta-analysis certainty audit
+Meta-analysis absence is not a defect by itself. No pooling may be appropriate
+when study number is low, populations/interventions/comparators/outcomes differ,
+follow-up or outcome definitions vary, single-arm or case-series evidence
+dominates, rare-condition evidence is sparse, effect metrics are incompatible,
+or structured narrative synthesis is the better method.
+
+However, if a guideline claims Minds/GRADE, certainty assessment, evidence-body
+evaluation, or evidence profile judgments without meta-analysis or quantitative
+synthesis, the audit must verify a substantive certainty basis:
+- study-level effect estimates or main results;
+- direction and magnitude of effects;
+- confidence intervals, event counts, ranges, thresholds, or other uncertainty
+  information;
+- reason quantitative pooling was not performed;
+- structured narrative synthesis method or explicit qualitative synthesis
+  criteria;
+- how inconsistency was judged without pooled heterogeneity statistics;
+- how imprecision was judged without pooled confidence intervals;
+- how indirectness, RoB, and publication bias were incorporated;
+- how outcome-specific certainty was assigned;
+- which outcome(s) drove overall certainty;
+- how uncertainty was reflected in EtD, recommendation direction, and strength.
+
+Mandatory audit alert is required when no meta-analysis or non-quantitative SR
+is paired with opaque inconsistency/imprecision judgments, opaque downgrade
+decisions, untraceable effect estimates, unexplained high certainty, or
+recommendation strength not connected to uncertainty.
+
+Do not downgrade merely because meta-analysis is absent, qualitative SR is used,
+research is sparse, certainty is very low, recommendation is conditional/weak,
+recommendation is not made, supporting details are outside the PDF, or complete
+recalculation is impossible. Downgrade only when the certainty basis is opaque
+and materially affects major outcomes, high certainty, strong recommendations,
+or repeated recommendation formation.
+
 ## Observational meta-analysis triage
 For all clinical practice guidelines, the existence of an observational
 meta-analysis is not enough to raise trust. Identify whether the clinical
@@ -264,11 +301,27 @@ targets for sentinel deep audit:
 - crude event counts, crude OR/RR, group means, SDs, or unadjusted totals used
   for comparative effects;
 - severity, stage, patient-background, co-intervention, or setting subgroup
-  analyses.
+  analyses;
+- "メタアナリシスは実施しなかった";
+- "定量的システマティックレビューは実施しなかった";
+- "定性的システマティックレビュー";
+- "エビデンス評価シート";
+- "エビデンス総体評価";
+- "非一貫性";
+- "不精確性";
+- "エビデンスの確実性";
+- "Mindsに従った";
+- "GRADEに準拠";
+- "推奨決定会議";
+- "益と害のバランス";
+- "患者の価値観";
+- "資源利用";
+- no meta-analysis or unclear pooling paired with certainty labels, downgrade
+  decisions, Evidence Profile, or recommendation strength.
 
 Do not conclude from the trigger alone. The next audit question must ask what
-claim type, evidence unit, bias structure, certainty logic, and EtD linkage are
-actually traceable.
+claim type, evidence unit, bias structure, quantitative or structured narrative
+synthesis basis, certainty logic, and EtD linkage are actually traceable.
 
 ## Outcome importance and certainty calibration triage
 For all clinical practice guidelines, treat the following as priority-queue
@@ -396,8 +449,26 @@ classify and assess the following when relevant:
 - **Certainty calibration**: whether RoB, inconsistency, indirectness,
   imprecision, publication bias, confounding, overlap, and threshold-based
   imprecision are reflected in outcome-specific certainty.
+- **Non-quantitative synthesis / no meta-analysis certainty**: whether
+  meta-analysis was performed; if not, whether no-pooling rationale,
+  study-level effects, uncertainty, structured narrative synthesis,
+  inconsistency/imprecision rationale, outcome-specific certainty, overall
+  certainty, and EtD reflection are traceable.
 - **EtD reflection**: whether these limitations change recommendation
   direction, strength, conditions, exceptions, or no-recommendation wording.
+
+For any sentinel with Minds/GRADE certainty but no meta-analysis or unclear
+pooling, explicitly answer:
+- Was meta-analysis performed: yes / no / unclear?
+- If no, was the reason justified?
+- Were study-level effect estimates or main results and uncertainty shown?
+- Was structured narrative synthesis used?
+- How was inconsistency judged without pooling?
+- How was imprecision judged without pooling?
+- How were RoB, indirectness, and publication bias incorporated?
+- Was outcome-specific certainty linked to evidence?
+- Was overall certainty linked to decision-driving outcomes?
+- Was uncertainty reflected in EtD and recommendation strength?
 
 ## SR conceptual failure gate
 For all clinical practice guidelines, treat repeated or major confusion of
@@ -874,6 +945,14 @@ conclusion must report the SR conceptual failure scan even when the result is
 "not found" or "not assessable." This alert requirement is separate from rating
 impact.
 
+Mandatory final alert also applies when Minds/GRADE certainty is claimed without
+meta-analysis or quantitative synthesis and the basis for inconsistency,
+imprecision, outcome-specific certainty, or overall certainty is not traceable.
+The Final must not say only "no meta-analysis." It must state whether pooling
+was absent, what certainty/domain judgments were nevertheless made, how
+traceable the rationale is, how formal claim differs from substantive certainty
+basis, connection to recommendation direction/strength, and rating impact.
+
 SR conceptual failure should not remain clean B when it affects major
 recommendations or repeats across the guideline. Use B− or B/C boundary only when
 the problem is isolated and limitations are explicitly reflected in EtD; use C
@@ -919,7 +998,27 @@ Lower from A or A with alerts only when a problem materially affects:
 8. similar inconsistency repeats;
 9. SR conceptual failure repeats across major recommendations or connects to
    certainty/strength;
-10. EtD does not explain the limitation.
+10. no meta-analysis / non-quantitative SR has opaque inconsistency,
+    imprecision, or certainty judgments that support major outcomes, high
+    certainty, strong recommendation, or repeated recommendation formation;
+11. EtD does not explain the limitation.
+
+For no-meta-analysis / non-quantitative synthesis concerns, consider B/C
+boundary or C below when:
+- opaque non-pooling certainty judgments repeat across major recommendations;
+- high certainty or strong recommendation rests on untraceable effect estimates;
+- inconsistency or imprecision is judged "not serious" without rationale;
+- evidence direction or magnitude is unclear but recommendation strength is
+  strong;
+- EtD does not acknowledge uncertainty;
+- Minds/GRADE is claimed but the substance resembles literature listing or
+  selective narrative explanation.
+
+Do not lower rating for no meta-analysis alone, few studies, qualitative SR,
+very low certainty, weak/conditional recommendation, no recommendation, details
+located outside the PDF, or incomplete full reproducibility when no-pooling
+rationale, structured narrative synthesis, domain judgments, certainty, and EtD
+are practically traceable.
 
 Preferred wording:
 - "Non-significance does not establish equivalence or non-inferiority. Without
@@ -941,6 +1040,14 @@ Preferred wording:
   balance, values, resources, and recommendation strength are traceable across
   the accessible evidence package; the alert should be retained but does not by
   itself justify B-minus."
+- "No meta-analysis was performed, but this is not a defect by itself. The
+  audit question is whether study-level effects, uncertainty, no-pooling
+  rationale, inconsistency/imprecision judgments, certainty, and EtD linkage are
+  traceable."
+- "Minds/GRADE certainty is claimed without quantitative synthesis, but the
+  basis for inconsistency, imprecision, and overall certainty is not
+  sufficiently traceable; if this supports major outcomes or recommendation
+  strength, B/C boundary or C should be considered."
 
 D/E: Use for major evidence-recommendation rupture, serious misrepresentation, unjustifiable recommendation, or severe COI/methodology failure.
 
@@ -967,6 +1074,10 @@ Final output must return to the whole CPG:
   meta-analysis, SR conceptual failure, evidence-unit confusion,
   non-significance/equivalence confusion, or high certainty despite unresolved
   methodological limitations when present;
+- non-quantitative SR / no meta-analysis certainty alert: meta-analysis
+  performed yes/no/unclear; reason for no pooling; inconsistency judgment
+  traceability; imprecision judgment traceability; certainty basis;
+  EtD/recommendation impact; Final warning;
 - each mandatory methodological alert must include: what was detected, why it
   matters, connection to certainty/recommendation/EtD/governance, and rating
   impact;

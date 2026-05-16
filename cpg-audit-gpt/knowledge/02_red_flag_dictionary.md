@@ -153,6 +153,79 @@ concern is clinically or methodologically material. Rating impact = none to
 possible. Downgrade condition = the concern materially affects direction,
 strength, certainty, EtD, or governance. A-with-alerts compatible = Yes.
 
+RF-06j GRADE/Minds certainty assessment without quantitative synthesis
+transparency: the guideline claims Minds/GRADE, certainty assessment, or
+evidence-body evaluation while meta-analysis or quantitative synthesis is absent
+or unclear, and the basis for certainty domains is not traceable.
+Metadata: Trigger = no pooling or non-quantitative SR plus certainty labels.
+Required audit questions = why no pooling, what study-level effects/uncertainty
+were used, and how inconsistency, imprecision, indirectness, RoB, publication
+bias, outcome certainty, overall certainty, and EtD were judged. Mandatory final
+alert = Yes when domain judgments are opaque. Rating impact = possible to
+strong. Downgrade condition = opaque certainty supports major outcomes, high
+certainty, strong recommendation, or repeats. A/B/C boundary guidance = A with
+alerts if transparent and limitation-aware; B/C boundary or C if opaque and
+central. Example final wording = "Minds/GRADE claim is formal, but the
+substantive certainty basis is not traceable without quantitative or structured
+narrative synthesis."
+
+RF-06k No meta-analysis but inconsistency/imprecision judged without rationale:
+the guideline states that meta-analysis was not performed, or uses only
+qualitative synthesis, but still judges inconsistency or imprecision without
+showing study-level effects, direction, confidence intervals, event numbers,
+clinical thresholds, or structured narrative criteria.
+Metadata: Mandatory final alert = Yes. Rating impact = possible. Downgrade
+condition = judgments are treated as "no serious concern" or used for high
+certainty/strong recommendation without rationale. A-with-alerts compatible =
+Yes when uncertainty is explained and reflected in weak/conditional/no
+recommendation.
+
+RF-06l Narrative synthesis substituted for GRADE certainty without transparent
+criteria: narrative explanation, selected study descriptions, or author
+interpretation is used as the certainty basis without explicit structured
+narrative synthesis methods for direction, magnitude, consistency, precision,
+RoB, indirectness, and publication bias.
+Metadata: Mandatory final alert = Yes when used for certainty. Rating impact =
+possible to strong. Downgrade condition = narrative synthesis drives certainty
+or recommendation strength without transparent criteria.
+
+RF-06m Non-quantitative SR claim with opaque downgrade decisions: an SR claim is
+non-quantitative or qualitative, yet downgrade/no-downgrade decisions for GRADE
+domains are listed without traceable evidence or rationale.
+Metadata: Mandatory final alert = Yes. Rating impact = possible. Downgrade
+condition = opaque downgrade decisions affect major recommendations or repeat.
+
+RF-06n Overall certainty assigned despite untraceable effect estimates: overall
+certainty is assigned even though outcome-specific effect estimates, study-level
+results, confidence intervals, event counts, or direction/magnitude are not
+traceable.
+Metadata: Mandatory final alert = Yes. Rating impact = possible to strong.
+Downgrade condition = high/A-like certainty, strong recommendation, or
+decision-driving outcome rests on untraceable effects.
+
+RF-06o Selective narrative evidence used as certainty basis: selected favorable
+or convenient narrative findings are used to justify certainty or direction
+without showing complete eligible study results or explaining why conflicting
+results do not change certainty.
+Metadata: Mandatory final alert = Yes when used for certainty/recommendation.
+Rating impact = possible to strong. Downgrade condition = selectivity affects
+major outcomes, certainty, or recommendation strength.
+
+RF-06p Evidence profile unsupported by quantitative or structured narrative
+synthesis: an Evidence Profile or certainty table exists, but its domain
+judgments cannot be traced to quantitative synthesis, study-level effects, or
+structured narrative synthesis criteria.
+Metadata: Mandatory final alert = Yes. Rating impact = possible. Downgrade
+condition = unsupported profile drives final certainty or recommendation.
+
+RF-06q Formal GRADE/Minds claim without substantive certainty basis: GRADE/Minds
+terminology is present, but effect estimates, uncertainty, no-pooling rationale,
+structured synthesis, domain judgments, outcome-specific certainty, and EtD
+connection are not substantively traceable.
+Metadata: Mandatory final alert = Yes. Rating impact = possible to strong.
+Downgrade condition = claim supports high certainty, strong recommendation, or
+repeated major recommendations without substantive basis.
+
 ## Recommendation formation red flags
 RF-07 Strong recommendation with low/very low certainty and no exceptional EtD rationale.
 
@@ -354,6 +427,9 @@ Do not flag as a defect by itself:
 - very low certainty;
 - conditional recommendation;
 - lack of quantitative pooling for QOL/harms/burden when explained;
+- lack of meta-analysis or quantitative pooling when no-pooling rationale,
+  study-level effects or results, uncertainty, structured narrative synthesis,
+  GRADE domain judgments, and EtD implications are transparent;
 - external appendix/SR reference;
 - lack of empirical acceptability/equity data if considered;
 - incomplete full recalculation when major judgments are practically verifiable.
@@ -377,3 +453,9 @@ Do not flag by itself: Japanese language or domestic guideline production.
 Japanese/domestic status requires a high-sensitivity SR conceptual failure scan
 and explicit Final reporting, but rating impact depends on the substantive
 evidence-unit, RoB, certainty, and EtD findings.
+
+Do not flag qualitative SR or narrative synthesis by itself. Flag when
+Minds/GRADE certainty, inconsistency, imprecision, overall certainty, or
+recommendation strength is assigned without traceable study-level results,
+uncertainty, no-pooling rationale, structured narrative synthesis criteria, or
+EtD reflection.

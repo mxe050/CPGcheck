@@ -2,6 +2,10 @@
 
 ## 2026-05-16
 
+- Added mandatory audit alerts for Minds/GRADE certainty assessment without meta-analysis or quantitative synthesis transparency, including opaque inconsistency, imprecision, overall certainty, and EtD/recommendation linkage.
+- Separated formal Minds/GRADE claims from substantive certainty basis when qualitative or non-quantitative SR is used.
+- Clarified that absence of meta-analysis, qualitative SR, sparse studies, very low certainty, conditional/weak recommendations, and no recommendation are not defects by themselves when no-pooling rationale, study-level results, structured narrative synthesis, certainty judgments, and EtD reflection are traceable.
+- Added regression cases for no-meta-analysis opaque inconsistency/imprecision judgments, transparent qualitative SR, formal claim without substantive certainty basis, high certainty without pooling rationale, and uncertainty reflected in weak recommendations.
 - Made SR conceptual failure Final alerts explanatory: alerts must include what was detected, why it matters, connection to certainty/recommendation/EtD, and rating impact rather than a one-line label.
 - Separated red flags into inspection triggers, mandatory audit alerts, and rating-lowering defects, with materiality assessment before whole-guideline downgrade.
 - Added an A-eligible high-traceability GRADE/EtD gate so distributed evidence packages, isolated correction issues, low certainty, conditional recommendations, and residual governance uncertainty do not automatically force B-minus when the core PICO-SR/SoF-EtD-recommendation chain is traceable.

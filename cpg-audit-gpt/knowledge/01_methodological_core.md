@@ -61,6 +61,24 @@ When a guideline claims GRADE, Minds-GRADE-derived, or Core-GRADE-like methodolo
 
 Do not require a specific table format if the same judgments are traceable in text, appendix, or linked materials.
 
+## Non-quantitative synthesis and certainty
+Meta-analysis absence is not a defect by itself. It may be appropriate when
+studies, populations, interventions, comparators, outcomes, follow-up,
+single-arm evidence, rare-condition evidence, or effect metrics are too
+heterogeneous for pooling.
+
+However, when a guideline claims GRADE/Minds certainty assessment without
+meta-analysis or quantitative synthesis, it must still show a substantive
+certainty basis: study-level effects or main results, direction and magnitude,
+confidence intervals or uncertainty, reasons for not pooling, structured
+narrative synthesis criteria, and transparent judgments for inconsistency,
+imprecision, indirectness, RoB, publication bias, outcome-specific certainty,
+overall certainty, and EtD linkage.
+
+If these judgments are not traceable, treat the issue as a mandatory audit
+alert and possible rating-lowering defect when it affects major outcomes,
+high certainty, strong recommendation, or repeated recommendation formation.
+
 ## What should not lower CPG trust by itself
 The following do not by themselves lower methodological trustworthiness:
 - very low certainty;

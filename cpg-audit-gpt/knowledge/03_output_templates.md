@@ -48,6 +48,18 @@ Use tables. Avoid long narrative summaries. Always distinguish: found at locatio
 | SR claim judgment: substantive validity |  |  |  |
 | SR claim judgment: SR conceptual failure alert | yes / no / unclear |  |  |
 | SR claim judgment: Final mandatory alert required | yes / no / unclear |  |  |
+| Non-quantitative synthesis: meta-analysis performed | yes / no / unclear |  |  |
+| Non-quantitative synthesis: reason for no pooling |  |  |  |
+| Non-quantitative synthesis: study-level effect estimates shown | yes / no / unclear |  |  |
+| Non-quantitative synthesis: structured narrative synthesis | adequate / partial / absent / unclear |  |  |
+| Non-quantitative synthesis: inconsistency judgment basis |  |  |  |
+| Non-quantitative synthesis: imprecision judgment basis |  |  |  |
+| Non-quantitative synthesis: RoB / indirectness / publication bias basis |  |  |  |
+| Non-quantitative synthesis: outcome-specific certainty basis |  |  |  |
+| Non-quantitative synthesis: overall certainty rationale |  |  |  |
+| Non-quantitative synthesis: EtD reflection |  |  |  |
+| Non-quantitative synthesis: final alert required | yes / no / unclear |  |  |
+| Non-quantitative synthesis: rating impact | none / possible / strong |  |  |
 | Observational meta-analysis scan: present | yes / no / unclear |  |  |
 | Observational meta-analysis scan: adjusted estimates used | adjusted / unadjusted / unclear / not applicable |  |  |
 | Observational meta-analysis scan: confounding handling |  |  |  |
@@ -143,6 +155,16 @@ Use tables. Avoid long narrative summaries. Always distinguish: found at locatio
     - What was detected:
     - Connection to certainty/recommendation:
     - Rating impact:
+  - No meta-analysis / opaque certainty assessment:
+    - What was detected:
+    - Meta-analysis performed:
+    - Reason for no pooling:
+    - Inconsistency judgment traceability:
+    - Imprecision judgment traceability:
+    - Certainty basis:
+    - Why it matters:
+    - Connection to certainty/recommendation:
+    - Rating impact:
   - Critical outcome weighting / decision-driving outcome alert:
     - What was detected:
     - Connection to certainty/recommendation:
@@ -189,6 +211,12 @@ Final alerts must never be one-line labels. For every mandatory alert, write
 what was detected, why it matters, how it connects to certainty/recommendation
 or governance, and the rating impact. Alerts can coexist with A, A with
 mandatory audit alerts, or A-minus when whole-guideline materiality is low.
+
+For no-meta-analysis / non-quantitative synthesis alerts, do not stop at "no
+meta-analysis." State whether inconsistency, imprecision, certainty, and overall
+certainty judgments are traceable to study-level effects, uncertainty,
+no-pooling rationale, and structured narrative synthesis. Meta-analysis absence
+alone is not a rating defect.
 
 ## Template B: Partial excerpt / page-based cluster assembly
 

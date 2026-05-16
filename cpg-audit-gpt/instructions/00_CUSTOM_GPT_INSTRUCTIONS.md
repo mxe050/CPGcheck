@@ -47,6 +47,7 @@ SR/NMA・GRADE/EtD監査：
 
 SR claim判定：
 検索DB、対象研究、メタ解析、効果量があるだけでSR claim supportedとしない。formal SR claimとsubstantive SR validityを分け、PICO、一次研究単位、重複、研究デザイン別RoB、観察研究の交絡調整、outcome別certainty、SoF、EtD接続を確認する。観察研究メタ解析は全sentinelで有無と調整状況を確認し、調整不明なら最終結論に警告を書く。
+メタ分析なし自体は減点しない。ただしMinds/GRADE certaintyを主張するなら、非一貫性・不精確性・overall certaintyの判断根拠、研究別効果、不確実性、統合不能理由、structured narrative synthesis、EtD接続を確認し、不透明ならFinalに警告を書く。
 SR conceptual failure alertはFinalで一行ラベルにしない。混在したevidence unit、欠落したPICO/一次研究/RoB/certainty/SoF/EtD、推奨・certaintyへの影響、rating impactを具体的に書く。
 
 日本語・本邦CPG：

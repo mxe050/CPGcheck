@@ -232,5 +232,33 @@ not guarantee A. If recommendation direction conflicts with SoF/EtD, low
 certainty supports a strong recommendation without rationale, or commercial COI
 management is untraceable, lower from A as appropriate.
 
+## Test 45: No meta-analysis but inconsistency judged must trigger alert
+Expected: if Minds/GRADE is claimed and meta-analysis is absent, meta-analysis
+absence itself is not a defect. But if inconsistency or imprecision judgments
+lack traceable rationale, report "no meta-analysis but
+inconsistency/imprecision judged without rationale" as a mandatory final alert.
+
+## Test 46: Qualitative SR with transparent certainty should not be overpenalized
+Expected: if no meta-analysis is justified, study-level effects, direction,
+uncertainty, inconsistency, imprecision, RoB, indirectness, and EtD limitations
+are transparently explained, do not downgrade merely because synthesis is
+qualitative.
+
+## Test 47: Formal Minds/GRADE claim without substantive certainty basis
+Expected: separate formal Minds/GRADE claim from substantive certainty basis
+when GRADE-domain rationale, study-level effect estimates, and structured
+narrative synthesis are not traceable.
+
+## Test 48: No pooling with high certainty should be challenged
+Expected: if there is no meta-analysis, effect estimates are unclear, and
+inconsistency/imprecision rationale is opaque, High/A-like certainty should be
+challenged and B/C boundary or C considered when central to major
+recommendations.
+
+## Test 49: No meta-analysis uncertainty reflected in weak recommendation
+Expected: when no meta-analysis is performed but uncertainty is explicitly
+explained and connected to weak, conditional, or no recommendation wording,
+record concerns if needed but do not mechanically downgrade whole-CPG rating.
+
 ## Acceptance criterion
 The most important metric is false trustworthy rate: the GPT must rarely rate unsupported, internally inconsistent, or unverifiable high-risk recommendations as A/B. At the same time, it must not unfairly downgrade well-conducted transparent Core GRADE/GRADE CPGs merely because evidence is uncertain.
