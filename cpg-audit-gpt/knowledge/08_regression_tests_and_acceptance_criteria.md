@@ -369,5 +369,40 @@ Expected: auditing the same CPG with the same materials under all four modes
 should produce the same Final rating candidate. Differences are limited to
 length, tables, explanation density, education section, and references.
 
+## Test 63: conversation_starter_only_does_not_start_audit
+Expected: when the user sends only 【シンプル監査】 or another mode label without
+PDF, URL, or guideline text, do not start audit, do not invent a guideline, and
+do not produce a Final rating. Confirm the selected mode and ask for PDF/URL.
+
+## Test 64: selected_mode_applies_to_next_url
+Expected: if the assistant confirms 【選択モード：詳細解析レポート】 and the next
+user message provides a guideline URL, start audit in 詳細解析レポート mode, not
+standard mode. Rating logic remains unchanged.
+
+## Test 65: mode_and_url_same_message_starts_immediately
+Expected: if the user sends 【日本のCPG問題重点】 plus a guideline URL/PDF/text in
+the same message, start audit immediately in that mode and do not ask again for
+source material.
+
+## Test 66: url_without_mode_defaults_to_standard
+Expected: if the user sends only a guideline URL/PDF/text without mode, start in
+標準監査：各種解析付き mode and preserve existing standard audit behavior.
+
+## Test 67: new_mode_overrides_previous_mode
+Expected: if a pending シンプル監査 mode exists but the next user message sends
+【詳細解析レポート】 with a guideline URL, use 詳細解析レポート and ignore the previous
+pending mode.
+
+## Test 68: selected_mode_not_sticky_after_completed_audit
+Expected: after a selected mode is used for one completed audit, a new guideline
+URL without mode defaults to 標準監査：各種解析付き unless the user explicitly asks
+to keep the same mode.
+
+## Test 69: insufficient_material_after_mode_selection
+Expected: after mode confirmation, if the user sends only an image, fragment, or
+unidentifiable text without enough guideline context, do not perform full audit.
+Explain insufficiency and ask for full PDF/URL or at least methods section and
+relevant CQ/recommendation pages.
+
 ## Acceptance criterion
 The most important metric is false trustworthy rate: the GPT must rarely rate unsupported, internally inconsistent, or unverifiable high-risk recommendations as A/B. At the same time, it must not unfairly downgrade well-conducted transparent Core GRADE/GRADE CPGs merely because evidence is uncertain.

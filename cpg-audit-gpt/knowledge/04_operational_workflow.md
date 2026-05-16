@@ -4,6 +4,14 @@
 1. Intake and mode detection: identify whether the user selected シンプル監査,
    日本のCPG問題重点, 標準監査：各種解析付き, 詳細解析レポート, or no explicit
    mode. Mode affects reporting format only, not audit judgment.
+   - If the message is only a Conversation Starter mode with no PDF, URL, or
+     guideline text, stop and ask for the PDF/URL in the next message.
+   - If the next message provides a PDF/URL/text after a confirmed mode, audit in
+     that mode unless the user selects a new mode.
+   - If mode and PDF/URL/text arrive together, start immediately in that mode.
+   - If PDF/URL/text arrives without a mode, use standard audit mode.
+   - A confirmed mode is consumed by one completed audit unless the user asks to
+     keep using it.
 2. Identify main guideline, appendices/supplements, web pages, evidence tables,
    search files, COI documents, and external evidence when provided.
 3. Map structure: separate formal recommendations, CQ/PICO, narrative statements, algorithms/figures, evidence summaries, methods, appendices.

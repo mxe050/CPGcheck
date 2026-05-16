@@ -2,6 +2,15 @@
 
 ## 2026-05-16
 
+- Added two-step Conversation Starter flow: mode-only messages confirm the
+  selected mode and wait for PDF/URL, the next source uses the pending mode,
+  source-only defaults to standard audit, and pending modes are not sticky after
+  one completed audit.
+- Updated GPT Builder Conversation Starters to beginner-friendly mode-selection
+  prompts that ask for PDF or URL in the next message.
+- Added regression cases for mode-only starts, next-message mode carryover,
+  mode+URL same-message starts, standard fallback, mode override, non-sticky
+  modes, and insufficient material after mode selection.
 - Expanded Mode 2/4 Japanese CPG educational output so the 12-item explanation
   uses the full detailed article, table rows must connect guideline wording to
   candidate patterns, and references include methodological annotations.
