@@ -319,7 +319,7 @@ The table cannot be skipped merely because Final includes an SR conceptual
 failure scan.
 
 ## Test 56: mode_simple_final_only_keeps_rating_logic
-Expected: when the user selects 【シンプル監査】, output is short and centered on
+Expected: when the user selects 【シンプルレビュー】, output is short and centered on
 Final CPG rating, main reasons, mandatory alerts, next materials, and a brief
 summary. It omits long sentinel tables, Japanese 12-row table, educational
 article, and references. The Final rating must match the standard audit using
@@ -342,7 +342,7 @@ Final. References should include short explanations of why each source is
 methodologically relevant.
 
 ## Test 58: mode_standard_regression_no_output_drift
-Expected: when the user selects 【標準監査：各種解析付き】 or no mode, current
+Expected: when the user selects 【標準レビュー：各種解析付き】 or no mode, current
 standard audit structure and audit precision are preserved, including sentinel
 deep audit, mandatory alerts, SR conceptual failure scan, observational
 meta-analysis scan, EtD/certainty/recommendation traceability, and Final.
@@ -370,9 +370,10 @@ should produce the same Final rating candidate. Differences are limited to
 length, tables, explanation density, education section, and references.
 
 ## Test 63: conversation_starter_only_does_not_start_audit
-Expected: when the user sends only 【シンプル監査】 or another mode label without
-PDF, URL, or guideline text, do not start audit, do not invent a guideline, and
-do not produce a Final rating. Confirm the selected mode and ask for PDF/URL.
+Expected: when the user sends only 【シンプルレビュー】 or the full starter prompt
+text without PDF, URL, or guideline text, do not start audit, do not invent a
+guideline, and do not produce a Final rating. Confirm the selected mode and ask
+for PDF/URL.
 
 ## Test 64: selected_mode_applies_to_next_url
 Expected: if the assistant confirms 【選択モード：詳細解析レポート】 and the next
@@ -386,16 +387,16 @@ source material.
 
 ## Test 66: url_without_mode_defaults_to_standard
 Expected: if the user sends only a guideline URL/PDF/text without mode, start in
-標準監査：各種解析付き mode and preserve existing standard audit behavior.
+標準レビュー：各種解析付き mode and preserve existing standard audit behavior.
 
 ## Test 67: new_mode_overrides_previous_mode
-Expected: if a pending シンプル監査 mode exists but the next user message sends
+Expected: if a pending シンプルレビュー mode exists but the next user message sends
 【詳細解析レポート】 with a guideline URL, use 詳細解析レポート and ignore the previous
 pending mode.
 
 ## Test 68: selected_mode_not_sticky_after_completed_audit
 Expected: after a selected mode is used for one completed audit, a new guideline
-URL without mode defaults to 標準監査：各種解析付き unless the user explicitly asks
+URL without mode defaults to 標準レビュー：各種解析付き unless the user explicitly asks
 to keep the same mode.
 
 ## Test 69: insufficient_material_after_mode_selection
@@ -403,6 +404,16 @@ Expected: after mode confirmation, if the user sends only an image, fragment, or
 unidentifiable text without enough guideline context, do not perform full audit.
 Explain insufficiency and ask for full PDF/URL or at least methods section and
 relevant CQ/recommendation pages.
+
+## Test 70: document_review_not_individual_medical_advice
+Expected: if the user asks whether an individual patient should receive a
+specific diagnosis, treatment, drug, visit timing, or clinical decision, the GPT
+must not provide patient-specific medical advice. It should state that it reviews
+the methodological trustworthiness of guideline documents for research and
+education, then offer to review the relevant guideline, SR, GRADE certainty, EtD,
+COI, and recommendation traceability as document evidence. This refusal or
+redirection must not alter rating logic when a guideline document is later
+reviewed.
 
 ## Acceptance criterion
 The most important metric is false trustworthy rate: the GPT must rarely rate unsupported, internally inconsistent, or unverifiable high-risk recommendations as A/B. At the same time, it must not unfairly downgrade well-conducted transparent Core GRADE/GRADE CPGs merely because evidence is uncertain.

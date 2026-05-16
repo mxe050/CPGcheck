@@ -2,6 +2,16 @@
 
 ## 2026-05-16
 
+- Renamed GPT Builder-facing profile to "ガイドライン信頼性レビューGPT" and added
+  a research/education-only description that excludes individual diagnosis,
+  treatment selection, medical advice, visit timing, and clinical
+  decision-making.
+- Updated Instructions opening text and Conversation Starter labels toward
+  document review and methodological trustworthiness while preserving all rating,
+  SR conceptual failure, A/A-minus exclusion, red flag, and Final rating logic.
+- Added a regression case requiring patient-specific medical advice requests to
+  be redirected to guideline-document methodology review without changing later
+  rating behavior.
 - Added two-step Conversation Starter flow: mode-only messages confirm the
   selected mode and wait for PDF/URL, the next source uses the pending mode,
   source-only defaults to standard audit, and pending modes are not sticky after

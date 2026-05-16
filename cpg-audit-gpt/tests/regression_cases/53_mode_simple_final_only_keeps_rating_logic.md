@@ -1,6 +1,6 @@
 # mode_simple_final_only_keeps_rating_logic
 
-Input scenario: The user selects 【シンプル監査】 and provides a full CPG PDF or
+Input scenario: The user selects 【シンプルレビュー】 and provides a full CPG PDF or
 URL.
 
 Expected behavior:

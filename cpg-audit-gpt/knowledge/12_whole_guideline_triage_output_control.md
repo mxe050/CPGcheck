@@ -29,10 +29,10 @@ Control output when a full guideline PDF or distributed web CPG is provided. Tri
 
 ## Output mode control
 Use this router only for output structure:
-- 【シンプル監査】: concise Final-centered report.
+- 【シンプルレビュー】: concise Final-centered document-review report.
 - 【日本のCPG問題重点】: Japanese domestic CPG focus with detailed inspection
   table, evidence excerpts, 12-item educational explanation, and references.
-- 【標準監査：各種解析付き】: current standard audit; default when no mode is
+- 【標準レビュー：各種解析付き】: current standard review; default when no mode is
   selected.
 - 【詳細解析レポート】: standard audit plus expanded explanation, detailed
   evidence excerpts, Japanese domestic inspection table when applicable,
@@ -44,13 +44,13 @@ be the same unless the user provides additional materials. Differences should be
 limited to displayed detail, educational explanation, and reference lists.
 
 Conversation Starter two-step rule:
-- mode label only, with no PDF/URL/guideline text: do not audit; confirm
+- mode label or starter prompt only, with no PDF/URL/guideline text: do not audit; confirm
   【選択モード：...】 and ask for a PDF or URL in the next message;
 - next message with PDF/URL/guideline text and no new mode: use the previously
   confirmed mode;
 - mode plus PDF/URL/guideline text in the same message: start immediately in
   that mode;
-- PDF/URL/guideline text without mode: default to 標準監査：各種解析付き;
+- PDF/URL/guideline text without mode: default to 標準レビュー：各種解析付き;
 - a confirmed mode applies to one completed audit only unless the user asks to
   reuse it;
 - a newly selected mode overrides any pending mode.

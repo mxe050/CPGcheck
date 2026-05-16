@@ -3,7 +3,7 @@
 Input sequence:
 
 User 1:
-【標準監査：各種解析付き】
+【標準レビュー：各種解析付き】
 
 Assistant 1:
 Confirms mode and asks for PDF/URL.

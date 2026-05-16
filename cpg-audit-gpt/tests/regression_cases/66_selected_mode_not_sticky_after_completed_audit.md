@@ -18,7 +18,7 @@ User 3:
 guideline B URL
 
 Expected behavior:
-- GPT defaults to 標準監査：各種解析付き unless user explicitly says to use the
+- GPT defaults to 標準レビュー：各種解析付き unless user explicitly says to use the
   same mode again.
 - GPT does not silently reuse 日本のCPG問題重点 mode.
 

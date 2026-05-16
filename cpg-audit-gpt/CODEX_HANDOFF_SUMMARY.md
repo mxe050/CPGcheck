@@ -157,7 +157,6 @@ The user can start a new chat with:
 ```text
 このリポジトリは F:\マイドライブ\2016年works\AI\作成アプリ\CPGcheck です。
 cpg-audit-gpt/AGENTS.md と cpg-audit-gpt/CODEX_HANDOFF_SUMMARY.md を読んで、
-診療ガイドライン方法論監査GPTのInstructions/Knowledge改善作業を続けてください。
+ガイドライン信頼性レビューGPTのInstructions/Knowledge改善作業を続けてください。
 active Knowledgeは12ファイル構成、旧13はactiveではありません。
 ```
-

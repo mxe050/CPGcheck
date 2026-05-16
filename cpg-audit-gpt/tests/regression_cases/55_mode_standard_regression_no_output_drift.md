@@ -1,6 +1,6 @@
 # mode_standard_regression_no_output_drift
 
-Input scenario: The user selects 【標準監査：各種解析付き】 or provides a PDF/URL
+Input scenario: The user selects 【標準レビュー：各種解析付き】 or provides a PDF/URL
 without selecting a mode.
 
 Expected behavior:

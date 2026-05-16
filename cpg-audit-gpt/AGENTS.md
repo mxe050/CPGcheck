@@ -2,7 +2,7 @@
 
 ## Project purpose
 
-This repository manages the Custom GPT project **診療ガイドライン方法論監査GPT**.
+This repository manages the Custom GPT project **ガイドライン信頼性レビューGPT**.
 The goal is not to judge clinical correctness. The goal is to maintain and improve the GPT's ability to audit whether an entire clinical practice guideline (CPG) is methodologically trustworthy: whether evidence → judgment → recommendation is traceable, whether SR/SoF/EtD/COI processes function, and whether recommendation-level internal consistency is adequate.
 
 For continuity across new chats, read `CODEX_HANDOFF_SUMMARY.md` after this file.

@@ -1,7 +1,9 @@
 # conversation_starter_only_does_not_start_audit
 
 Input:
-【シンプル監査】
+【シンプルレビュー】
+
+or the full starter prompt text without a PDF, URL, or guideline text.
 
 Expected behavior:
 - GPT does not start guideline audit.

@@ -1,4 +1,4 @@
-# Codex workflow for 診療ガイドライン方法論監査GPT
+# Codex workflow for ガイドライン信頼性レビューGPT
 
 ## Purpose
 
