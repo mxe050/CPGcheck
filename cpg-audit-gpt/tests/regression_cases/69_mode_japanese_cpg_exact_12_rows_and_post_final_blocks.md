@@ -6,6 +6,10 @@ that provides a main guideline PDF and partial supplement references.
 Expected behavior:
 - Output includes a guideline-specific 12-row inspection table immediately
   before Final CPG trustworthiness conclusion.
+- Output does not display Formal recommendation inventory, Statement / GPS /
+  algorithm / expert-opinion inventory, Red flags, Deep audit priority queue,
+  Sentinel target selected, or Sentinel deep audit as separate sections unless
+  explicitly requested.
 - The table uses these columns:
   チェック項目 / このCPGでの確認箇所・記載 / パターン判定 / 補足資料確認 / コメント.
 - The table normally includes all 12 standard rows:
@@ -32,3 +36,5 @@ Forbidden behavior:
 - Do not stop after the table.
 - Do not stop immediately after Final.
 - Do not say "rating is C because several table rows are positive."
+- Do not insert standard-audit inventory, red flag, priority queue, or sentinel
+  deep audit sections before the Japanese 12-row table.

@@ -2,6 +2,16 @@
 
 ## 2026-05-16
 
+- Adjusted 【日本のCPG問題重点】 so standard-audit intermediate sections
+  (formal recommendation inventory, statement/GPS/algorithm inventory, red
+  flags, priority queue, sentinel selection, and sentinel deep audit) are not
+  displayed by default, while internal checks may still protect Final rating
+  consistency.
+- Updated the Mode 2 educational article wording to match the requested
+  12-item explanation, including the distinction between formal completeness and
+  true trustworthiness.
+- Added regression coverage ensuring Japanese CPG focus output suppresses the
+  standard-audit section sequence unless explicitly requested.
 - Hardened 【日本のCPG問題重点】 output so the guideline-specific 12-row
   inspection table, Final conclusion, post-Final short summary, full 12-item
   educational article, and annotated reference list are all required completion

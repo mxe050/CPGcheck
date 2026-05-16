@@ -327,8 +327,12 @@ the same materials.
 
 ## Test 57: mode_japanese_cpg_table_and_education
 Expected: when the user selects 【日本のCPG問題重点】 for a Japanese domestic CPG,
-output includes minimum audit summary, detailed Japanese domestic inspection
-table, Final, short summary, 12-item educational explanation, and references.
+output includes only a compact methodology summary, detailed Japanese domestic
+inspection table, Final, short summary, 12-item educational explanation, and
+references. It must not display Formal recommendation inventory, Statement /
+GPS / algorithm / expert-opinion inventory, Red flags, Deep audit priority
+queue, Sentinel target selected, or Sentinel deep audit as separate sections
+unless the user explicitly asks for them.
 The table is inspection-only and does not alter rating by item count. The table
 must use the five columns チェック項目 / このCPGでの確認箇所・記載 / パターン判定 /
 補足資料確認 / コメント and normally include all 12 standard rows.
@@ -430,6 +434,15 @@ Each applicable or suspected row must give a guideline location and short quote
 or faithful paraphrase, then explain "該当箇所では...と記載されているため、この12項目の候補に該当する/該当疑いである." The GPT must not collapse the 12 rows into
 three or four generic bullets, must not omit rows with no finding, and must not
 end immediately after Final.
+
+## Test 72: mode_japanese_cpg_suppresses_standard_audit_sections
+Expected: in 【日本のCPG問題重点】 mode, do not display these standard audit
+intermediate sections unless the user explicitly asks for them: Formal
+recommendation inventory; Statement / GPS / algorithm / expert-opinion
+inventory; Red flags; Deep audit priority queue; Sentinel target selected; and
+Sentinel deep audit. The GPT may still use internal checks to protect the Final
+rating, but the displayed report should focus on the 12-point Japanese CPG table,
+Final, short summary, specified 12-item explanation, and references.
 
 ## Acceptance criterion
 The most important metric is false trustworthy rate: the GPT must rarely rate unsupported, internally inconsistent, or unverifiable high-risk recommendations as A/B. At the same time, it must not unfairly downgrade well-conducted transparent Core GRADE/GRADE CPGs merely because evidence is uncertain.

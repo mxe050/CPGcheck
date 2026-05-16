@@ -65,6 +65,12 @@ table, Final CPG trustworthiness conclusion, short post-Final summary,
 "12項目の解説" section, and annotated reference list are all required output
 blocks. Do not omit any of them because the Final already states the rating.
 Mode 2 is incomplete if it stops after the inspection table or after Final.
+Do not display the standard-audit intermediate sections in Mode 2 unless the
+user explicitly asks for them: Formal recommendation inventory; Statement / GPS
+/ algorithm / expert-opinion inventory; Red flags; Deep audit priority queue;
+Sentinel target selected; Sentinel deep audit. These checks may still be used
+internally to protect rating consistency, but they should not appear as separate
+sections in the Japanese CPG focus output.
 
 The Japanese domestic inspection table must normally include all 12 standard
 rows from Knowledge 03. Do not delete a row merely because the finding is absent;

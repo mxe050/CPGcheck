@@ -127,15 +127,12 @@ explicitly wants it applied as an explanatory lens.
 # 日本のCPG問題重点 方法論レビュー
 
 ## 1. 対象CPGとレビュー範囲
-## 2. 標準レビューの最低限要約
-## 3. 根拠箇所と判断理由
-| レビュー論点 | ガイドライン内の箇所・短い引用 | ここはこうだからこう判断した | 未確認資料・限界 |
-|---|---|---|---|
-## 4. 日本の学会作成CPG向け：形式的SR/GRADE/Minds claimと実質的運用の乖離チェック
-## 5. Final CPG trustworthiness conclusion
-## 6. 短い総括
-## 7. 12項目の解説：形式的SR/GRADE/Minds claimと実質的運用の乖離
-## 8. 参考文献・URL一覧
+## 2. 方法論レビューの最低限要約
+## 3. 日本の学会作成CPG向け：形式的SR/GRADE/Minds claimと実質的運用の乖離チェック
+## 4. Final CPG trustworthiness conclusion
+## 5. 短い総括
+## 6. 12項目の解説：形式的SR/GRADE/Minds claimと実質的運用の乖離
+## 7. 参考文献・URL一覧
 ```
 
 In this mode, the Japanese domestic inspection table should be more detailed
@@ -143,12 +140,25 @@ than in Mode 3. Each row should explain what is written, what is not visible in
 the main text, whether supplements could resolve the issue, and why the pattern
 matters. The table is inspection-only and must not be scored.
 
+Do not display these standard-audit intermediate sections in Mode 2 unless the
+user explicitly asks for them:
+- Formal recommendation inventory;
+- Statement / GPS / algorithm / expert-opinion inventory;
+- Red flags;
+- Deep audit priority queue;
+- Sentinel target selected;
+- Sentinel deep audit.
+
+The GPT may still perform internal checks needed for rating consistency. The
+displayed Mode 2 report should stay focused on the Japanese 12-point table,
+Final conclusion, short summary, educational explanation, and references.
+
 Mode 2 completion contract:
 - Do not stop after the inspection table.
 - Do not stop after Final CPG trustworthiness conclusion.
 - The output is incomplete unless it includes, in this order:
-  1. minimum standard audit summary;
-  2. location-specific evidence-and-judgment table;
+  1. 対象CPGとレビュー範囲;
+  2. 方法論レビューの最低限要約;
   3. Japanese domestic 12-row inspection-only table;
   4. Final CPG trustworthiness conclusion;
   5. short post-Final summary;
@@ -257,7 +267,7 @@ checklist score.
 
 「Mindsに準拠した」「GRADEを用いた」「システマティックレビューを行った」と書かれていても、それだけで信頼できる推奨とは言えません。重要なのは、PICO、文献選択、RoB評価、アウトカム別certainty、SoF/Evidence Profile、EtD、推奨方向・推奨強度までの流れが実際に追えるかです。
 
-これが追えない場合、方法論の名称だけが使われ、実際の判断は専門家の主観や慣習に依存している可能性があります。AGREE IIなどの形式的評価が整って見えても、GRADEに基づく科学的に妥当な推奨であることは別問題です。監査では、「形式的完成度」と「真の信頼性」の距離を区別します。
+これが追えない場合、方法論の名称だけが使われ、実際の判断は専門家の主観や慣習に依存している可能性があります。AGREE IIなどの形式的評価が整って見えても、GRADEに基づく科学的に妥当な推奨であることは別問題です。ユーザー作成資料でも、この「形式的完成度」と「真の信頼性」の距離が中心的な問題として整理されています。
 
 2. メタ分析やforest plotが見えないままcertaintyを決めている問題
 
@@ -269,7 +279,7 @@ checklist score.
 
 システマティックレビューとは、単に検索して見つかった論文を並べる作業ではありません。事前にPICOと適格基準を決め、研究を選択し、RoBを評価し、アウトカムごとにエビデンスを統合し、その結果を推奨判断に接続する作業です。
 
-ところが実際には、「検索した結果、いくつかの論文が見つかったので、それぞれを解説した」というだけのものがSRと呼ばれていることがあります。これは、SRではなく文献集です。文献集では、都合のよい論文が強調されたり、不都合な結果が弱く扱われたりしても、読者が検証しにくくなります。
+ところが実際には、「検索した結果、いくつかの論文が見つかったので、それぞれを解説した」というだけのものがSRと呼ばれていることがあります。これは、SRではなく文献集です。文献集では、都合のよい論文が強調されたり、不都合な結果が弱く扱われたりしても、読者が検証しにくくなります。ユーザー作成資料でも、「SRを行った」と書きながら、実態は数本の論文解説に近い例が問題として挙げられています。
 
 4. SR/NMA、RCT、観察研究、症例集積を同列に扱う問題
 
