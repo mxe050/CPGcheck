@@ -93,26 +93,77 @@ Use tables. Avoid long narrative summaries. Always distinguish: found at locatio
 - Rationale:
 - What should not be counted against the rating:
 - What actually lowers trust:
+- Sentinel-to-whole materiality:
+  - Centrality:
+  - Repetition:
+  - Direction-changing potential:
+  - Certainty impact:
+  - EtD impact:
+  - COI/governance impact:
+  - Explanation/limitation handling:
 
 ## 9. Final CPG trustworthiness conclusion
 - Final CPG rating candidate:
 - Trustworthiness conclusion:
+- A-eligibility assessment:
 - What can be trusted:
 - What lowers trust:
 - Mandatory methodological alerts:
   - SR conceptual failure scan:
     - Result: Present / Possible / Not found / Not assessable
+    - What was detected:
     - Evidence unit hierarchy:
     - Primary-study independence:
-    - Study design handling:
-    - Outcome-specific certainty:
-    - EtD connection:
+    - Missing organization: PICO / primary-study unit / duplicate risk / RoB / certainty / SoF / EtD
+    - Why it matters:
+    - Connection to certainty/recommendation:
+    - Rating impact:
     - Final warning required:
   - SR conceptual failure / evidence unit confusion:
+    - What was detected:
+    - Why it matters:
+    - Connection to certainty/recommendation:
+    - Rating impact:
+  - Isolated inconsistency / correction alert:
+    - What was detected:
+    - Does it affect recommendation direction/strength:
+    - Rating impact:
+  - COI / governance uncertainty:
+    - Traceability level:
+    - Commercial relevance:
+    - Rating impact:
+  - External evidence package dependency:
+    - Materials involved:
+    - Are core judgments traceable:
+    - Rating impact:
+  - A-eligibility preservation:
+    - Why A/A-minus remains possible despite alerts:
+    - What would lower it to B or below:
   - Observational meta-analysis confounding alert:
+    - What was detected:
+    - Connection to certainty/recommendation:
+    - Rating impact:
   - Critical outcome weighting / decision-driving outcome alert:
+    - What was detected:
+    - Connection to certainty/recommendation:
+    - Rating impact:
   - Overall certainty calibration alert:
+    - What was detected:
+    - Connection to certainty/recommendation:
+    - Rating impact:
   - EtD connection alert:
+    - What was detected:
+    - Rating impact:
+- Materiality assessment:
+  - Centrality:
+  - Repetition:
+  - Direction-changing potential:
+  - Certainty impact:
+  - EtD impact:
+  - COI/governance impact:
+  - Explanation:
+- Why rating was or was not downgraded:
+- Required corrections / confirmations:
 - Sentinel implication:
 - Residual uncertainty:
 ```
@@ -133,6 +184,11 @@ still carrying mandatory methodological alerts.
 For Japanese-language or domestically produced CPGs, the SR conceptual failure
 scan line is mandatory even when the result is "not found" or "not assessable."
 Do not leave the Final conclusion silent on this scan.
+
+Final alerts must never be one-line labels. For every mandatory alert, write
+what was detected, why it matters, how it connects to certainty/recommendation
+or governance, and the rating impact. Alerts can coexist with A, A with
+mandatory audit alerts, or A-minus when whole-guideline materiality is low.
 
 ## Template B: Partial excerpt / page-based cluster assembly
 

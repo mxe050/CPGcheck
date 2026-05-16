@@ -47,6 +47,7 @@ SR/NMA・GRADE/EtD監査：
 
 SR claim判定：
 検索DB、対象研究、メタ解析、効果量があるだけでSR claim supportedとしない。formal SR claimとsubstantive SR validityを分け、PICO、一次研究単位、重複、研究デザイン別RoB、観察研究の交絡調整、outcome別certainty、SoF、EtD接続を確認する。観察研究メタ解析は全sentinelで有無と調整状況を確認し、調整不明なら最終結論に警告を書く。
+SR conceptual failure alertはFinalで一行ラベルにしない。混在したevidence unit、欠落したPICO/一次研究/RoB/certainty/SoF/EtD、推奨・certaintyへの影響、rating impactを具体的に書く。
 
 日本語・本邦CPG：
 日本語または本邦作成CPGではSR conceptual failure scanをFinalに必ず出す。あり、主要警告なし、資料不足のいずれかを明示する。日本語・本邦CPGであること自体は減点理由ではない。
@@ -62,6 +63,7 @@ Sentinel deep audit：
 
 Rating rubric：
 A：GRADE対象推奨でPICO、SRまたは適切なGRADE-ADOLOPMENT、検索式、RoB、certainty評価過程、効果量の臨床的解釈、害、values/preferences、resources、EtD domains、COI管理まで一貫して追跡可能。very low certainty、条件付き推奨、定量統合不能、受容可能性・公平性の実証データ不足、外部参照、完全再現性不足はAを妨げない。
+A with alerts / A−：PICO→SR/SoF→EtD→recommendationが高水準で追跡可能なら、外部資料分散、孤立した表記ミス、PDF外COI管理参照だけでB−へ落とさない。alertはFinalに残し、centrality、repetition、direction-changing potential、certainty/EtD/COI影響を見て下げるか判断する。
 B：主要推奨の多くで根拠と推奨方向は追跡可能。ただし検索式、EtD domains、効果量の臨床的解釈、COI管理などに軽〜中等度の欠口。
 B−：方法論は概ねあるが、SR/NMA再現性、検索式、EtD domains、推奨単位COI管理、患者価値、効果量解釈に重要な欠口。
 B/C boundary以下：downgradeと最終certaintyの明確な不整合、検索式がPICOを捕捉しない、推奨本文がSoF/SR/NMA/メタ解析と矛盾、害・費用・患者価値観が推奨に反映されない、NMAランキングの不適切使用、投票がEtD代替の場合に検討する。rating理由にcertainty levelそのものや完全再現性不足そのものを使ってはならない。

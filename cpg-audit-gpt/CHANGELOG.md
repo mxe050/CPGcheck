@@ -2,6 +2,12 @@
 
 ## 2026-05-16
 
+- Made SR conceptual failure Final alerts explanatory: alerts must include what was detected, why it matters, connection to certainty/recommendation/EtD, and rating impact rather than a one-line label.
+- Separated red flags into inspection triggers, mandatory audit alerts, and rating-lowering defects, with materiality assessment before whole-guideline downgrade.
+- Added an A-eligible high-traceability GRADE/EtD gate so distributed evidence packages, isolated correction issues, low certainty, conditional recommendations, and residual governance uncertainty do not automatically force B-minus when the core PICO-SR/SoF-EtD-recommendation chain is traceable.
+- Added A with mandatory audit alerts, A-minus / A-eligible with residual governance uncertainty, and B+ rating handling.
+- Added sentinel-to-whole rating separation and staged COI/governance assessment, including residual governance uncertainty and commercial product COI strong alerts.
+- Added regression cases for explanatory SR conceptual failure alerts, non-automatic red-flag downgrades, A-eligible high-traceability CPGs, materiality assessment, COI staging, isolated correction alerts, and blind acceptance guardrails.
 - Strengthened SR conceptual failure handling for Japanese-language and domestically produced CPGs: Final conclusions must show an SR conceptual failure scan status even when rating is unchanged, and Japanese/domestic origin is not a rating defect by itself.
 - Added review-level evidence confused with primary-study evidence, possible SR conceptual failure, and formal SR claim without substantive SR validity to the mandatory alert workflow.
 - Added regression cases for Japanese/domestic mandatory SR conceptual failure scan, non-silent SR failure alerts, mixed review/primary evidence, and "B but not clean B" handling.

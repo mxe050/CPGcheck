@@ -2,6 +2,27 @@
 
 Red flags indicate need for deeper audit. They do not prove the clinical recommendation is wrong.
 
+## Red flag classification metadata
+Each red flag must be interpreted through these fields before rating:
+- **Trigger**: the observed phrase, structure, inconsistency, or missing link.
+- **Required audit question**: what must be checked before judgment.
+- **Mandatory final alert**: Yes / No.
+- **Rating impact**: none / possible / strong.
+- **Downgrade condition**: when the finding becomes a rating-lowering defect.
+- **A-with-alerts compatible**: Yes / No.
+
+Use three severity classes:
+- **Inspection trigger**: prompts closer audit; no rating downgrade by itself.
+- **Mandatory audit alert**: must appear in Final, but may remain compatible with
+  A, A with mandatory audit alerts, or A-minus.
+- **Rating-lowering defect**: materially affects recommendation direction,
+  strength, certainty, EtD, or COI/governance.
+
+Do not convert an inspection trigger into a rating-lowering defect without
+materiality assessment: centrality, repetition, direction-changing potential,
+certainty impact, EtD impact, COI/governance impact, and whether limitations
+are explained.
+
 ## Claim and evidence red flags
 RF-01 Unsupported GRADE claim: explicit GRADE/Minds/Core GRADE claim without traceable outcome-specific certainty, domains, SoF/Evidence Profile/equivalent, or EtD.
 
@@ -84,18 +105,32 @@ primary-study organization, duplicate-study handling, design-specific RoB,
 outcome-specific certainty, SoF/Evidence Profile, and EtD connection. When this
 pattern affects major recommendations or repeats across multiple targets, treat
 it as a basic SR concept failure, not merely a missing detail.
+Metadata: Trigger = mixed evidence units or untraceable SR architecture.
+Required audit question = what units are mixed, what organizing steps are
+missing, and whether certainty/recommendation/EtD are affected. Mandatory final
+alert = Yes. Rating impact = possible to strong. Downgrade condition = repeated
+or central failure connected to certainty, recommendation strength, or unexplained
+EtD. A-with-alerts compatible = Yes only if isolated, explained, and not
+direction-changing.
 
 RF-06f Possible SR conceptual failure: the available materials suggest mixed
 evidence units, unclear primary-study independence, unclear review-level
 evidence handling, or absent outcome-specific certainty/EtD connection, but
 materials are insufficient to confirm full SR conceptual failure. This still
 requires a Final alert when relevant to the audited CPG.
+Metadata: Mandatory final alert = Yes when relevant. Rating impact = possible.
+Downgrade condition = unresolved concern is central/repeated or supports
+certainty/strength without explanation. A-with-alerts compatible = Yes when
+main PICO-SR-SoF-EtD-recommendation chain remains practically traceable.
 
 RF-06g Review-level evidence confused with primary-study evidence: existing
 SRs, NMAs, meta-analysis reports, reviews, or guideline summaries are treated as
 if they were primary studies or counted inside "included studies" without
 separating review-level evidence from primary-study evidence, assessing overlap,
 or specifying adoption/adaptation/ADOLOPMENT/overview/supplementary citation.
+Metadata: Mandatory final alert = Yes if used in the recommendation evidence
+chain. Rating impact = possible to strong. Downgrade condition = the confusion
+changes evidence independence, certainty, or recommendation strength.
 
 RF-06h Japanese domestic CPG requires high-sensitivity SR conceptual failure
 scan: for Japanese-language guidelines or guidelines produced through domestic
@@ -103,6 +138,20 @@ professional, research-group, public-institution, or Minds-related processes,
 perform and report an SR conceptual failure scan in the Final conclusion. This
 flag means "scan required," not "defect present," and must not lower rating by
 itself.
+Metadata: Severity class = inspection trigger / mandatory reporting rule.
+Mandatory final alert = scan field required. Rating impact = none unless
+substantive SR conceptual failure is detected. A-with-alerts compatible = Yes.
+
+RF-06i Red flag should not automatically downgrade A-eligible CPG: a concern is
+present in an otherwise high-traceability GRADE/EtD CPG, but PICO, SR/living SR
+or evaluated existing SR/NMA, SoF/Evidence Profile, GRADE certainty, EtD,
+benefit-harm reasoning, values/preferences, resources, equity, acceptability,
+feasibility, limitations, and recommendation direction/strength remain
+practically traceable.
+Metadata: Severity class = rating guardrail. Mandatory final alert = Yes if the
+concern is clinically or methodologically material. Rating impact = none to
+possible. Downgrade condition = the concern materially affects direction,
+strength, certainty, EtD, or governance. A-with-alerts compatible = Yes.
 
 ## Recommendation formation red flags
 RF-07 Strong recommendation with low/very low certainty and no exceptional EtD rationale.
@@ -233,12 +282,72 @@ outcome weighting, decision-driving outcome uncertainty, or same-direction /
 highest-certainty shortcut is detected but absent from the Final CPG
 trustworthiness conclusion.
 
+RF-24e SR conceptual failure alert too terse: Final CPG trustworthiness
+conclusion states only that an SR conceptual failure alert exists, without
+explaining the mixed evidence units, missing PICO/primary-study/RoB/certainty/
+SoF/EtD links, why this is a conceptual SR problem, connection to certainty or
+recommendation, and rating impact.
+Metadata: Severity class = mandatory audit alert quality failure. Mandatory
+final alert = Yes. Rating impact = possible because the audit output is
+insufficient, not because the CPG itself is necessarily worse.
+
+RF-24f Sentinel defect generalized without materiality assessment: an isolated
+sentinel finding is used to lower whole-CPG rating without assessing centrality,
+repetition, direction-changing potential, certainty impact, EtD impact,
+COI/governance impact, and explanation of limitations.
+Metadata: Severity class = rating guardrail. Mandatory final alert = Yes when
+rating depends on the sentinel finding. Rating impact = prevents automatic
+downgrade. A-with-alerts compatible = Yes when whole-CPG materiality is low.
+
+RF-24g Isolated inconsistency in otherwise high-traceability CPG: a table value,
+wording, cell, appendix cross-reference, or local summary is inconsistent, but
+the surrounding PICO-SR-SoF-EtD-recommendation chain, limitation explanation,
+and recommendation direction/strength remain coherent.
+Metadata: Severity class = mandatory audit alert or correction alert. Rating
+impact = none to possible. Downgrade condition = the inconsistency is repeated
+or could change direction, strength, certainty, or EtD. A-with-alerts compatible
+= Yes.
+
+RF-24h External evidence package dependency: essential details are distributed
+across an app, GRADEpro/GDT file, living SR, supplement, linked SR/NMA, journal
+appendix, or web evidence package. This is an inspection trigger, not a defect,
+when core judgments remain practically verifiable across accessible materials.
+Metadata: Rating impact = none to possible. Downgrade condition = major
+judgments remain inaccessible, inconsistent, or not practically verifiable after
+considering the external package. A-with-alerts compatible = Yes.
+
 ## COI and governance red flags
 RF-25 COI disclosure without management, especially for high-cost drugs, devices, procedures, screening, or industry-sensitive topics.
 
 RF-26 Recommendation-specific COI handling not traceable when relevant COI exists or industry funding/influence is plausible.
 
 RF-27 External current evidence not reconciled when a living SR, major NMA, or major international guideline is likely relevant.
+
+RF-28 Residual governance uncertainty: COI management, voting restrictions, or
+role management are referenced but not fully visible in the uploaded PDF, while
+no direct industry influence is evident and recommendation/EtD handling remains
+transparent.
+Metadata: Severity class = mandatory audit alert. Rating impact = none to
+possible. Downgrade condition = relevant COI, industry influence, commercial
+product recommendation, or governance inconsistency is material and management
+cannot be traced. A-with-alerts compatible = Yes.
+
+RF-29 COI management referenced but not directly visible: the document points to
+COI management materials or policy outside the uploaded file, but the auditor
+cannot inspect all details in the current materials.
+Metadata: Severity class = inspection trigger or mandatory audit alert. Rating
+impact = none to possible. Downgrade condition = relevant conflicts are likely
+to affect a high-risk recommendation and management remains untraceable.
+A-with-alerts compatible = Yes when no material conflict signal is present.
+
+RF-30 Commercial product recommendation with untraceable COI management: a
+commercial product, device, test, drug, procedure, or branded intervention is
+recommended and relevant COI/industry influence management cannot be traced.
+Metadata: Severity class = rating-lowering defect when material. Mandatory
+final alert = Yes. Rating impact = strong. Downgrade condition = product-linked
+COI plausibly affects recommendation direction/strength or strong promotion.
+A-with-alerts compatible = No unless commercial relevance and COI materiality
+are convincingly absent.
 
 ## Fairness guardrails
 Do not flag as a defect by itself:

@@ -438,6 +438,24 @@ remain possible for an isolated, limitation-aware problem, but a "clean B"
 without the SR conceptual failure alert is not allowed. Use a warning such as:
 "本CPGでは、既存SR/NMA、メタ解析論文、一次研究、RCT、観察研究、症例集積、レビュー論文の扱いが、PICO・一次研究単位・研究デザイン別RoB・outcome別certainty・EtD接続の観点で十分に整理されていない箇所がある。これは単なる記載不足ではなく、SRの基本概念が破綻している、またはその疑いがある重要な方法論的警告である。"
 
+The Final warning must be explanatory, not a one-line label. Do not write only
+"SR conceptual failure alert present." Include:
+- what evidence units were mixed: existing SR/NMA, meta-analysis reports,
+  primary studies, RCTs, observational studies, case series, review articles, or
+  other review-level evidence;
+- what was not organized: PICO, primary-study unit, existing-review vs
+  primary-study hierarchy, duplicate-count risk, design-specific RoB,
+  outcome-specific certainty, SoF/Evidence Profile, or EtD connection;
+- why this is SR conceptual failure or possible SR conceptual failure rather
+  than a minor documentation issue;
+- whether the issue could affect recommendation direction, recommendation
+  strength, certainty, or EtD judgment;
+- rating impact: no downgrade but mandatory alert, A/A-minus with alerts,
+  B/C boundary, or C below depending on materiality.
+
+Preferred Final wording:
+"SR conceptual failure alert: 一部の推奨では、既存SR/NMA、メタアナリシス論文、一次研究、RCT、観察研究、症例集積、レビュー論文の階層が十分に区別されていない。PICOに基づく一次研究単位の整理、同一一次研究の重複カウントリスク、研究デザイン別RoB、outcome別certainty、SoF/Evidence ProfileからEtDへの接続が追跡しにくい。このため、これは単なる記載不足ではなく、SRの基本概念が破綻している、またはその疑いがある方法論的警告である。ratingを直ちに下げるかは、この問題が主要推奨に反復し、certaintyや推奨強度へ実質的に接続しているかで判断する。"
+
 ## Outcome importance and certainty calibration audit
 For all clinical practice guidelines, all critical outcomes are not
 automatically equal in decision weight. When multiple critical outcomes exist,
@@ -717,8 +735,108 @@ Replace with one of the following only if supported:
 
 ---
 
+## A-eligible high-traceability CPG gate
+Begin from an A-eligible stance when the CPG has a high-traceability
+GRADE/EtD profile. This is not authority-based: platform, tool, journal, or
+publisher names never guarantee A. However, if the substance is traceable, do
+not downgrade to B-minus merely because materials are distributed across a
+GRADE platform, GRADEpro/GDT evidence profile, living SR, supplement, journal
+appendix, web evidence package, or linked methods document.
+
+A-eligible high-traceability profile:
+- clear PICO;
+- de novo SR, living SR, or appropriately assessed existing SR/NMA use;
+- SoF/Evidence Profile or equivalent structured evidence summary;
+- GRADE certainty by outcome;
+- EtD or equivalent judgment record;
+- explicit recommendation direction and strength;
+- consistency between certainty, benefit-harm balance, values, and strength;
+- benefits, harms, burden, patient values/preferences, resources/costs, equity,
+  acceptability, and feasibility considered when relevant;
+- uncertainty and limitations explicitly stated;
+- conditional/weak recommendations connected to EtD reasons;
+- core judgments practically verifiable across main text and accessible external
+  evidence package.
+
+High-traceability CPGs may be rated A, A with mandatory audit alerts, or A-minus
+when residual issues are not material to direction, strength, certainty, EtD, or
+governance. Do not accept them blindly: lower from A when the substantive chain
+contains material contradictions or untraceable governance.
+
+## Red flag materiality assessment
+Classify every red flag before applying it to the whole-CPG rating:
+- **Inspection trigger**: check details; no downgrade by itself.
+- **Mandatory audit alert**: must appear in Final; rating may remain A/A-minus
+  when materiality is low.
+- **Rating-lowering defect**: materially affects direction, strength, certainty,
+  EtD, or COI/governance.
+
+For whole-guideline rating, evaluate:
+- **Centrality**: major recommendation or patient-important outcome?
+- **Repetition**: isolated or repeated across recommendations?
+- **Direction-changing potential**: could it change direction or strength?
+- **Certainty impact**: could outcome-specific or overall certainty change?
+- **EtD impact**: could benefit/harm, values, resources, equity, acceptability,
+  or feasibility judgment change?
+- **COI/governance impact**: relevant commercial, industry, or governance risk?
+- **Explanation**: limitation explained and reflected in EtD or wording?
+
+Sentinel deep audit findings do not automatically lower whole-CPG rating. An
+isolated transcription/table/cell issue can remain a mandatory correction alert
+with A-eligibility preserved if it does not change recommendation direction,
+strength, certainty, or EtD.
+
+## COI staged governance assessment
+Classify COI/governance before rating impact:
+
+**A. COI management traceable**
+COI disclosure and management policy are visible, and relevant participation,
+recusal, or voting restrictions are traceable. No rating decrease by itself.
+
+**B. COI management referenced but not visible in uploaded PDF**
+Management materials are referenced outside the current PDF. Treat as residual
+governance uncertainty. If no direct industry influence is evident, the
+recommendation is conservative/conditional, and EtD is transparent, A,
+A-minus, or A with mandatory audit alerts may remain appropriate.
+
+**C. Relevant industry funding/influence/conflicts exist and management is not traceable**
+Lower from A when relevant commercial interest, product-specific conflict, or
+industry influence plausibly affects a high-risk recommendation and management
+cannot be followed.
+
+**D. Commercial product recommendations with no COI management traceability**
+Use a strong alert and consider B or below when a commercial product, device,
+test, drug, branded intervention, or procedure is recommended and relevant COI
+management is untraceable.
+
+Preferred wording:
+"COI管理はPDF単体では完全には追跡できないが、管理プロセスへの参照があり、推奨は条件付きで、EtD上の不確実性も明示されている。このため residual governance uncertainty としてA−またはA with mandatory audit alertsに留める余地がある。ただし、商用製品推奨に関連するCOI管理資料は最終確認対象である。"
+
+---
+
 ## Rating rubric
-A: Recommendation-level PICO, SR/NMA or appropriate GRADE-ADOLOPMENT, search, RoB, certainty process, clinical effect interpretation, harms, values/preferences, resources, EtD domains, and COI management are practically verifiable and internally consistent. Evidence may be very low if handled transparently. Complete recalculation is not required.
+A: Recommendation-level PICO, SR/living SR/NMA or appropriate GRADE-ADOLOPMENT,
+SoF/Evidence Profile, search, RoB, certainty process, clinical effect
+interpretation, harms, values/preferences, resources, equity, acceptability,
+feasibility, EtD domains, direction/strength, uncertainty, and COI management
+are practically verifiable and internally consistent. Evidence may be very low
+if handled transparently. Complete recalculation is not required.
+
+A with mandatory audit alerts: The core PICO-SR/SoF-EtD-recommendation chain is
+A-level, but Final must report non-silent alerts such as possible SR conceptual
+failure in an isolated area, adjustment-unclear observational meta-analysis not
+driving major conclusions, residual governance uncertainty, external evidence
+package dependency, or isolated correction alert. Alerts do not currently
+overturn direction, strength, certainty, or EtD.
+
+A− / A-eligible with residual governance uncertainty: A-level methodological
+architecture is present, but COI management, external materials, isolated table
+inconsistency, or practical verifiability leaves a residual confirmation item
+that is not enough to make the CPG B-level.
+
+B+: Mostly high-traceability and broadly trustworthy, but one or more important
+A-level transparency or consistency elements are incomplete. Major
+recommendation direction and strength remain supported.
 
 B: Major recommendations are mostly traceable and internally coherent, but some important judgments remain only partially practically verifiable even after considering accessible appendices, supplements, linked SR/NMA papers, protocols, or web pages, or there are minor internal inconsistencies that are unlikely to change the recommendation.
 
@@ -727,6 +845,11 @@ B−: Methods are broadly present, but multiple important judgments are difficul
 B/C boundary: Some recommendations are trustworthy, but guideline-level recommendation formation is substantially opaque or heterogeneous; GRADE vs non-GRADE separation may be incomplete.
 
 C+ or below: Consider when downgrade/final certainty is inconsistent, search misses PICO, recommendation conflicts with evidence materials, major harms/costs/values are not reflected, NMA ranking is misused, vote replaces EtD, or relevant COI management is not traceable in a high-risk recommendation.
+
+C: Use when SR/GRADE/EtD basic structure fails across multiple major
+recommendations, evidence-to-recommendation connection cannot be trusted, or
+SR conceptual failure/evidence-unit confusion/unadjusted confounded synthesis
+directly supports certainty or recommendation strength without explanation.
 
 Also consider C+ or below when design counts, name-only SR/Minds/GRADE claims,
 or crude observational meta-analysis are used as the main bridge from evidence
@@ -772,10 +895,31 @@ Do not lower rating for these alone: Japanese language or domestic production,
 observational evidence, existing SR/NMA reference, meta-analysis article
 reference, observational meta-analysis presence, study-design count reporting,
 meta-analysis presence, non-significant findings, SR details being outside the
-main text but accessible, external meta-analysis location, very low certainty,
-weak/conditional recommendation, no recommendation, all outcomes being
-classified as critical, lack of numeric utility analysis, or incomplete full
-reproducibility.
+main text but accessible, external evidence package distribution, external
+meta-analysis location, PDF-only incompleteness when core judgments are
+practically verifiable elsewhere, low/very low certainty, weak/conditional
+recommendation, no recommendation, all outcomes being classified as critical,
+lack of numeric utility analysis, empirically sparse QOL/harms/burden/equity/
+acceptability/feasibility data when considered in EtD, isolated transcription
+or table/cell error that does not change direction/strength/certainty/EtD, or
+incomplete full reproducibility.
+
+Lower from A or A with alerts only when a problem materially affects:
+1. recommendation direction or strength contradicts SoF/SR/EtD;
+2. low/very low certainty supports a strong recommendation without exceptional
+   EtD rationale;
+3. search strategy or scope clearly misses PICO;
+4. RoB, downgrade, and final certainty are inconsistent in a way that can change
+   recommendation judgment;
+5. important harms, costs, burden, or patient values are ignored;
+6. commercial product, industry funding, or related COI exists and management is
+   substantively untraceable;
+7. table/numeric inconsistency is not isolated and could change direction,
+   strength, or EtD;
+8. similar inconsistency repeats;
+9. SR conceptual failure repeats across major recommendations or connects to
+   certainty/strength;
+10. EtD does not explain the limitation.
 
 Preferred wording:
 - "Non-significance does not establish equivalence or non-inferiority. Without
@@ -793,6 +937,10 @@ Preferred wording:
 - "The limitation is documented and connected to weak, conditional, no
   recommendation, or limited practice wording, so this issue should be recorded
   without mechanically downgrading the whole CPG."
+- "The CPG remains A-eligible because PICO, SR/SoF, EtD, certainty, benefit-harm
+  balance, values, resources, and recommendation strength are traceable across
+  the accessible evidence package; the alert should be retained but does not by
+  itself justify B-minus."
 
 D/E: Use for major evidence-recommendation rupture, serious misrepresentation, unjustifiable recommendation, or severe COI/methodology failure.
 
@@ -804,6 +952,8 @@ Rating reasons must not be certainty level itself, conditional recommendation it
 Final output must return to the whole CPG:
 - Final CPG rating candidate;
 - trustworthiness conclusion: trustworthy / conditionally trustworthy / important concerns / difficult to trust;
+- A-eligibility assessment: A-eligible / A with mandatory audit alerts /
+  A-minus eligible / not A-eligible, with reason;
 - SR/NMA claim judgment;
 - SR conceptual failure scan: Result: Present / Possible / Not found / Not
   assessable; Basis; Impact on trustworthiness; Rating impact; Final warning;
@@ -817,6 +967,13 @@ Final output must return to the whole CPG:
   meta-analysis, SR conceptual failure, evidence-unit confusion,
   non-significance/equivalence confusion, or high certainty despite unresolved
   methodological limitations when present;
+- each mandatory methodological alert must include: what was detected, why it
+  matters, connection to certainty/recommendation/EtD/governance, and rating
+  impact;
+- materiality assessment: centrality, repetition, direction-changing potential,
+  certainty impact, EtD impact, COI/governance impact, and explanation;
+- why rating was or was not downgraded;
+- required corrections or confirmations;
 - critical outcome weighting / decision-driving outcome alert when relative
   importance, patient values, decision-driving outcomes, or outcome-specific
   certainty-to-overall certainty calibration is not traceable;

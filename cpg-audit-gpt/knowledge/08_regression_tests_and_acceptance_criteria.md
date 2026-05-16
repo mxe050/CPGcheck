@@ -189,5 +189,48 @@ domestic scan field, but detected SR conceptual failure, formal SR claim without
 substantive validity, or evidence-unit confusion must still appear in the Final
 alert.
 
+## Test 37: SR conceptual failure final alert must be explanatory
+Expected: Final must not say only "SR conceptual failure alert present." It must
+state the mixed evidence units, missing PICO/primary-study/RoB/certainty/SoF/EtD
+links, why this is conceptual SR failure or suspicion, connection to certainty
+or recommendation, and rating impact.
+
+## Test 38: High-traceability GRADE CPG remains A candidate with alerts
+Expected: when PICO, living SR or evaluated SR/NMA, SoF, EtD, GRADE certainty,
+conditional recommendation rationale, values, resources, equity, acceptability,
+and feasibility are traceable, isolated wording errors or distributed external
+materials do not force B-minus. A with mandatory audit alerts or A-minus is
+allowed.
+
+## Test 39: Red flags are not automatic downgrades
+Expected: classify red flags as inspection trigger, mandatory audit alert, or
+rating-lowering defect before rating. Downgrade only after materiality
+assessment.
+
+## Test 40: Sentinel defect requires materiality before whole rating downgrade
+Expected: an isolated numeric inconsistency in sentinel audit does not lower
+whole-CPG rating unless centrality, repetition, direction-changing potential,
+certainty impact, EtD impact, and explanation support a whole-guideline defect.
+
+## Test 41: Residual governance uncertainty does not automatically drop to B
+Expected: if COI management is referenced outside the PDF, no direct industry
+influence is evident, and the recommendation is conditional with transparent
+EtD, A-minus or A with mandatory audit alerts remains possible.
+
+## Test 42: Commercial product untraceable COI should downgrade or strong alert
+Expected: if a commercial product recommendation has relevant untraceable COI
+management, produce a strong governance alert and consider lowering from A.
+
+## Test 43: Isolated transcription error is correction alert, not rating drop
+Expected: an isolated wording/table/cell error that does not change
+recommendation direction, strength, certainty, or EtD is a mandatory correction
+alert, not automatic whole-CPG downgrade.
+
+## Test 44: High-quality CPG should not be accepted blindly
+Expected: high-traceability formats, platforms, tools, or journal publication do
+not guarantee A. If recommendation direction conflicts with SoF/EtD, low
+certainty supports a strong recommendation without rationale, or commercial COI
+management is untraceable, lower from A as appropriate.
+
 ## Acceptance criterion
 The most important metric is false trustworthy rate: the GPT must rarely rate unsupported, internally inconsistent, or unverifiable high-risk recommendations as A/B. At the same time, it must not unfairly downgrade well-conducted transparent Core GRADE/GRADE CPGs merely because evidence is uncertain.

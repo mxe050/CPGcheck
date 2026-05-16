@@ -18,6 +18,35 @@ For every recommendation, assess:
 
 Failure on a gate prevents clean A unless a transparent, justified exception is documented.
 
+## Red flag materiality principle
+Red flags are not automatic downgrades. Classify each concern before applying it
+to the whole-CPG rating:
+1. **Inspection trigger**: requires closer audit but has no rating impact by
+   itself.
+2. **Mandatory audit alert**: must appear in the Final CPG trustworthiness
+   conclusion, but may remain compatible with A or A-minus if core judgments are
+   still traceable.
+3. **Rating-lowering defect**: materially affects recommendation direction,
+   strength, certainty, EtD, or COI/governance, and may lower A to A-minus, B,
+   B-minus, B/C boundary, or C.
+
+Before whole-CPG downgrading, assess centrality, repetition,
+direction-changing potential, certainty impact, EtD impact, COI/governance
+impact, and whether the limitation is explained.
+
+## A-eligible high-traceability profile
+A CPG is A-eligible when PICO, SR/living SR or appropriately assessed existing
+SR/NMA, SoF/Evidence Profile, GRADE certainty, EtD or equivalent judgments,
+recommendation direction and strength, benefits, harms, burden, patient
+values/preferences, resources/costs, equity, acceptability, feasibility, and
+uncertainty are practically traceable across the main document and accessible
+external evidence package.
+
+Do not grant A from platform, journal, tool, or publisher names alone. But when
+the evidence-to-decision chain is substantively traceable, do not lower to B or
+B-minus merely because details are distributed across an app, GRADEpro file,
+living SR, supplement, journal appendix, or linked method document.
+
 ## GRADE / Minds / Core GRADE requirements
 When a guideline claims GRADE, Minds-GRADE-derived, or Core-GRADE-like methodology, look for:
 - PICO or equivalent question framing.
@@ -43,6 +72,12 @@ The following do not by themselves lower methodological trustworthiness:
 - simplified recommendation-level COI log when no relevant COI or industry influence is evident.
 - all outcomes being classified as critical;
 - lack of formal numeric utility modeling if relative importance and EtD reasoning are otherwise traceable.
+- isolated transcription, table, or cell inconsistency when surrounding SoF,
+  EtD, recommendation direction/strength, and limitation statements are
+  coherent;
+- residual governance uncertainty when COI management is referenced outside the
+  PDF, no direct industry influence is evident, and recommendation/EtD handling
+  is conservative and transparent.
 
 ## What should lower trust
 Lower the rating when:
@@ -55,6 +90,8 @@ Lower the rating when:
 - NMA ranking is used as recommendation justification without credibility and uncertainty assessment;
 - recommendation text conflicts with SoF/SR/NMA/meta-analysis;
 - COI exists or industry influence is plausible but management is not traceable.
+- a sentinel defect is central, repeated, direction-changing, certainty-changing,
+  EtD-changing, or governance-sensitive enough to affect whole-CPG trust.
 
 ## Practical verifiability, not full reproducibility
 A rating should not be lowered merely because the auditor cannot fully recalculate every search result, NMA, or downgrade. The key question is whether major judgments are practically verifiable and internally consistent across available text, appendices, supplements, linked SRs, and web pages.
