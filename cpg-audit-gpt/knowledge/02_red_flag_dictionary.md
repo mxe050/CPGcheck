@@ -113,6 +113,34 @@ or central failure connected to certainty, recommendation strength, or unexplain
 EtD. A-with-alerts compatible = Yes only if isolated, explained, and not
 direction-changing.
 
+RF-06e1 Evidence collection masquerading as SR: literature searches are followed
+by a parallel list of existing SRs, NMAs, meta-analysis reports, RCTs,
+observational studies, case series, and reviews without a PICO-based
+primary-study map, eligibility flow, duplicate-count handling, design-specific
+RoB, outcome-specific certainty, SoF/Evidence Profile, or EtD linkage. Treat
+this as possible or confirmed SR conceptual failure, not as ordinary incomplete
+traceability.
+
+RF-06e2 Heterogeneous evidence-unit parallel listing: existing SR/NMA and
+primary studies are counted, compared, or interpreted as the same "study" unit,
+or review-level evidence and primary-study evidence are placed on the same level
+without specifying adoption/adaptation/ADOLOPMENT/overview/supplementary use.
+Mandatory final alert = Yes. Rating impact = strong when repeated or central.
+
+RF-06e3 CPG-level SR conceptual failure: evidence-unit hierarchy failure is
+detected in methods chapters, evidence tables, SR supplements, recommendation
+tables, web materials, or multiple CQ clusters. Do not dismiss it because one
+sentinel CQ is sparse or does not show all defects. Rating ceiling = not
+A/A-minus/A-eligible when major recommendations or multiple clusters are
+affected; consider B-minus, B/C boundary, or C by materiality.
+
+RF-06e4 Sentinel-CQ anchoring error: a sparse sentinel CQ is used to conclude
+that SR conceptual failure is absent despite CPG-level or cluster-level evidence
+of mixed evidence units, missing primary-study mapping, unclear design-specific
+RoB, unclear outcome-specific certainty, or absent SoF-to-EtD linkage. This is
+an audit error. Required wording = "not assessable from this CQ alone; CPG-level
+SR architecture scan still shows possible/confirmed SR conceptual failure."
+
 RF-06f Possible SR conceptual failure: the available materials suggest mixed
 evidence units, unclear primary-study independence, unclear review-level
 evidence handling, or absent outcome-specific certainty/EtD connection, but
@@ -122,6 +150,9 @@ Metadata: Mandatory final alert = Yes when relevant. Rating impact = possible.
 Downgrade condition = unresolved concern is central/repeated or supports
 certainty/strength without explanation. A-with-alerts compatible = Yes when
 main PICO-SR-SoF-EtD-recommendation chain remains practically traceable.
+Do not interpret "not automatic C" as "A/A-minus remains available." If possible
+SR conceptual failure repeats across major CQ clusters or undermines the CPG's
+evidence synthesis architecture, A/A-minus/A-eligible is excluded.
 
 RF-06g Review-level evidence confused with primary-study evidence: existing
 SRs, NMAs, meta-analysis reports, reviews, or guideline summaries are treated as

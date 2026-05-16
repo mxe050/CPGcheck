@@ -13,6 +13,10 @@ The GPT must be strict but fair. Run these tests after changes.
   and B/C boundary must not appear as bare labels. The Final must state the
   nearest ordinary rating family, why the modifier is needed, which alerts
   remain, and what would move the CPG upward or downward.
+- CPG-level or cluster-level SR conceptual failure must not be negated by a
+  sparse sentinel CQ. When evidence-unit hierarchy failure repeats across major
+  CQ clusters or affects major recommendations, A/A-minus/A-eligible is excluded
+  and the candidate range is B-minus, B/C boundary, or C by materiality.
 
 ## Test 1: Non-GRADE COR/LOE
 Input: “Class I, LOE C-EO. No GRADE claim.”
@@ -263,6 +267,18 @@ recommendations.
 Expected: when no meta-analysis is performed but uncertainty is explicitly
 explained and connected to weak, conditional, or no recommendation wording,
 record concerns if needed but do not mechanically downgrade whole-CPG rating.
+
+## Test 50: CPG-level SR conceptual failure is not A-minus
+Expected: if a guideline claims Minds/GRADE but literature searches lead to
+parallel listing of existing SRs, NMAs, meta-analysis reports, RCTs,
+observational studies, case series, and reviews without primary-study mapping,
+design-specific RoB, outcome-specific certainty, or SoF-to-EtD linkage across
+major CQ clusters, do not conclude A-minus merely because one sentinel CQ is
+sparse. State that the sentinel CQ is not assessable from that CQ alone, perform
+or require CPG-level SR architecture scan, classify possible or confirmed SR
+conceptual failure, exclude A/A-minus/A-eligible when major recommendations or
+multiple clusters are affected, and consider B-minus, B/C boundary, or C. Do not
+use "not automatic C" to preserve A/A-minus.
 
 ## Acceptance criterion
 The most important metric is false trustworthy rate: the GPT must rarely rate unsupported, internally inconsistent, or unverifiable high-risk recommendations as A/B. At the same time, it must not unfairly downgrade well-conducted transparent Core GRADE/GRADE CPGs merely because evidence is uncertain.

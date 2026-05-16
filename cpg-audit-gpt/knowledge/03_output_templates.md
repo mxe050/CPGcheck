@@ -127,14 +127,28 @@ Use tables. Avoid long narrative summaries. Always distinguish: found at locatio
 - Mandatory methodological alerts:
   - SR conceptual failure scan:
     - Result: Present / Possible / Not found / Not assessable
+    - Detection level: sentinel CQ / CQ cluster / CPG-level methods / evidence tables / supplements / web materials
     - What was detected:
     - Evidence unit hierarchy:
     - Primary-study independence:
     - Missing organization: PICO / primary-study unit / duplicate risk / RoB / certainty / SoF / EtD
     - Why it matters:
     - Connection to certainty/recommendation:
+    - A/A-minus eligibility:
+    - Rating ceiling:
     - Rating impact:
     - Final warning required:
+  - SR architecture and evidence-unit hierarchy judgment:
+    - Status: Confirmed SR conceptual failure / Possible SR conceptual failure / Not found / Not assessable
+    - Detection level:
+    - Evidence units mixed or unclear:
+    - Missing structural elements:
+    - Sentinel-CQ limitation:
+    - CPG-level or cluster-level scan result:
+    - Impact on certainty / EtD / recommendation:
+    - A/A-minus eligibility:
+    - Rating ceiling:
+    - Final rating implication:
   - SR conceptual failure / evidence unit confusion:
     - What was detected:
     - Why it matters:

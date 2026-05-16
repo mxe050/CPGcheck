@@ -2,6 +2,15 @@
 
 ## 2026-05-16
 
+- Added CPG-level SR architecture rules so evidence collections masquerading as
+  SR, heterogeneous evidence-unit parallel listing, and repeated evidence-unit
+  hierarchy failure cannot be dismissed by a sparse sentinel CQ.
+- Added an A/A-minus exclusion gate and rating ceiling for confirmed or repeated
+  CPG-level SR conceptual failure, clarifying that "not automatic C" does not
+  preserve A/A-minus.
+- Added Final output fields for SR architecture and evidence-unit hierarchy
+  judgment, including detection level, A/A-minus eligibility, rating ceiling,
+  and rating implication.
 - Required expanded rating labels such as `A with mandatory audit alerts`,
   `A-minus`, `B+`, and `B/C boundary` to be explained in Final CPG conclusions
   rather than used as bare labels, including their nearest ordinary rating

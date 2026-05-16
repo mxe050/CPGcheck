@@ -96,6 +96,15 @@ uncertain/compromised because observational meta-analysis, evidence-unit
 independence, design-specific RoB, outcome-specific certainty, and EtD
 connection are not adequately traceable."
 
+When a guideline lists existing SRs, NMAs, meta-analysis reports, RCTs,
+observational studies, case series, and review articles in parallel after a
+search, do not treat this as merely sparse reporting. Audit whether the evidence
+collection is masquerading as SR: PICO-based primary-study units, hierarchy of
+review-level vs primary-study evidence, duplicate primary-study risk,
+design-specific RoB, outcome-specific certainty, SoF/Evidence Profile, and EtD
+linkage must be practically traceable before Minds/GRADE/SR claims can support
+high trust.
+
 Japanese wording may state: "SRを行ったという形式的記載はあるが、観察研究メタ解析の交絡調整、一次研究単位の独立性、研究デザイン別RoB、アウトカム別certainty、EtD接続が追跡できず、実質的なSR妥当性には重大な懸念が残る。"
 
 ## Japanese/domestic CPG SR conceptual failure scan
@@ -176,9 +185,13 @@ to accept.
 Classify the claim as explicit, partial/incomplete, unsupported in provided
 materials, or traceable. Check whether the materials show:
 - prespecified PICO;
+- SR target study units and inclusion/exclusion criteria;
+- separation of existing SR/NMA, meta-analysis reports, primary studies, case
+  series, and review articles by role and evidence hierarchy;
 - outcome-specific study selection;
 - design-appropriate RoB assessment;
 - outcome-specific certainty judgments using GRADE domains;
+- downgrade reasons;
 - SoF/Evidence Profile or equivalent for important outcomes;
 - EtD judgments for benefit, harm, burden, values/preferences, resources,
   acceptability, and feasibility when relevant;
@@ -187,6 +200,8 @@ materials, or traceable. Check whether the materials show:
 
 Do not treat literature search, study-design counts, narrative explanation, or
 voting/agreement rates as substitutes for GRADE/Minds appraisal.
+If these operational elements are absent, use: "Minds/GRADE claim present but
+operational structure not traceable."
 
 ## Non-quantitative synthesis / no meta-analysis certainty audit
 Meta-analysis absence is not a defect by itself. No pooling may be appropriate
@@ -492,6 +507,26 @@ when the evidence chain:
 11. claims SR/GRADE/Minds but does not make PICO, primary-study unit, RoB,
     outcome-specific certainty, and EtD connection practically traceable.
 
+Apply this gate at CPG-level and cluster-level, not only within the selected
+sentinel CQ. If the problem appears in the methods chapter, evidence tables, SR
+supplements, recommendation tables, web materials, or multiple CQ clusters, a
+sparse sentinel CQ cannot negate it. Write:
+"Sentinel CQ alone is not assessable for SR conceptual failure, but CPG-level /
+cluster-level evidence synthesis structure shows possible/confirmed SR
+conceptual failure."
+
+CPG-level SR architecture scan must check:
+- whether literature search outputs are organized by PICO and primary-study
+  unit rather than as an evidence collection;
+- whether existing SR/NMA and primary studies are separated by role;
+- whether duplicate primary-study counting through reviews is assessed;
+- whether RCTs, observational studies, case series, and reviews receive
+  design-appropriate appraisal;
+- whether outcome-specific certainty and downgrade reasons are traceable;
+- whether SoF/Evidence Profile links to EtD, recommendation direction, and
+  recommendation strength;
+- whether the limitation is recognized and mitigated.
+
 Use this judgment sentence when supported:
 "既存SR/NMA、RCT、観察研究、症例集積、レビュー論文を、PICO・一次研究単位・RoB・outcome別certainty・EtD接続なしに混ぜて扱っている場合、それは単なるtraceability不足ではなく、SRの基本概念の破綻である。"
 
@@ -502,6 +537,17 @@ Rating cap:
   C or C−;
 - claiming SR/GRADE/Minds while no substantive SR process exists: consider C−
   or D.
+
+A/A-minus exclusion gate:
+If confirmed SR conceptual failure or repeated evidence-unit hierarchy failure
+is found at CPG-level or across major CQ clusters, the CPG is not eligible for
+A, A with mandatory audit alerts, A-minus, or A-eligible status. This exclusion
+does not automatically require C. The appropriate range is B-minus, B/C boundary,
+or C depending on centrality to major recommendations, repetition across CQs,
+impact on outcome-specific certainty, impact on recommendation direction or
+strength, impact on EtD judgments, and whether the limitation is explicitly
+recognized and mitigated. The absence of an automatic C downgrade must never be
+used to preserve A/A-minus.
 
 SR conceptual failure or strong suspicion must appear in the Final CPG
 trustworthiness conclusion even when rating is not lowered. A B or B− rating may
@@ -897,6 +943,16 @@ Whenever the Final rating candidate is "A with mandatory audit alerts",
 - whether the alerts are rating-lowering defects or non-material alerts;
 - what finding would move the CPG upward or downward.
 
+A/A-minus exclusion rule: If confirmed SR conceptual failure or repeated
+evidence-unit hierarchy failure is found at CPG-level or across major CQ
+clusters, the CPG is not eligible for A, A with mandatory audit alerts, A-minus,
+or A-eligible status. This exclusion does not automatically require C. Consider
+B-minus, B/C boundary, or C depending on centrality, repetition, impact on
+outcome-specific certainty, impact on recommendation direction or strength,
+impact on EtD, and whether the limitation is explicitly recognized and
+mitigated. Never use "SR failure is not automatic C" as a reason to preserve
+A/A-minus.
+
 A: Recommendation-level PICO, SR/living SR/NMA or appropriate GRADE-ADOLOPMENT,
 SoF/Evidence Profile, search, RoB, certainty process, clinical effect
 interpretation, harms, values/preferences, resources, equity, acceptability,
@@ -1077,6 +1133,10 @@ Final output must return to the whole CPG:
 - SR/NMA claim judgment;
 - SR conceptual failure scan: Result: Present / Possible / Not found / Not
   assessable; Basis; Impact on trustworthiness; Rating impact; Final warning;
+- SR architecture and evidence-unit hierarchy judgment:
+  Status; Detection level; Evidence units mixed or unclear; Missing structural
+  elements; Impact on certainty / EtD / recommendation; A/A-minus eligibility;
+  Rating ceiling; Final rating implication;
 - GRADE/Minds/Core GRADE consistency;
 - GRADE vs non-GRADE separation;
 - EtD traceability;

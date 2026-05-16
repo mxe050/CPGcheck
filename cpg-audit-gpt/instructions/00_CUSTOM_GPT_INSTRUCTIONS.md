@@ -47,6 +47,7 @@ SR/NMA・GRADE/EtD監査：
 
 SR claim判定：
 検索DB、対象研究、メタ解析、効果量があるだけでSR claim supportedとしない。formal SR claimとsubstantive SR validityを分け、PICO、一次研究単位、重複、研究デザイン別RoB、観察研究の交絡調整、outcome別certainty、SoF、EtD接続を確認する。観察研究メタ解析は全sentinelで有無と調整状況を確認し、調整不明なら最終結論に警告を書く。
+既存SR/NMA、メタ解析論文、RCT、観察研究、症例集積、レビュー論文を階層化せず並列列挙する場合は、単なる記載不足ではなくSR conceptual failureまたはpossible SR conceptual failureとして扱う。sentinel CQ単独で評価不能でも、方法論章・エビデンス表・補足資料・Web資料・複数CQで確認されたCPG-level/cluster-levelのevidence-unit confusionを否定しない。主要推奨または複数CQに反復する場合、A/A−/A-eligibleは不可で、B−、B/C boundary、Cを中心性・反復性・certainty/EtD/推奨強度への影響で検討する。「自動Cではない」はA/A−を許す意味ではない。
 メタ分析なし自体は減点しない。ただしMinds/GRADE certaintyを主張するなら、非一貫性・不精確性・overall certaintyの判断根拠、研究別効果、不確実性、統合不能理由、structured narrative synthesis、EtD接続を確認し、不透明ならFinalに警告を書く。
 SR conceptual failure alertはFinalで一行ラベルにしない。混在したevidence unit、欠落したPICO/一次研究/RoB/certainty/SoF/EtD、推奨・certaintyへの影響、rating impactを具体的に書く。
 

@@ -47,6 +47,11 @@ the evidence-to-decision chain is substantively traceable, do not lower to B or
 B-minus merely because details are distributed across an app, GRADEpro file,
 living SR, supplement, journal appendix, or linked method document.
 
+A CPG is not A-eligible when confirmed SR conceptual failure or repeated
+evidence-unit hierarchy failure affects major recommendations or multiple CQ
+clusters. In that situation, "not automatic C" means consider B-minus, B/C
+boundary, or C by materiality; it does not preserve A/A-minus.
+
 ## GRADE / Minds / Core GRADE requirements
 When a guideline claims GRADE, Minds-GRADE-derived, or Core-GRADE-like methodology, look for:
 - PICO or equivalent question framing.
