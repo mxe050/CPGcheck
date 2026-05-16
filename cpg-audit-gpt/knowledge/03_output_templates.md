@@ -46,10 +46,20 @@ Use tables. Avoid long narrative summaries. Always distinguish: found at locatio
 | SR/NMA/search |  |  |  |
 | RoB and certainty domains |  |  |  |
 | SoF/effect interpretation |  |  |  |
+| Claim type | superiority / equivalence / non-inferiority / no recommendation / descriptive evidence |  |  |
+| Evidence unit and independence | primary studies / existing SR / meta-analysis / overview / mixed unclear |  |  |
+| Study design handling |  |  |  |
+| Existing SR/meta-analysis use |  |  |  |
+| Confounding and adjusted estimates |  |  |  |
+| Subgroup / interaction logic |  |  |  |
+| Equivalence or non-inferiority logic |  |  |  |
+| Certainty calibration |  |  |  |
 | EtD: benefits/harms |  |  |  |
 | EtD: values/resources/feasibility |  |  |  |
+| EtD reflection of evidence limitations |  |  |  |
 | COI management |  |  |  |
 | Internal consistency |  |  |  |
+| Impact on rating |  |  |  |
 
 ## 8. Sentinel rating
 - Rating:
@@ -65,6 +75,12 @@ Use tables. Avoid long narrative summaries. Always distinguish: found at locatio
 - Sentinel implication:
 - Residual uncertainty:
 ```
+
+Use these judgment labels in sentinel deep audit domains:
+- Adequate
+- Partly adequate / unclear
+- Major concern
+- Not assessable from available materials
 
 ## Template B: Partial excerpt / page-based cluster assembly
 

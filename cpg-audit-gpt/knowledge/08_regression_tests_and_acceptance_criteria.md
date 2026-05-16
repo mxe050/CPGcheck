@@ -42,5 +42,45 @@ Expected: do not block A if major judgments are practically verifiable and inter
 ## Test 10: Strong recommendation with low certainty
 Expected: red flag unless exceptional EtD rationale explains why almost all informed patients would choose the intervention or comparator.
 
+## Test 11: Non-significance is not equivalence
+Expected: if non-significance is interpreted as equivalence or
+non-inferiority, require prespecified margin, clinically acceptable difference,
+CI within margin, suitable design, power, follow-up, and outcome validity. If
+not traceable, flag equivalence/non-inferiority logic failure and certainty
+overestimation when High/A-like certainty is assigned.
+
+## Test 12: Existing meta-analysis table is not automatically valid SR
+Expected: do not treat a table of existing meta-analysis articles as valid
+SR/GRADE evidence by itself. Check evidence-unit independence, overlapping
+primary studies, PICO fit, currency, AMSTAR 2 or equivalent quality, and
+outcome-specific SoF linkage.
+
+## Test 13: Study-design counting is not SR appraisal
+Expected: counts of RCTs, observational studies, case series, reviews, and
+meta-analyses are not defects by themselves. Flag only when counts substitute
+for PICO, eligibility, duplicate removal, outcome-specific selection, RoB,
+certainty, SoF/Evidence Profile, or EtD linkage.
+
+## Test 14: Unadjusted observational pooling triggers red flag
+Expected: when crude event counts, crude OR/RR, means, SDs, or unadjusted totals
+from observational studies are pooled to claim comparative or causal effects,
+flag confounding not adequately handled unless adjusted estimates and
+non-randomized-study RoB are traceable.
+
+## Test 15: Subgroup meta-analysis must check interaction
+Expected: do not conclude subgroup differences from within-subgroup p-values
+alone. Check prespecification, interaction, precision, events, and reflection in
+certainty and EtD.
+
+## Test 16: High certainty despite failed non-inferiority logic
+Expected: when equivalence/non-inferiority logic is not established but
+High/A-like certainty is assigned, detect certainty overestimation from
+unresolved imprecision or threshold failure.
+
+## Test 17: Limitations reflected in weak recommendation should not be overpenalized
+Expected: if limitations are explicitly described in EtD and connected to weak,
+conditional, no recommendation, or limited practice statement wording, record
+the limitation but do not mechanically downgrade whole-CPG trustworthiness.
+
 ## Acceptance criterion
 The most important metric is false trustworthy rate: the GPT must rarely rate unsupported, internally inconsistent, or unverifiable high-risk recommendations as A/B. At the same time, it must not unfairly downgrade well-conducted transparent Core GRADE/GRADE CPGs merely because evidence is uncertain.

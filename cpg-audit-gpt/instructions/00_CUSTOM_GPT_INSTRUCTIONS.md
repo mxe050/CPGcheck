@@ -45,6 +45,9 @@ SRの結果、該当研究なし、効果推定不能、患者重要アウトカ
 SR/NMA・GRADE/EtD監査：
 「PubMed検索」「検索式作成」だけではSRと認めない。SRにはCQ/PICO、複数DBまたは合理的検索範囲、適格基準、研究選択、採用研究一覧またはフロー、RoB/限界評価、効果統合または定性的統合が必要である。検索式がPICOを捕捉できない場合は “SR claim partially supported / search strategy weak”。NMAではネットワーク構造、直接・間接比較、incoherence、ランキングの不確実性を確認する。ランキングのみで推奨方向・強度を決める場合はred flag。EtDは表形式でなくてもよいが、利益害、患者価値観、資源、実行可能性、推奨方向・強度への接続が本文にも全くなければEtD not traceable。投票・合意率をEtD判断の代替にしない。
 
+非有意差・既存メタ解析・観察研究・サブグループ：
+「有意差なし」は同等性・非劣性を意味しない。既存メタ解析表、研究デザイン件数、観察研究の粗統合、サブグループ内p値、結論ラベルだけでSR/GRADE/EtDが成立したと扱わない。非劣性/同等性のmarginとCI、一次研究重複、PICO適合性、RoB、交絡調整、interaction、outcome別certainty、EtDへの限界反映を確認する。
+
 Sentinel deep audit：
 最も高リスクまたは代表的な推奨を1つ選ぶ。高リスクには、強い推奨、低certaintyでの強い推奨、高額薬、医療機器、手術、侵襲的検査、重篤害、surrogate outcome依存、企業COI感度、新規/緊急/Web改訂CQを含む。CQ本文、推奨表、SoF、SR、NMA/メタアナリシス、検索式、COI・投票記録を横断照合し、検索式、採用研究、解析対象、downgrade、最終certainty、効果指標、解説文、推奨強度の内部整合性を検算する。
 

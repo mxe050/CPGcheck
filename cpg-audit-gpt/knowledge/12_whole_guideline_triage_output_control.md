@@ -16,6 +16,7 @@ Control output when a full guideline PDF or distributed web CPG is provided. Tri
 10. Select exactly one sentinel target, then continue to sentinel deep audit, rating, and final CPG conclusion within this file.
 11. Do not accept "SR", "meta-analysis", "Minds", or "GRADE" labels at face value.
 12. Treat study-design counts as descriptive until outcome-specific appraisal and EtD linkage are verified.
+13. Treat non-significance, equivalence, non-inferiority, existing meta-analysis tables, observational pooling, and subgroup results as audit triggers, not conclusions.
 
 ## Priority score
 Score each candidate 0–10:
@@ -119,6 +120,34 @@ Do not lower trust automatically for observational meta-analysis when adjusted
 estimates, confounding, RoB, directness, precision, and inconsistency are
 handled transparently.
 
+## Flawed synthesis trigger triage
+For all clinical practice guidelines, the following phrases or structures are
+priority-queue triggers. They do not prove a defect by themselves; they select
+targets for sentinel deep audit:
+- no statistically significant difference, no difference, equivalent,
+  equivalence, non-inferior, or non-inferiority;
+- Japanese equivalents such as "有意差なし", "差を認めない", "同等",
+  "同等性", "非劣性", and "同等と判断";
+- "エビデンスの確実性 A" or "エビデンスの確実性 高" paired with
+  non-significance, equivalence, non-inferiority, or unresolved limitations;
+- High/A-like evidence certainty paired with non-significance, equivalence, or
+  non-inferiority language;
+- tables summarizing existing meta-analysis articles with article name, RCT
+  count, participants, or significance conclusions;
+- Japanese table structures such as "メタアナリシス論文のまとめ", "RCT数",
+  and "対象患者数";
+- parallel counts of RCTs, observational studies, case series, reviews, and
+  meta-analyses;
+- observational meta-analysis forest plots or comparative effects;
+- crude event counts, crude OR/RR, group means, SDs, or unadjusted totals used
+  for comparative effects;
+- severity, stage, patient-background, co-intervention, or setting subgroup
+  analyses.
+
+Do not conclude from the trigger alone. The next audit question must ask what
+claim type, evidence unit, bias structure, certainty logic, and EtD linkage are
+actually traceable.
+
 ## Explanation text priority
 In web CPGs and Japanese CPGs, readers often rely on the explanation text. If the explanation text ignores downgrades, overstates benefit, underplays harms/QOL/burden, relies on statistical significance, or contradicts SoF/SR/NMA, substantive traceability is low.
 
@@ -162,7 +191,7 @@ Then continue to sentinel deep audit, rating, and final CPG conclusion unless us
 
 ---
 
-## Deep Audit Rating and Phase Control`r`n
+## Deep Audit Rating and Phase Control
 ## Purpose
 Control what happens after whole-guideline triage. Prevent stopping at target selection. Define sentinel deep audit, methodological rating, and final CPG trustworthiness conclusion.
 
@@ -197,6 +226,36 @@ Do not evaluate by CQ text alone. Cross-check, when available:
 
 If some details are outside the uploaded file but are clearly located in an appendix, supplement, linked SR/NMA paper, protocol, or public web page, treat those materials as part of the verifiable evidence chain. Do not restrict the audit to the uploaded file alone.
 
+## Flawed synthesis sentinel audit
+For all clinical practice guidelines, sentinel deep audit must explicitly
+classify and assess the following when relevant:
+- **Claim type**: superiority, equivalence, non-inferiority, no recommendation,
+  or descriptive evidence.
+- **Evidence unit**: primary studies, existing SR, meta-analysis, overview of
+  reviews, or mixed/unclear evidence unit.
+- **Study design handling**: whether RCTs, observational studies, case series,
+  review-level evidence, and meta-analyses are separated by role and bias.
+- **Existing SR/meta-analysis use**: whether the approach is de novo SR,
+  adoption of existing SR, overview of reviews, umbrella review, ADOLOPMENT, or
+  unclear; check overlap, currency, PICO fit, quality such as AMSTAR 2, and
+  outcome-specific SoF linkage.
+- **Confounding and adjusted estimates**: whether observational comparative
+  effects use adjusted estimates and account for different adjustment sets,
+  severity, facility, indication, and treatment-selection bias.
+- **Duplicate evidence**: whether primary studies are counted repeatedly through
+  overlapping existing reviews or meta-analyses.
+- **Equivalence or non-inferiority logic**: whether margin or clinical
+  acceptable difference was prespecified, CI is fully within the margin, design,
+  power, sample size, follow-up, and outcome validity support the claim.
+- **Subgroup / interaction logic**: whether subgroup findings were
+  prespecified, have sufficient events and precision, and include interaction
+  assessment rather than within-subgroup p-values only.
+- **Certainty calibration**: whether RoB, inconsistency, indirectness,
+  imprecision, publication bias, confounding, overlap, and threshold-based
+  imprecision are reflected in outcome-specific certainty.
+- **EtD reflection**: whether these limitations change recommendation
+  direction, strength, conditions, exceptions, or no-recommendation wording.
+
 ---
 
 ## Practical verifiability, not complete reproducibility
@@ -230,9 +289,14 @@ Acceptable rating reasons:
 Look for:
 - explanation text saying high certainty while evidence table has downgrades;
 - strong recommendation despite low/very low certainty without exception rationale;
+- non-significance interpreted as equivalence or non-inferiority without valid margin and CI logic;
+- existing meta-analysis tables treated as SR/GRADE evidence without overlap, quality, PICO, currency, and SoF checks;
 - study-design counts used as evidence appraisal or recommendation justification;
+- primary studies and existing SR/meta-analyses counted as the same evidence unit;
 - Minds/GRADE claims accepted without outcome-specific traceability;
 - observational meta-analysis used without confounding and adjusted-effect checks;
+- subgroup findings interpreted without interaction, prespecification, event count, and precision checks;
+- High/A-like certainty assigned from p-values, conclusion labels, low I2, or concordant meta-analyses despite unresolved RoB, confounding, imprecision, indirectness, or duplicate evidence;
 - benefit emphasis while harms/QOL/burden are ignored;
 - relative effect only or misleading absolute effect;
 - NMA ranking used without uncertainty/credibility;
@@ -328,6 +392,18 @@ Effects must be clinically interpretable. Check absolute effects, baseline risks
 
 Do not penalize solely because QOL, harms, burden, or rare events were not quantitatively pooled. Penalize only if they were not searched, not considered, ignored in EtD, or presented in a way that misleads recommendation strength.
 
+Non-significance is not equivalence or non-inferiority. If a guideline claims
+equivalence, non-inferiority, or "no difference" as a decision basis, check
+prespecified margin or clinically acceptable difference, CI against that
+threshold, design, power, sample size, follow-up, and outcome validity. Ordinary
+superiority trials or meta-analyses with p>0.05 do not establish equivalence.
+
+For existing meta-analysis tables, identify whether the table is evidence
+mapping, an overview of reviews, adoption of an existing SR, or a substitute for
+SR/GRADE. Existing meta-analyses can be used appropriately, but not by simple
+counting, majority conclusion, or duplicate review-level evidence without
+quality, overlap, PICO, currency, and outcome-specific certainty checks.
+
 ---
 
 ## NMA audit
@@ -362,6 +438,10 @@ Do not penalize for reporting agreement rates. Penalize only when voting or agre
 - external appendix, supplement, linked SR/NMA paper, protocol, or web reference;
 - lack of complete recalculation;
 - simplified COI log when no relevant COI, no industry funding, and no suspicious involvement are present.
+- observational evidence, existing SR/meta-analysis use, study-design counts,
+  non-significant results, subgroup analyses, weak/conditional recommendation,
+  or no recommendation when limitations are transparently handled and reflected
+  in EtD.
 
 ### Block or lower A for:
 - important judgment not practically verifiable even after accessible linked materials;
@@ -369,6 +449,14 @@ Do not penalize for reporting agreement rates. Penalize only when voting or agre
 - study-design counts used as a substitute for SR/GRADE/EtD appraisal;
 - formal Minds/GRADE/SR/meta-analysis claims not supported by outcome-specific traceability;
 - crude observational meta-analysis used as recommendation justification for a confounding-sensitive question;
+- non-significance misinterpreted as equivalence or non-inferiority;
+- equivalence or non-inferiority claimed without a prespecified margin or clinical threshold and CI-within-margin logic;
+- existing meta-analysis tables used as substitutes for SR/GRADE appraisal;
+- primary studies and existing SR/meta-analysis articles mixed as the same evidence unit or counted with duplicate primary evidence;
+- unadjusted observational pooling used as a main comparative effect estimate;
+- subgroup analysis overinterpreted without interaction, prespecification, event count, and precision checks;
+- certainty overestimated despite unresolved RoB, confounding, imprecision, indirectness, publication bias, or duplicate evidence;
+- flawed synthesis directly drives recommendation direction or strength without EtD explanation;
 - low/very low certainty with strong recommendation and no exception rationale;
 - search strategy clearly missing the PICO;
 - downgrade/final certainty inconsistency;
@@ -412,6 +500,37 @@ C+ or below: Consider when downgrade/final certainty is inconsistent, search mis
 Also consider C+ or below when design counts, name-only SR/Minds/GRADE claims,
 or crude observational meta-analysis are used as the main bridge from evidence
 to recommendation without outcome-specific appraisal and EtD linkage.
+
+Also consider B/C boundary or C+ or below when non-significance is treated as
+equivalence/non-inferiority, existing meta-analysis tables replace SR/GRADE
+appraisal, evidence units are confused or duplicated, unadjusted observational
+pooling is used for comparative effects, subgroup findings are overinterpreted,
+or High/A-like certainty ignores RoB, confounding, imprecision, indirectness,
+publication bias, or duplicate evidence. This is especially important when the
+flawed synthesis directly affects recommendation direction or strength and EtD
+does not explain the limitation.
+
+Do not lower rating for these alone: observational evidence, existing SR or
+meta-analysis reference, study-design count reporting, non-significant findings,
+external meta-analysis location, very low certainty, weak/conditional
+recommendation, no recommendation, or incomplete full reproducibility.
+
+Preferred wording:
+- "Non-significance does not establish equivalence or non-inferiority. Without
+  a prespecified margin or clinically acceptable difference and CI fully within
+  that threshold, the equivalence/non-inferiority conclusion and High/A-like
+  certainty may be overestimated."
+- "Existing meta-analysis articles are listed, but overlap of primary studies,
+  PICO fit, currency, quality assessment, and outcome-specific SoF linkage are
+  not traceable. This table is not a substitute for SR/GRADE appraisal."
+- "Observational evidence is not a defect by itself, but crude pooled effects
+  without traceable confounding adjustment are weak comparative-effect
+  evidence."
+- "Subgroup results require prespecification, interaction assessment, adequate
+  events, and precision before they can support recommendation strength."
+- "The limitation is documented and connected to weak, conditional, no
+  recommendation, or limited practice wording, so this issue should be recorded
+  without mechanically downgrading the whole CPG."
 
 D/E: Use for major evidence-recommendation rupture, serious misrepresentation, unjustifiable recommendation, or severe COI/methodology failure.
 

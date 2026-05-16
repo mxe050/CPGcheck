@@ -22,6 +22,19 @@ the decision.
 
 RF-04 Study design or significance confused with certainty: “RCT,” “phase III,” “high-quality trial,” or “statistically significant” is used as if it automatically means high certainty.
 
+RF-04a Non-significance misinterpreted as equivalence/non-inferiority:
+"no statistically significant difference," "no difference," "equivalent," or
+"non-inferior" is used as a conclusion without a prespecified equivalence or
+non-inferiority margin, a clinically acceptable difference, and effect estimate
+with 95% CI fully within that margin. A superiority trial or ordinary
+meta-analysis with p>0.05 does not establish equivalence or non-inferiority.
+
+RF-04b Certainty overestimated from conclusion labels or p-values: High/A-like
+certainty is assigned from labels such as non-significant, equivalent,
+non-inferior, low heterogeneity, or concordant meta-analyses without
+outcome-specific RoB, inconsistency, indirectness, imprecision, publication
+bias, confounding, duplicate evidence, and threshold-based imprecision checks.
+
 RF-05 Downgrade arithmetic mismatch: domain ratings do not match final certainty, or downgrades are described but final certainty remains high without explanation.
 
 RF-06 Search strategy weak: search terms fail to capture PICO, key synonyms, drug/device names, class names, or appropriate controlled vocabulary/free text.
@@ -31,6 +44,18 @@ Minds/GRADE, evaluated certainty, or used GRADE-like methods, but prespecified
 PICO, outcome-specific study selection, design-appropriate RoB, GRADE domain
 judgments, SoF/Evidence Profile, EtD domains, certainty-strength alignment, and
 transparent linkage to recommendation wording are not traceable.
+
+RF-06b Existing meta-analysis table mistaken for SR/GRADE evidence: existing
+meta-analysis articles are listed in a table with article name, number of RCTs,
+participants, or significance conclusions, and the table is treated as valid
+SR/GRADE evidence without assessing PICO fit, currency, methodological quality,
+overlap of primary studies, outcome-specific SoF/Evidence Profile, or EtD
+linkage.
+
+RF-06c Evidence unit confusion / duplicate evidence risk: primary studies,
+existing SRs, meta-analyses, reviews, and guideline summaries are counted as if
+they were independent evidence units, or the same primary studies may be counted
+multiple times through overlapping reviews.
 
 ## Recommendation formation red flags
 RF-07 Strong recommendation with low/very low certainty and no exceptional EtD rationale.
@@ -70,6 +95,19 @@ without checking confounding, adjustment differences, ROBINS-I or equivalent
 RoB, directness, imprecision, inconsistency, and whether the result is overused
 for strong recommendation or high certainty.
 
+RF-18c Unadjusted observational pooling / confounding ignored: observational or
+non-randomized studies are pooled for a comparative or causal effect using crude
+event counts, crude OR/RR, means, SDs, or unadjusted totals, without adjusted
+effect estimates, confounding strategy, adjustment-set assessment, or
+non-randomized-study RoB. This is a major red flag when used as recommendation
+justification.
+
+RF-18d Subgroup analysis overinterpreted / interaction not assessed: severity,
+background, co-intervention, setting, or other subgroup results are used as
+recommendation evidence based on within-subgroup p-values alone, without
+prespecification, sufficient events, precision, and between-subgroup interaction
+assessment.
+
 ## Traceability and document-structure red flags
 RF-19 Formal traceability only: PICO/SR/SoF/EtD/COI documents exist, but their contents do not align with each other.
 
@@ -82,6 +120,18 @@ RF-22 Hidden recommendation: narrative, figure, algorithm, summary box, or footn
 RF-23 Algorithm ambiguity: arrows, colors, boxes, sequences, thresholds, or escalation rules imply action without evidence basis or strength.
 
 RF-24 CQ methods generalized incorrectly: a few GRADE/SR-based CQs are used to imply all recommendation tables are GRADE/SR-based.
+
+RF-24a Study-design counting substituted for SR appraisal: counts of RCTs,
+observational studies, case series, reviews, and meta-analyses are used as if
+they established SR appraisal or certainty, without prespecified PICO,
+eligibility criteria, duplicate removal, outcome-specific selection,
+design-specific role, RoB, certainty, SoF/Evidence Profile, and EtD linkage.
+
+RF-24b Evidence-to-recommendation connection failure after flawed synthesis:
+limitations in SR, existing-review use, observational pooling, equivalence or
+non-inferiority logic, subgroup interpretation, or certainty calibration are
+not reflected in EtD, recommendation strength, conditions, exceptions, or final
+wording.
 
 ## COI and governance red flags
 RF-25 COI disclosure without management, especially for high-cost drugs, devices, procedures, screening, or industry-sensitive topics.
@@ -102,3 +152,9 @@ Do not flag as a defect by itself:
 Do not flag study-design counts or observational meta-analysis as defects by
 themselves. Flag only when they are used as substitutes for substantive
 evidence appraisal or recommendation justification.
+
+Also do not flag by itself: use of existing SR/meta-analysis, presence of a
+non-significant result, subgroup analysis, observational evidence, very low
+certainty, conditional/weak recommendation, no recommendation, or externally
+located meta-analysis. The red flag is misuse, overinterpretation, unaddressed
+bias, or failure to connect limitations to EtD and recommendation wording.
