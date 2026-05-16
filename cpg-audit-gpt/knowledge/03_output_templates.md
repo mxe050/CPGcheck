@@ -143,6 +143,44 @@ than in Mode 3. Each row should explain what is written, what is not visible in
 the main text, whether supplements could resolve the issue, and why the pattern
 matters. The table is inspection-only and must not be scored.
 
+Mode 2 completion contract:
+- Do not stop after the inspection table.
+- Do not stop after Final CPG trustworthiness conclusion.
+- The output is incomplete unless it includes, in this order:
+  1. minimum standard audit summary;
+  2. location-specific evidence-and-judgment table;
+  3. Japanese domestic 12-row inspection-only table;
+  4. Final CPG trustworthiness conclusion;
+  5. short post-Final summary;
+  6. full 12-item educational article;
+  7. annotated methodological references with URLs.
+- The 12-row table and the 12-item educational article are different sections.
+  The table applies the 12 points to the specific guideline. The article teaches
+  what the 12 points mean in general.
+
+For the Japanese domestic inspection-only table, use these exact columns:
+
+| チェック項目 | このCPGでの確認箇所・記載 | パターン判定 | 補足資料確認 | コメント |
+|---|---|---|---|---|
+
+The table should normally include all 12 standard rows below. If a row cannot be
+assessed, keep the row and write "提供資料内では確認できない", "本文では確認できない",
+or "補足資料未確認のため評価不能" rather than deleting it.
+
+Standard 12 rows:
+1. Minds/GRADE/SR claim と実質的エビデンス統合の対応
+2. メタ分析なし／forest plotなしでcertaintyを判断している可能性
+3. SRを装った文献集・エビデンス集
+4. 既存SR/NMAと一次研究の階層混同
+5. 観察研究メタ分析における未調整raw data統合
+6. 観察研究certainty inflation
+7. 同じ方向だから最高certaintyを採るshortcut
+8. サロゲートアウトカムの都合のよい使用
+9. P値・有意差あり/なしに依存した推奨
+10. 相対効果だけに依存した推奨
+11. EtD claim と本文・推奨文の乖離
+12. 推奨がエビデンス要約の直後に突然出る構造
+
 For the Japanese 12-row inspection table in Mode 2, avoid generic checklist
 phrases. Each applicable or suspected row should include concrete evidence from
 the guideline:
@@ -153,6 +191,14 @@ the guideline:
 - whether a supplement, separate PDF, evidence table, forest plot, SoF/Evidence
   Profile, or web file could resolve the uncertainty.
 Use many small, location-specific snippets rather than long quotations.
+
+For each applicable or suspected row, the "コメント" cell should contain a
+specific explanation in this style:
+"該当箇所では『...』と記載されているため、[12項目名]の候補に該当する/該当疑いである。論点は...であり、この表自体はrating非連動である。"
+
+If the row is not confirmed, still explain the uncertainty:
+"本文では確認できない。別PDF、Web補足資料、forest plot、GRADE evidence table、
+SoF/Evidence Profile、検索式、予備投票資料があれば確認できる可能性がある。"
 
 ## Mode 3: 標準レビュー：各種解析付き
 
@@ -278,6 +324,77 @@ Core GRADEの観点では、費用、資源、公平性、実行可能性など�
 信頼できるCPGでは、「エビデンスがこうだった」だけでなく、「だからなぜその推奨になったのか」が説明されます。推奨は、効果の大きさ、害、certainty、患者価値観、負担、臨床的文脈を踏まえた判断だからです。
 
 ところが、論文結果を数段落で説明したあと、突然「したがって推奨する」と書かれているCPGがあります。この場合、読者は、推奨方向や推奨強度がどの判断に基づくのかを検証できません。「パネルで合意した」「投票で決めた」という記載も、理由の説明にはなりません。合意形成は重要ですが、合意に至った論理が見えなければ、実質的には専門家意見の追認に近くなります。
+
+## Annotated reference list for Mode 2 and Mode 4
+
+Mode 2 and Mode 4 must include an annotated reference list after the 12-item
+educational article. Do not omit it merely because the Final rating is already
+shown. Mode 2 may use a compact version only if the answer would otherwise be
+unusable, but it should still include the key URLs and one-line relevance notes.
+Mode 4 should include the full list. These references support education and
+methodological interpretation; they are not a separate scoring system.
+
+Use this list:
+
+- Lima JP, Mirza RD, Guyatt GH. How to recognize a trustworthy clinical
+  practice guideline. 2023.
+  URL: https://doi.org/10.1186/s44158-023-00094-7
+  PubMed: https://pubmed.ncbi.nlm.nih.gov/37386667/
+  信頼できるCPGを見分ける6つの問いを示した実用的な総説です。
+
+- Lima JP, Tangamornsuksan W, Guyatt GH. Trustworthy evidence-based versus
+  untrustworthy guidelines: detecting the difference. 2023.
+  URL: https://doi.org/10.1136/fmch-2023-002437
+  PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC10565152/
+  信頼できるCPGと信頼できないCPGの違いを整理した、監査者向けに使いやすい文献です。
+
+- Institute of Medicine. Clinical Practice Guidelines We Can Trust. 2011.
+  URL: https://doi.org/10.17226/13058
+  NAP: https://nap.nationalacademies.org/catalog/13058/clinical-practice-guidelines-we-can-trust
+  透明性、COI、パネル構成、SRとの接続、推奨の根拠づけを扱う古典的基準です。
+
+- Schunemann HJ, et al. Requirements for claiming the use of GRADE. J Clin
+  Epidemiol. 2023.
+  URL: https://doi.org/10.1016/j.jclinepi.2023.05.010
+  Full text: https://www.jclinepi.com/article/S0895-4356(23)00122-1/fulltext
+  「GRADEを使った」と主張するための条件を確認する文献です。
+
+- GRADE Handbook.
+  URL: https://gradepro.org/handbook/
+  GRADEによるcertainty評価と推奨作成の基本資料です。
+
+- GRADE Evidence to Decision frameworks. BMJ. 2016.
+  Part 1 URL: https://doi.org/10.1136/bmj.i2016
+  Part 2 URL: https://doi.org/10.1136/bmj.i2089
+  EtDでエビデンスから推奨へ進む判断過程を透明化するための基本文献です。
+
+- PRISMA 2020.
+  URL: https://www.prisma-statement.org/prisma-2020-checklist
+  SRとして何を報告すべきかを見るための基本チェックリストです。
+
+- AMSTAR 2.
+  URL: https://doi.org/10.1136/bmj.j4008
+  BMJ: https://www.bmj.com/content/358/bmj.j4008
+  既存SR/NMAを使う場合、その質を評価するための基本ツールです。
+
+- RoB 2.
+  URL: https://methods.cochrane.org/bias/resources/rob-2-revised-cochrane-risk-bias-tool-randomized-trials
+  RCTのrisk of bias評価に使う基本ツールです。
+
+- ROBINS-I.
+  URL: https://doi.org/10.1136/bmj.i4919
+  BMJ: https://www.bmj.com/content/355/bmj.i4919
+  非ランダム化研究・観察研究のrisk of bias評価に使う基本文献です。
+
+- AGREE II.
+  URL: https://www.agreetrust.org/wp-content/uploads/2017/12/AGREE-II-Users-Manual-and-23-item-Instrument-2009-Update-2017.pdf
+  CPGの報告整備度を見る基本ツールです。ただしAGREE II高得点はGRADE的な推奨妥当性を保証しません。
+
+- Dahm P, et al. Analysis of European Association of Urology Guidelines 2023
+  and its adherence to GRADE methodology. 2024.
+  URL: https://doi.org/10.1002/gin2.70004
+  Wiley: https://onlinelibrary.wiley.com/doi/10.1002/gin2.70004
+  「GRADE採用」記載と実運用がずれることがある実例として有用です。
 
 ## Template A: Whole-guideline triage plus sentinel audit
 

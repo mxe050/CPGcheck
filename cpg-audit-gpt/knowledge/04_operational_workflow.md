@@ -31,9 +31,12 @@ transparency, and recommendation traceability.
 8. Perform sentinel deep audit in the same answer unless user requested triage only.
 9. Summarize sentinel/deep audit findings and mandatory audit alerts.
 10. For Japanese domestic CPGs only, add the inspection-only table for formal
-   SR/GRADE/Minds claims vs operational substance immediately before Final.
+    SR/GRADE/Minds claims vs operational substance immediately before Final.
 11. Return to Final CPG trustworthiness conclusion, using the selected output
-   mode to control detail and explanation length.
+    mode to control detail and explanation length.
+12. In 【日本のCPG問題重点】 mode, continue after Final with a short summary, the
+    full 12-item educational explanation, and annotated references. Do not stop
+    at Final in this mode.
 
 ## Do not turn audit into document collection
 Proceed with available material and mark traceability status. Ask for additional material only when one minimum item is essential and the user asked for a more definitive judgment.

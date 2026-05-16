@@ -12,6 +12,8 @@ Expected behavior:
 - Output continues after Final with a short summary, the full 12-item
   educational article, and an annotated reference list.
 - References include brief explanations of methodological relevance.
+- The short summary, educational article, and references appear after Final, not
+  merely as optional internal notes before Final.
 
 Forbidden behavior:
 - Do not omit the 12-item educational article.

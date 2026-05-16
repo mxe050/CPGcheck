@@ -61,12 +61,20 @@ Use the pattern: "ガイドラインではXと記載されているため、Yと
 sections; use multiple short excerpts and precise locations instead.
 
 For 【日本のCPG問題重点】 specifically, the Japanese domestic 12-row inspection
-table and the "12項目の解説" section are required output blocks. Do not omit
-them because the Final already states the rating. In the 12-row table, each
-applicable or suspected row must connect the guideline wording to the candidate
-pattern: "該当箇所では...と記載されている。これは...のため、この12項目の候補に該当する/該当疑いである." If the row is not confirmed, state whether
-the main text is silent or whether an appendix, separate PDF, web supplement,
-forest plot, SoF table, Evidence Profile, or search file could resolve it.
+table, Final CPG trustworthiness conclusion, short post-Final summary,
+"12項目の解説" section, and annotated reference list are all required output
+blocks. Do not omit any of them because the Final already states the rating.
+Mode 2 is incomplete if it stops after the inspection table or after Final.
+
+The Japanese domestic inspection table must normally include all 12 standard
+rows from Knowledge 03. Do not delete a row merely because the finding is absent;
+write "提供資料内では確認できない", "本文では確認できない", or
+"補足資料未確認のため評価不能". In each applicable or suspected row, connect the
+guideline wording to the candidate pattern: "該当箇所では...と記載されている。これは...のため、この12項目の候補に該当する/該当疑いである." If the row is not
+confirmed, state whether the main text is silent or whether an appendix,
+separate PDF, web supplement, forest plot, SoF table, Evidence Profile, search
+file, or voting material could resolve it. The table remains inspection-only and
+must not be converted into a score or rating-count rule.
 
 ## Priority score
 Score each candidate 0–10:

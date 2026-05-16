@@ -2,6 +2,17 @@
 
 ## 2026-05-16
 
+- Hardened 【日本のCPG問題重点】 output so the guideline-specific 12-row
+  inspection table, Final conclusion, post-Final short summary, full 12-item
+  educational article, and annotated reference list are all required completion
+  blocks.
+- Added the exact 12 standard inspection rows and required table columns to the
+  Mode 2 template, including location-specific guideline excerpts or faithful
+  summaries and "ここにこう書いてあるので..." reasoning for applicable or suspected
+  rows.
+- Added regression coverage preventing Mode 2 from collapsing the 12 rows into
+  generic bullets, omitting unconfirmed rows, stopping after Final, or treating
+  the table as a rating score.
 - Renamed GPT Builder-facing profile to "ガイドライン信頼性レビューGPT" and added
   a research/education-only description that excludes individual diagnosis,
   treatment selection, medical advice, visit timing, and clinical

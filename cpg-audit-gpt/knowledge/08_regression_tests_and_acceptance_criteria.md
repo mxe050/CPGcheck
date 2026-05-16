@@ -329,17 +329,23 @@ the same materials.
 Expected: when the user selects 【日本のCPG問題重点】 for a Japanese domestic CPG,
 output includes minimum audit summary, detailed Japanese domestic inspection
 table, Final, short summary, 12-item educational explanation, and references.
-The table is inspection-only and does not alter rating by item count.
+The table is inspection-only and does not alter rating by item count. The table
+must use the five columns チェック項目 / このCPGでの確認箇所・記載 / パターン判定 /
+補足資料確認 / コメント and normally include all 12 standard rows.
 Each applicable or suspected row must cite the guideline location and short
 wording, then explain why that wording fits the relevant 12-item candidate
-pattern. The 12-item explanation should be the full educational article unless
-the user explicitly asks for brevity.
+pattern using a concrete "ここにこう書いてあるので..." explanation. Rows that are
+not confirmed must remain in the table and distinguish "not found in provided
+materials" from "not assessable because appendix/supplement is unavailable".
+The 12-item explanation should be the full educational article unless the user
+explicitly asks for brevity.
 
 ## Test 57a: mode_japanese_cpg_full_article_and_annotated_references
 Expected: 【日本のCPG問題重点】 includes the full 12-item educational article and
 an annotated reference list. It must not stop after the inspection table and
-Final. References should include short explanations of why each source is
-methodologically relevant.
+Final. After Final, it must continue with a short summary, the full 12-item
+educational article, and annotated references. References should include short
+explanations of why each source is methodologically relevant.
 
 ## Test 58: mode_standard_regression_no_output_drift
 Expected: when the user selects 【標準レビュー：各種解析付き】 or no mode, current
@@ -414,6 +420,16 @@ education, then offer to review the relevant guideline, SR, GRADE certainty, EtD
 COI, and recommendation traceability as document evidence. This refusal or
 redirection must not alter rating logic when a guideline document is later
 reviewed.
+
+## Test 71: mode_japanese_cpg_exact_12_rows_and_post_final_blocks
+Expected: in 【日本のCPG問題重点】 mode for a Japanese domestic CPG, the output is
+incomplete unless it contains: a guideline-specific 12-row inspection table
+before Final; Final CPG trustworthiness conclusion; a short post-Final summary;
+the full 12-item educational article; and an annotated reference list with URLs.
+Each applicable or suspected row must give a guideline location and short quote
+or faithful paraphrase, then explain "該当箇所では...と記載されているため、この12項目の候補に該当する/該当疑いである." The GPT must not collapse the 12 rows into
+three or four generic bullets, must not omit rows with no finding, and must not
+end immediately after Final.
 
 ## Acceptance criterion
 The most important metric is false trustworthy rate: the GPT must rarely rate unsupported, internally inconsistent, or unverifiable high-risk recommendations as A/B. At the same time, it must not unfairly downgrade well-conducted transparent Core GRADE/GRADE CPGs merely because evidence is uncertain.
