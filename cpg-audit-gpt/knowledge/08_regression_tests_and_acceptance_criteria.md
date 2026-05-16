@@ -117,5 +117,44 @@ if they are explicitly reflected in EtD and weak, conditional, no
 recommendation, or limited practice wording, do not mechanically downgrade the
 whole CPG.
 
+## Test 24: SR conceptual failure must appear in final
+Expected: when existing SR/NMA, primary studies, RCTs, observational studies,
+case series, and review articles are mixed without PICO, primary-study unit,
+RoB, outcome-specific certainty, and EtD connection, Final CPG trustworthiness
+conclusion must mention SR conceptual failure or suspected SR conceptual
+failure regardless of whether the rating is lowered.
+
+## Test 25: SR conceptual failure should not be silent even if rating B
+Expected: a B or B− rating may be possible for isolated, limitation-aware
+problems, but the SR conceptual failure alert must still be present in Final
+CPG trustworthiness conclusion.
+
+## Test 26: All critical outcomes are not equal decision weight
+Expected: when all outcomes are critical but mortality, serious complications,
+function, QOL, harms, burden, and costs are not weighted or linked to the
+recommendation, flag unclear decision weight among critical outcomes.
+
+## Test 27: Values/preferences variability only is insufficient
+Expected: if values/preferences only state variability without addressing
+utility, disutility, relative importance, burden, or trade-offs among outcomes,
+detect values/preferences reduced to variability only.
+
+## Test 28: Same-direction/highest-certainty shortcut triggers alert
+Expected: if same-direction critical outcomes lead to choosing the highest
+certainty as overall certainty, flag overall certainty selected by
+same-direction/highest-certainty shortcut and include a Final alert.
+
+## Test 29: Decision-driving outcome certainty not traceable
+Expected: if the outcome driving recommendation direction or strength is not
+identified, or its certainty is not connected to the final certainty/strength,
+flag decision-driving outcome not identified and decision-driving outcome
+certainty not traceable.
+
+## Test 30: Appropriate outcome weighting should not be overpenalized
+Expected: if EtD explains relative importance among critical outcomes, accounts
+for a low-certainty important outcome, and connects this to weak, conditional,
+or no recommendation wording, record the issue but do not mechanically lower
+whole-CPG trustworthiness.
+
 ## Acceptance criterion
 The most important metric is false trustworthy rate: the GPT must rarely rate unsupported, internally inconsistent, or unverifiable high-risk recommendations as A/B. At the same time, it must not unfairly downgrade well-conducted transparent Core GRADE/GRADE CPGs merely because evidence is uncertain.

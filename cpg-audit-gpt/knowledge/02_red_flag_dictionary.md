@@ -93,6 +93,21 @@ RF-12 Harms, burden, cost, feasibility, or patient values ignored despite being 
 
 RF-13 Conditionality mismatch: major uncertainty or value variability exists, but the recommendation wording implies uniform action.
 
+RF-13a Undifferentiated critical outcomes / no decision-weight rationale: all
+important outcomes are classified as critical, but the guideline does not
+explain their relative importance, utility/disutility, seriousness, reversibility,
+frequency, absolute effects, clinical thresholds, or contribution to the
+recommendation.
+
+RF-13b Values/preferences reduced to variability only: patient values are
+treated only as "variable" or "not variable" without explaining how patients
+value benefits, harms, burdens, utilities/disutilities, or trade-offs across
+critical outcomes.
+
+RF-13c Decision-driving outcome not identified: the recommendation does not
+identify which benefit or harm outcome(s) drove direction, strength, or
+conditionality.
+
 ## Evidence presentation red flags
 RF-14 Relative effect only: relative effect is presented without absolute effect, baseline risk, MID, NNT/NNH, or clinical interpretation when needed.
 
@@ -137,6 +152,22 @@ recommendation evidence based on within-subgroup p-values alone, without
 prespecification, sufficient events, precision, and between-subgroup interaction
 assessment.
 
+RF-18e Overall certainty selected by same-direction/highest-certainty shortcut:
+multiple critical outcomes point in the same direction and the highest
+certainty among them is used as overall certainty without explaining the
+decision-driving outcome, benefit-harm balance, relative outcome importance,
+absolute effects, clinical thresholds, patient values, or the influence of
+lower-certainty critical outcomes.
+
+RF-18f Decision-driving outcome certainty not traceable: the certainty of the
+outcome(s) that drive recommendation direction or strength is unclear or not
+connected to the final certainty/strength judgment.
+
+RF-18g Certainty calibration failure across critical outcomes: outcome-specific
+certainty exists, but overall certainty or recommendation confidence does not
+reflect differences across critical benefits and harms, especially when a
+low-certainty critical outcome materially affects the decision.
+
 ## Traceability and document-structure red flags
 RF-19 Formal traceability only: PICO/SR/SoF/EtD/COI documents exist, but their contents do not align with each other.
 
@@ -168,6 +199,12 @@ while evidence-unit independence, duplicate review-level evidence,
 design-specific RoB, observational confounding, imprecision, indirectness, or
 outcome-specific certainty remains unresolved.
 
+RF-24d Mandatory final alert omitted: SR conceptual failure, evidence-unit
+confusion, adjustment-unclear observational meta-analysis, unclear critical
+outcome weighting, decision-driving outcome uncertainty, or same-direction /
+highest-certainty shortcut is detected but absent from the Final CPG
+trustworthiness conclusion.
+
 ## COI and governance red flags
 RF-25 COI disclosure without management, especially for high-cost drugs, devices, procedures, screening, or industry-sensitive topics.
 
@@ -193,3 +230,8 @@ non-significant result, subgroup analysis, observational evidence, very low
 certainty, conditional/weak recommendation, no recommendation, or externally
 located meta-analysis. The red flag is misuse, overinterpretation, unaddressed
 bias, or failure to connect limitations to EtD and recommendation wording.
+
+Do not flag by itself: classifying all outcomes as critical, omitting numeric
+utility modeling, or noting patient-value variability. Flag when relative
+importance, decision-driving outcomes, outcome-specific certainty, and EtD
+weighting are not traceable.

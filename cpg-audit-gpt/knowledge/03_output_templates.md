@@ -58,6 +58,18 @@ Use tables. Avoid long narrative summaries. Always distinguish: found at locatio
 | Study design handling |  |  |  |
 | Existing SR/meta-analysis use |  |  |  |
 | Confounding and adjusted estimates |  |  |  |
+| SR conceptual failure: evidence unit hierarchy |  |  |  |
+| SR conceptual failure: existing SR/NMA and primary-study mixing |  |  |  |
+| SR conceptual failure: primary-study independence / duplicate evidence |  |  |  |
+| SR conceptual failure: outcome-specific certainty and EtD connection |  |  |  |
+| SR conceptual failure alert required | yes / no / unclear |  |  |
+| Critical outcomes listed |  |  |  |
+| Relative importance among critical outcomes |  |  |  |
+| Patient values / utility-disutility rationale |  |  |  |
+| Decision-driving outcome(s) |  |  |  |
+| Certainty of decision-driving outcome(s) |  |  |  |
+| Same-direction/highest-certainty shortcut | yes / no / unclear |  |  |
+| Overall certainty rationale |  |  |  |
 | Subgroup / interaction logic |  |  |  |
 | Equivalence or non-inferiority logic |  |  |  |
 | Certainty calibration |  |  |  |
@@ -82,6 +94,11 @@ Use tables. Avoid long narrative summaries. Always distinguish: found at locatio
 - What can be trusted:
 - What lowers trust:
 - Mandatory methodological alerts:
+  - SR conceptual failure / evidence unit confusion:
+  - Observational meta-analysis confounding alert:
+  - Critical outcome weighting / decision-driving outcome alert:
+  - Overall certainty calibration alert:
+  - EtD connection alert:
 - Sentinel implication:
 - Residual uncertainty:
 ```
@@ -96,7 +113,8 @@ Mandatory methodological alerts must be shown even when they do not
 automatically lower the final rating. Include alerts for adjustment-unclear
 observational meta-analysis, SR conceptual failure, evidence-unit confusion,
 possible non-significance/equivalence confusion, and high certainty despite
-unresolved methodological limitations when present.
+unresolved methodological limitations when present. A rating can be B while
+still carrying mandatory methodological alerts.
 
 ## Template B: Partial excerpt / page-based cluster assembly
 

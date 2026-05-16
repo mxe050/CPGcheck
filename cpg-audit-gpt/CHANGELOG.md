@@ -2,6 +2,7 @@
 
 ## 2026-05-16
 
+- Added mandatory Final alerts for SR conceptual failure and outcome-weighting/overall-certainty calibration concerns, including critical-outcome relative importance, decision-driving outcomes, same-direction/highest-certainty shortcuts, and values/preferences reduced to variability only.
 - Added formal-vs-substantive SR claim judgment, mandatory observational meta-analysis scan and final alerts, SR conceptual failure rating caps, evidence-unit duplication checks, and related regression cases.
 - Added generalized red flags, sentinel audit domains, output template fields, rating guardrails, and regression cases for non-significance/equivalence errors, existing meta-analysis table misuse, evidence-unit duplication, unadjusted observational pooling, subgroup overinterpretation, and certainty overestimation.
 - Added a routine-edit rule: do not rebuild or provide zip packages unless explicitly requested; tell the user "終了しました" and list exact GPT Builder files to update.

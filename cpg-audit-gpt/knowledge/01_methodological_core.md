@@ -14,6 +14,7 @@ For every recommendation, assess:
 4. Systematic evidence basis: current SR, NMA, or transparent evidence synthesis when claimed or required by the recommendation risk.
 5. Certainty-strength compatibility: low/very low certainty with strong recommendation requires explicit exceptional EtD rationale.
 6. COI: disclosure is not management; active management is required for high-risk recommendations.
+7. Outcome weighting: when multiple critical outcomes exist, the decision-driving outcome(s), relative importance, benefit-harm weight, and certainty used for recommendation judgment should be traceable.
 
 Failure on a gate prevents clean A unless a transparent, justified exception is documented.
 
@@ -27,6 +28,7 @@ When a guideline claims GRADE, Minds-GRADE-derived, or Core-GRADE-like methodolo
 - Downgrade/upgrade explanations.
 - EtD or equivalent reasoning connecting evidence to direction and strength.
 - Benefits, harms, values/preferences, resources, equity, acceptability, feasibility when relevant.
+- Relative importance among critical outcomes and which outcome(s) drive the recommendation.
 
 Do not require a specific table format if the same judgments are traceable in text, appendix, or linked materials.
 
@@ -39,6 +41,8 @@ The following do not by themselves lower methodological trustworthiness:
 - lack of empirical data for acceptability or equity if the domain was considered;
 - search/RoB/SoF details located in appendix, supplement, linked SR, or web page;
 - simplified recommendation-level COI log when no relevant COI or industry influence is evident.
+- all outcomes being classified as critical;
+- lack of formal numeric utility modeling if relative importance and EtD reasoning are otherwise traceable.
 
 ## What should lower trust
 Lower the rating when:
@@ -47,6 +51,7 @@ Lower the rating when:
 - search strategy does not capture the PICO;
 - RoB/domain judgments and final certainty are inconsistent;
 - harms, burden, cost, or patient values are ignored;
+- critical outcomes are treated as equal without decision-weight rationale, or overall certainty is chosen from the highest-certainty outcome without explaining decision-driving outcomes;
 - NMA ranking is used as recommendation justification without credibility and uncertainty assessment;
 - recommendation text conflicts with SoF/SR/NMA/meta-analysis;
 - COI exists or industry influence is plausible but management is not traceable.

@@ -19,6 +19,7 @@ Control output when a full guideline PDF or distributed web CPG is provided. Tri
 13. Treat non-significance, equivalence, non-inferiority, existing meta-analysis tables, observational pooling, and subgroup results as audit triggers, not conclusions.
 14. Separate formal SR claim existence from substantive SR validity before judging SR/NMA support.
 15. Scan every sentinel target for observational or non-randomized-study meta-analysis and report adjustment/confounding status.
+16. Treat SR conceptual failure, critical-outcome weighting opacity, and overall-certainty shortcuts as mandatory final alerts when detected.
 
 ## Priority score
 Score each candidate 0–10:
@@ -214,6 +215,27 @@ Do not conclude from the trigger alone. The next audit question must ask what
 claim type, evidence unit, bias structure, certainty logic, and EtD linkage are
 actually traceable.
 
+## Outcome importance and certainty calibration triage
+For all clinical practice guidelines, treat the following as priority-queue
+triggers. They are not defects by themselves; they indicate that sentinel deep
+audit must inspect decision weighting:
+- all or nearly all outcomes are labeled critical without relative-importance
+  rationale;
+- values/preferences are described only as variable or not variable;
+- no decision-driving outcome is identified;
+- benefit-harm balance is stated without absolute effects, outcome importance,
+  patient values, or clinical thresholds;
+- multiple critical outcomes point in the same direction and the highest
+  certainty appears to be used as overall certainty;
+- outcome-specific certainty exists, but the rationale for overall certainty or
+  recommendation confidence is unclear;
+- benefit and harm certainty differ, but the outcome governing direction or
+  strength is not identified.
+
+Do not require formal utility modeling. Require at least a traceable explanation
+of which outcome(s) drive the recommendation and how values, benefits, harms,
+absolute effects, thresholds, and certainty influence direction and strength.
+
 ## Explanation text priority
 In web CPGs and Japanese CPGs, readers often rely on the explanation text. If the explanation text ignores downgrades, overstates benefit, underplays harms/QOL/burden, relies on statistical significance, or contradicts SoF/SR/NMA, substantive traceability is low.
 
@@ -349,6 +371,38 @@ Rating cap:
 - claiming SR/GRADE/Minds while no substantive SR process exists: consider C−
   or D.
 
+SR conceptual failure or strong suspicion must appear in the Final CPG
+trustworthiness conclusion even when rating is not lowered. Use a warning such
+as: "本CPGでは、既存SR/NMA、一次研究、RCT、観察研究、症例集積、レビュー論文の扱いが、PICO・一次研究単位・研究デザイン別RoB・outcome別certainty・EtD接続の観点で十分に整理されていない箇所がある。これは単なる記載不足ではなく、SRの基本概念が破綻している、またはその疑いがある重要な方法論的警告である。"
+
+## Outcome importance and certainty calibration audit
+For all clinical practice guidelines, all critical outcomes are not
+automatically equal in decision weight. When multiple critical outcomes exist,
+sentinel deep audit must assess:
+- critical outcome list;
+- relative importance among critical outcomes;
+- patient values, utilities, disutilities, burden, reversibility, seriousness,
+  frequency, absolute effects, and clinical thresholds;
+- decision-driving outcome(s);
+- certainty of the decision-driving outcome(s);
+- whether same-direction outcomes were used to select the highest certainty;
+- rationale for overall certainty or recommendation confidence;
+- whether EtD reflects outcome weighting and uncertainty.
+
+Flag as a mandatory final alert when:
+- all outcomes are critical but relative importance is not explained;
+- values/preferences are reduced to variability only;
+- decision-driving outcome(s) are not identified;
+- low-certainty critical outcomes that influence the recommendation are ignored;
+- benefit and harm certainty are mixed without explaining which governs the
+  decision;
+- overall certainty appears to be selected from same-direction or
+  highest-certainty shortcut.
+
+Use this warning when supported: "すべてのアウトカムを重大と分類すること自体は妥当であり得る。しかし、重大アウトカム間でも、患者にとっての効用・非効用、害の重さ、絶対効果、臨床的閾値、推奨判断への寄与は異なり得る。本CPGでは、どの重大アウトカムが推奨判断を主導したのか、またその相対的重要性がどのようにEtDに反映されたのかが十分に追跡できない。"
+
+Use this warning when supported: "複数の重大アウトカムの点推定値が同じ方向であることを理由に、最も高いcertaintyを全体のエビデンスの確実性として採用しているように見える。しかし、推奨判断を主導するアウトカムのcertainty、害と利益の相対的重要性、患者価値観、絶対効果、臨床的閾値がどのように反映されたかが不明であり、overall certainty判断には過大評価の疑いがある。"
+
 ---
 
 ## Practical verifiability, not complete reproducibility
@@ -392,6 +446,10 @@ Look for:
 - adjustment-unclear observational meta-analysis omitted from the final warning;
 - SR conceptual failure rated clean B despite repetition or direct link to
   certainty/strength;
+- all critical outcomes treated as equal without decision-weight rationale;
+- patient values/preferences reduced to variability only;
+- decision-driving outcome or its certainty not traceable;
+- overall certainty selected by same-direction/highest-certainty shortcut;
 - Minds/GRADE claims accepted without outcome-specific traceability;
 - observational meta-analysis used without confounding and adjusted-effect checks;
 - subgroup findings interpreted without interaction, prespecification, event count, and precision checks;
@@ -628,11 +686,21 @@ unadjusted observational pooling, absent design-specific RoB, absent
 outcome-specific certainty, and absent EtD linkage drive certainty, strength,
 or whole-CPG conclusions.
 
+Critical-outcome weighting and certainty-calibration failures are rating
+lowering when they repeat across major recommendations, directly support
+High/A-like certainty or strong recommendation, lack EtD explanation, or hide
+low/unclear certainty in the outcome that actually drives the decision. In that
+case consider B/C boundary or C below. If the issue is isolated and EtD
+explicitly explains limitations and connects them to weak, conditional, no
+recommendation, or limited practice wording, record the alert without
+mechanically lowering the whole CPG.
+
 Do not lower rating for these alone: observational evidence, existing SR or
 meta-analysis reference, observational meta-analysis presence, study-design
 count reporting, meta-analysis presence, non-significant findings, external
 meta-analysis location, very low certainty, weak/conditional recommendation, no
-recommendation, or incomplete full reproducibility.
+recommendation, all outcomes being classified as critical, lack of numeric
+utility analysis, existing SR/NMA reference, or incomplete full reproducibility.
 
 Preferred wording:
 - "Non-significance does not establish equivalence or non-inferiority. Without
@@ -672,6 +740,11 @@ Final output must return to the whole CPG:
   meta-analysis, SR conceptual failure, evidence-unit confusion,
   non-significance/equivalence confusion, or high certainty despite unresolved
   methodological limitations when present;
+- critical outcome weighting / decision-driving outcome alert when relative
+  importance, patient values, decision-driving outcomes, or outcome-specific
+  certainty-to-overall certainty calibration is not traceable;
+- overall certainty calibration alert when same-direction/highest-certainty
+  shortcut may have overestimated certainty;
 - sentinel implication;
 - COI judgment;
 - practical interpretation;

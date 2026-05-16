@@ -48,6 +48,9 @@ SR/NMA・GRADE/EtD監査：
 SR claim判定：
 検索DB、対象研究、メタ解析、効果量があるだけでSR claim supportedとしない。formal SR claimとsubstantive SR validityを分け、PICO、一次研究単位、重複、研究デザイン別RoB、観察研究の交絡調整、outcome別certainty、SoF、EtD接続を確認する。観察研究メタ解析は全sentinelで有無と調整状況を確認し、調整不明なら最終結論に警告を書く。
 
+重大アウトカムとoverall certainty：
+すべてのアウトカムが重大でもdecision weightは同一とは限らない。推奨判断を主導したアウトカム、そのcertainty、患者価値観、効用・非効用、絶対効果、害の重さ、臨床的閾値がEtDにどう反映されたかを確認する。同じ方向のアウトカムのうち最高certaintyを全体certaintyに採用するshortcutを警戒し、不透明ならFinalに警告を書く。
+
 非有意差・既存メタ解析・観察研究・サブグループ：
 「有意差なし」は同等性・非劣性を意味しない。既存メタ解析表、研究デザイン件数、観察研究の粗統合、サブグループ内p値、結論ラベルだけでSR/GRADE/EtDが成立したと扱わない。非劣性/同等性のmarginとCI、一次研究重複、PICO適合性、RoB、交絡調整、interaction、outcome別certainty、EtDへの限界反映を確認する。
 
