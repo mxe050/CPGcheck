@@ -8,7 +8,10 @@
 5. Whole-guideline triage: identify high-risk recommendations; do not deep audit everything.
 6. Select one sentinel target unless the user asks otherwise.
 7. Perform sentinel deep audit in the same answer unless user requested triage only.
-8. Return to Final CPG trustworthiness conclusion.
+8. Summarize sentinel/deep audit findings and mandatory audit alerts.
+9. For Japanese domestic CPGs only, add the inspection-only table for formal
+   SR/GRADE/Minds claims vs operational substance immediately before Final.
+10. Return to Final CPG trustworthiness conclusion.
 
 ## Do not turn audit into document collection
 Proceed with available material and mark traceability status. Ask for additional material only when one minimum item is essential and the user asked for a more definitive judgment.

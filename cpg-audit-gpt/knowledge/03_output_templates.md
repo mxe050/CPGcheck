@@ -114,7 +114,30 @@ Use tables. Avoid long narrative summaries. Always distinguish: found at locatio
   - COI/governance impact:
   - Explanation/limitation handling:
 
-## 9. Final CPG trustworthiness conclusion
+## 9. Japanese domestic CPG inspection table if applicable
+Use this section only for Japanese domestic CPGs or when the user explicitly
+requests it. Place it immediately before the Final CPG trustworthiness
+conclusion. This is an inspection-only table, not a rating calculation table.
+
+日本の学会作成CPG向け：形式的SR/GRADE/Minds claimと実質的運用の乖離チェック
+※この表はratingを直接変更する採点表ではなく、Final conclusionの前に置くinspection-only checklistである。
+
+| チェック項目 | このCPGでの確認箇所・記載 | パターン判定 | 補足資料確認 | コメント |
+|---|---|---|---|---|
+| Minds/GRADE/SR claim と実質的エビデンス統合の対応 |  | 該当あり / 該当疑い / 本文では確認できない / 補足資料未確認のため評価不能 / 該当なし / 適用外 | 本文内で確認 / 付録で確認 / 別PDFで確認 / Web補足資料で確認 / 補足資料が参照されているが未提供 / 補足資料の存在を確認できない / 該当なし | claim自体ではなく、PICO、適格基準、RoB、outcome別certainty、SoF/Evidence Profile、EtD接続が追跡できるかが論点。 |
+| メタ分析なし／forest plotなしでcertaintyを判断している可能性 |  |  |  | メタ分析がないこと自体ではなく、非一貫性・不精確性・overall certaintyの判断根拠が追跡できるかが論点。 |
+| SRを装った文献集・エビデンス集 |  |  |  | 検索後の文献列挙ではなく、PICO別一次研究単位、重複、研究デザイン別RoB、outcome別certaintyが整理されているかが論点。 |
+| 既存SR/NMAと一次研究の階層混同 |  |  |  | 既存SR/NMAの方法論評価、PICO適合性、更新性、直接性、重複一次研究リスクが扱われているかが論点。 |
+| 観察研究メタ分析における未調整raw data統合 |  |  |  | 統計ソフトで計算できることと疫学的に妥当な因果推論は別であり、調整推定値や交絡処理が論点。 |
+| 観察研究certainty inflation |  |  |  | 症例数、p値、有意差だけで中等度以上のcertaintyにしていないか、正当なupgradeまたはdowngrade過程が論点。 |
+| 同じ方向だから最高certaintyを採るshortcut |  |  |  | 単純に最低certaintyへ合わせることではなく、重大アウトカム間の重みづけとdecision-driving outcomeの説明が論点。 |
+| サロゲートアウトカムの都合のよい使用 |  |  |  | サロゲート使用自体ではなく、患者重要アウトカムへの接続やindirectness説明なしに都合のよいサロゲートだけを使っていないかが論点。 |
+| P値・有意差あり/なしに依存した推奨 |  |  |  | p値だけで有効・無効・同等性を判断せず、効果量、95%CI、事前マージン、臨床的重要性が論点。 |
+| 相対効果だけに依存した推奨 |  |  |  | 相対効果だけでなく、絶対効果、ベースラインリスク、risk difference、NNT/NNH、MID、臨床的閾値が論点。 |
+| EtD claim と本文・推奨文の乖離 |  |  |  | 費用・公平性等の詳細不足だけではなく、患者価値観、益害判断、推奨強度の理由が本文・推奨文に接続しているかが論点。 |
+| 推奨がエビデンス要約の直後に突然出る構造 |  |  |  | パネル会議や投票だけでなく、なぜその方向・強度になったかの判断過程が示されているかが論点。 |
+
+## 10. Final CPG trustworthiness conclusion
 - Final CPG rating candidate:
   - Normalized rating label:
   - If using an expanded label such as A with mandatory audit alerts, A-minus,

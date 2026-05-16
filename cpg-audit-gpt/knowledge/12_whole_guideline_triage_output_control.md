@@ -161,6 +161,86 @@ Do not write "SR claim supported" and stop. Formal SR claim, substantive SR
 validity, SR conceptual failure alert status, and whether a Final mandatory
 alert is required must be separated.
 
+## Japanese domestic CPG inspection-only table
+For Japanese domestic CPGs, place an inspection-only table immediately before
+the Final CPG trustworthiness conclusion. Use the title:
+"日本の学会作成CPG向け：形式的SR/GRADE/Minds claimと実質的運用の乖離チェック"
+or "Japanese domestic CPG inspection table: formal SR/GRADE/Minds claims vs
+operational substance."
+
+Display this table only when one of these applies:
+- the CPG is produced by a Japanese academic society, research group,
+  professional organization, guideline committee, or Minds-listed process;
+- the CPG is Japanese-language and clearly situated in a domestic CPG-making
+  context, with Minds, GRADE, CQ, SR, recommendation meetings, or similar terms;
+- the guideline is not merely a translation, and domestic adaptation,
+  ADOLOPMENT, or original recommendation development is being performed;
+- the user explicitly asks to include the table for a Japanese CPG.
+
+Do not display this table by default for international CPGs such as MAGICapp,
+BMJ Rapid Recommendations, JAMA, WHO, NICE, AHRQ, USPSTF, EAU, ASCO, ESMO, or
+other non-Japanese bodies; Japanese translations of overseas CPGs; SR articles,
+reviews, commentaries, educational materials; or materials whose domestic CPG
+status is unclear.
+
+This table is not a rating calculation rule. Do not upgrade or downgrade a CPG
+because the table has many or few "該当あり" rows. Do not use Japanese origin as
+a rating reason. The table makes typical inspection patterns visible for the
+reader. If the same finding is independently verified in the ordinary audit as
+SR conceptual failure, EtD failure, certainty inflation, recommendation
+traceability failure, or another existing defect, handle that finding under the
+existing rules; the table itself remains inspection-only.
+
+Use these columns:
+| チェック項目 | このCPGでの確認箇所・記載 | パターン判定 | 補足資料確認 | コメント |
+
+Allowed pattern judgments:
+- 該当あり
+- 該当疑い
+- 本文では確認できない
+- 補足資料未確認のため評価不能
+- 該当なし
+- 適用外
+
+Allowed supplement-status wording:
+- 本文内で確認
+- 付録で確認
+- 別PDFで確認
+- Web補足資料で確認
+- 補足資料が参照されているが未提供
+- 補足資料の存在を確認できない
+- 該当なし
+
+For the location/evidence column, cite the page, chapter, CQ, table, appendix,
+web supplement, or file when possible. If evidence is absent, write "提供資料内
+では確認できない", "本文では確認できない", or "付録・別PDF・Web補足資料が未提供のため
+評価不能"; do not use vague wording such as "書いてなさそう." Preserve the
+possibility that appendices, separate PDFs, web supplements, forest plot
+collections, GRADE evidence tables, SoF tables, Evidence Profiles, FLOCK, or
+other support files may exist. Absence from the main PDF alone is not a
+confirmed methodological failure.
+
+Standard inspection rows:
+1. Minds/GRADE/SR claim と実質的エビデンス統合の対応.
+2. メタ分析なし／forest plotなしでcertaintyを判断している可能性.
+3. SRを装った文献集・エビデンス集.
+4. 既存SR/NMAと一次研究の階層混同.
+5. 観察研究メタ分析における未調整raw data統合.
+6. 観察研究certainty inflation.
+7. 同じ方向だから最高certaintyを採るshortcut.
+8. サロゲートアウトカムの都合のよい使用.
+9. P値・有意差あり/なしに依存した推奨.
+10. 相対効果だけに依存した推奨.
+11. EtD claim と本文・推奨文の乖離.
+12. 推奨がエビデンス要約の直後に突然出る構造.
+
+Comments must focus on the methodological question, not rating impact. For
+example, do not treat no meta-analysis, surrogate outcomes, or limited
+cost/resource/equity/feasibility detail as defects by themselves. Focus on
+whether inconsistency/imprecision rationale, patient-important outcome linkage,
+benefit-harm and patient values/preferences, EtD-to-recommendation logic, or
+other existing audit domains are traceable.
+
 ## Study-design counting triage
 For all clinical practice guidelines, statements such as "RCTs, observational
 studies, and case series were extracted" may be a valid search or selection

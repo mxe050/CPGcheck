@@ -2,6 +2,14 @@
 
 ## 2026-05-16
 
+- Added an inspection-only Japanese domestic CPG table immediately before the
+  Final CPG trustworthiness conclusion to show formal SR/GRADE/Minds claims
+  versus operational substance without changing rating calculations.
+- Defined display conditions and exclusions for the Japanese domestic table,
+  including international CPGs and translated-only materials.
+- Added regression cases confirming the table is non-rating, domestic-only by
+  default, does not break A-minus when evidence is otherwise traceable, and
+  detects patterns without checklist scoring.
 - Added CPG-level SR architecture rules so evidence collections masquerading as
   SR, heterogeneous evidence-unit parallel listing, and repeated evidence-unit
   hierarchy failure cannot be dismissed by a sparse sentinel CQ.

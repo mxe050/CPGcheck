@@ -280,5 +280,36 @@ conceptual failure, exclude A/A-minus/A-eligible when major recommendations or
 multiple clusters are affected, and consider B-minus, B/C boundary, or C. Do not
 use "not automatic C" to preserve A/A-minus.
 
+## Test 51: Japanese CPG inspection table is non-rating
+Expected: for a Japanese domestic academic-society CPG with Minds/GRADE claims
+and visible checklist patterns, include the Japanese domestic inspection table
+immediately before Final CPG trustworthiness conclusion. Use the required five
+columns, show locations or "not confirmed in provided materials," distinguish
+main-text absence from unavailable supplements, and do not change rating merely
+because of the table. Rating remains governed by existing audit rules.
+
+## Test 52: International CPG does not get Japanese table by default
+Expected: for a high-quality international CPG from a non-Japanese body, do not
+show the Japanese domestic CPG inspection table by default. Usual audit and
+Final CPG trustworthiness conclusion remain unchanged unless the user explicitly
+asks for the table.
+
+## Test 53: Japanese table does not break A-minus
+Expected: for a Japanese domestic CPG with traceable PICO, SR, SoF/Evidence
+Profile, EtD, and recommendation logic, the table appears but "not assessable"
+or "supplement not provided" rows do not cause downgrade by themselves. If
+existing audit rules support A-minus or A with mandatory alerts, preserve that
+rating.
+
+## Test 54: Japanese table detects patterns without scoring
+Expected: when a Japanese domestic CPG shows multiple checklist patterns such as
+evidence-unit mixing, unadjusted observational meta-analysis, p-value-driven
+reasoning, surrogate cherry-picking, and abrupt recommendation without EtD
+linkage, list them with concrete locations or provided-material statements. The
+table must state or imply inspection-only status. Final rating is explained
+separately using existing SR conceptual failure, certainty, EtD, and
+recommendation-traceability rules; do not say rating is C because the table has
+a certain number of items.
+
 ## Acceptance criterion
 The most important metric is false trustworthy rate: the GPT must rarely rate unsupported, internally inconsistent, or unverifiable high-risk recommendations as A/B. At the same time, it must not unfairly downgrade well-conducted transparent Core GRADE/GRADE CPGs merely because evidence is uncertain.
