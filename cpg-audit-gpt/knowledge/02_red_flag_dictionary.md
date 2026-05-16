@@ -7,6 +7,13 @@ RF-01 Unsupported GRADE claim: explicit GRADE/Minds/Core GRADE claim without tra
 
 RF-02 Unsupported SR/NMA claim: explicit SR/NMA claim without traceable databases, search date, search strategy, eligibility criteria, study selection, RoB, included studies, and synthesis method.
 
+RF-02a SR claim formally present but substantively compromised: search
+databases, search period, included-study counts, meta-analysis, and effect
+estimates are described, but substantive SR validity is not established because
+PICO, outcome-specific selection, primary-study independence, design-specific
+RoB, confounding assessment, outcome-specific certainty, SoF/Evidence Profile,
+or EtD connection is not traceable.
+
 RF-03 Literature catalog instead of certainty: SRs, RCTs, and observational studies are listed in parallel without certainty assessment or linkage to recommendation strength.
 
 RF-03a Study-design counting used as evidence appraisal: counts such as RCTs,
@@ -57,6 +64,20 @@ existing SRs, meta-analyses, reviews, and guideline summaries are counted as if
 they were independent evidence units, or the same primary studies may be counted
 multiple times through overlapping reviews.
 
+RF-06d Existing SR/NMA mixed with primary studies: existing SR/NMA reports,
+meta-analysis articles, narrative reviews, primary RCTs, observational studies,
+and case series are placed in the same evidence hierarchy or counted as the same
+"study" unit without specifying whether the method is de novo SR, existing SR
+adoption, guideline adaptation, GRADE-ADOLOPMENT, overview of reviews, umbrella
+review, or supplementary narrative citation.
+
+RF-06e SR conceptual failure: existing SR/NMA, primary studies, observational
+studies, case series, and review articles are mixed without PICO-based
+primary-study organization, duplicate-study handling, design-specific RoB,
+outcome-specific certainty, SoF/Evidence Profile, and EtD connection. When this
+pattern affects major recommendations or repeats across multiple targets, treat
+it as a basic SR concept failure, not merely a missing detail.
+
 ## Recommendation formation red flags
 RF-07 Strong recommendation with low/very low certainty and no exceptional EtD rationale.
 
@@ -102,6 +123,14 @@ effect estimates, confounding strategy, adjustment-set assessment, or
 non-randomized-study RoB. This is a major red flag when used as recommendation
 justification.
 
+RF-18c1 Observational meta-analysis adjustment unclear: observational or
+non-randomized studies are meta-analyzed for comparative or causal effects, but
+it is unclear whether adjusted OR/RR/HR or equivalent estimates were used,
+whether propensity scores, multivariable adjustment, stratification, sensitivity
+analyses, severity, facility, indication bias, treatment-selection bias, or
+prognostic factors were considered, or whether ROBINS-I/equivalent RoB informed
+certainty and EtD.
+
 RF-18d Subgroup analysis overinterpreted / interaction not assessed: severity,
 background, co-intervention, setting, or other subgroup results are used as
 recommendation evidence based on within-subgroup p-values alone, without
@@ -132,6 +161,12 @@ limitations in SR, existing-review use, observational pooling, equivalence or
 non-inferiority logic, subgroup interpretation, or certainty calibration are
 not reflected in EtD, recommendation strength, conditions, exceptions, or final
 wording.
+
+RF-24c Certainty overestimated despite unresolved confounding/design-unit
+problems: High/A-like certainty or strong recommendation language is assigned
+while evidence-unit independence, duplicate review-level evidence,
+design-specific RoB, observational confounding, imprecision, indirectness, or
+outcome-specific certainty remains unresolved.
 
 ## COI and governance red flags
 RF-25 COI disclosure without management, especially for high-cost drugs, devices, procedures, screening, or industry-sensitive topics.

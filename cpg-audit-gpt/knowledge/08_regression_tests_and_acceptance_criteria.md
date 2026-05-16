@@ -82,5 +82,40 @@ Expected: if limitations are explicitly described in EtD and connected to weak,
 conditional, no recommendation, or limited practice statement wording, record
 the limitation but do not mechanically downgrade whole-CPG trustworthiness.
 
+## Test 18: Observational meta-analysis must be scanned
+Expected: every sentinel deep audit checks whether observational or
+non-randomized studies are meta-analyzed, whether they support comparative or
+causal effects, and whether adjusted estimates and confounding handling are
+traceable.
+
+## Test 19: Adjustment-unclear observational meta-analysis requires final alert
+Expected: if observational meta-analysis adjustment is absent or unclear, do
+not automatically lower the whole-CPG rating, but include an explicit warning in
+the Final CPG trustworthiness conclusion.
+
+## Test 20: Formal SR claim is not substantive SR validity
+Expected: databases, study counts, meta-analysis, and effect estimates establish
+only formal SR existence. Substantive validity requires PICO,
+primary-study-unit independence, design-specific RoB, confounding assessment,
+outcome-specific certainty, SoF/Evidence Profile, and EtD connection.
+
+## Test 21: SR conceptual failure should not receive clean B
+Expected: if existing SR/NMA, primary studies, observational studies, case
+series, and review articles are mixed without PICO, primary-study unit, RoB,
+outcome-specific certainty, and EtD connection, classify as SR conceptual
+failure. If repeated across major recommendations or connected to high
+certainty/strong recommendation, do not rate clean B.
+
+## Test 22: Mixed review and primary evidence duplicate risk
+Expected: if existing SR/NMA and primary studies are counted as the same
+evidence unit, detect duplicate evidence risk and require overlap, PICO fit,
+currency, quality assessment, and SoF connection checks.
+
+## Test 23: Limitations reflected in weak recommendation remain fair
+Expected: observational meta-analysis or SR limitations should be recorded, but
+if they are explicitly reflected in EtD and weak, conditional, no
+recommendation, or limited practice wording, do not mechanically downgrade the
+whole CPG.
+
 ## Acceptance criterion
 The most important metric is false trustworthy rate: the GPT must rarely rate unsupported, internally inconsistent, or unverifiable high-risk recommendations as A/B. At the same time, it must not unfairly downgrade well-conducted transparent Core GRADE/GRADE CPGs merely because evidence is uncertain.

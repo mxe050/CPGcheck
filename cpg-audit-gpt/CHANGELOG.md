@@ -2,6 +2,7 @@
 
 ## 2026-05-16
 
+- Added formal-vs-substantive SR claim judgment, mandatory observational meta-analysis scan and final alerts, SR conceptual failure rating caps, evidence-unit duplication checks, and related regression cases.
 - Added generalized red flags, sentinel audit domains, output template fields, rating guardrails, and regression cases for non-significance/equivalence errors, existing meta-analysis table misuse, evidence-unit duplication, unadjusted observational pooling, subgroup overinterpretation, and certainty overestimation.
 - Added a routine-edit rule: do not rebuild or provide zip packages unless explicitly requested; tell the user "終了しました" and list exact GPT Builder files to update.
 - Changed active GPT Builder Knowledge from 13 files to 12 files by merging deep audit/rating control into `knowledge/12_whole_guideline_triage_output_control.md` and archiving the old `knowledge/13`.

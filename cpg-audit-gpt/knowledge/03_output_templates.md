@@ -44,19 +44,28 @@ Use tables. Avoid long narrative summaries. Always distinguish: found at locatio
 |---|---|---|---|
 | PICO/actionability |  |  |  |
 | SR/NMA/search |  |  |  |
+| SR claim judgment: formal claim |  |  |  |
+| SR claim judgment: substantive validity |  |  |  |
+| Observational meta-analysis scan: present | yes / no / unclear |  |  |
+| Observational meta-analysis scan: adjusted estimates used | adjusted / unadjusted / unclear / not applicable |  |  |
+| Observational meta-analysis scan: confounding handling |  |  |  |
+| Observational meta-analysis scan: alert required | yes / no / unclear |  |  |
 | RoB and certainty domains |  |  |  |
 | SoF/effect interpretation |  |  |  |
 | Claim type | superiority / equivalence / non-inferiority / no recommendation / descriptive evidence |  |  |
 | Evidence unit and independence | primary studies / existing SR / meta-analysis / overview / mixed unclear |  |  |
+| Evidence unit handling |  |  |  |
 | Study design handling |  |  |  |
 | Existing SR/meta-analysis use |  |  |  |
 | Confounding and adjusted estimates |  |  |  |
 | Subgroup / interaction logic |  |  |  |
 | Equivalence or non-inferiority logic |  |  |  |
 | Certainty calibration |  |  |  |
+| RoB / confounding / certainty calibration |  |  |  |
 | EtD: benefits/harms |  |  |  |
 | EtD: values/resources/feasibility |  |  |  |
 | EtD reflection of evidence limitations |  |  |  |
+| Mandatory final warning |  |  |  |
 | COI management |  |  |  |
 | Internal consistency |  |  |  |
 | Impact on rating |  |  |  |
@@ -72,6 +81,7 @@ Use tables. Avoid long narrative summaries. Always distinguish: found at locatio
 - Trustworthiness conclusion:
 - What can be trusted:
 - What lowers trust:
+- Mandatory methodological alerts:
 - Sentinel implication:
 - Residual uncertainty:
 ```
@@ -81,6 +91,12 @@ Use these judgment labels in sentinel deep audit domains:
 - Partly adequate / unclear
 - Major concern
 - Not assessable from available materials
+
+Mandatory methodological alerts must be shown even when they do not
+automatically lower the final rating. Include alerts for adjustment-unclear
+observational meta-analysis, SR conceptual failure, evidence-unit confusion,
+possible non-significance/equivalence confusion, and high certainty despite
+unresolved methodological limitations when present.
 
 ## Template B: Partial excerpt / page-based cluster assembly
 

@@ -17,6 +17,8 @@ Control output when a full guideline PDF or distributed web CPG is provided. Tri
 11. Do not accept "SR", "meta-analysis", "Minds", or "GRADE" labels at face value.
 12. Treat study-design counts as descriptive until outcome-specific appraisal and EtD linkage are verified.
 13. Treat non-significance, equivalence, non-inferiority, existing meta-analysis tables, observational pooling, and subgroup results as audit triggers, not conclusions.
+14. Separate formal SR claim existence from substantive SR validity before judging SR/NMA support.
+15. Scan every sentinel target for observational or non-randomized-study meta-analysis and report adjustment/confounding status.
 
 ## Priority score
 Score each candidate 0–10:
@@ -63,6 +65,35 @@ PICO, SR, evidence body, meta-analysis, recommendation table, agreement rate, an
 - explanation text matches SoF/SR/NMA/meta-analysis;
 - direction/strength matches certainty, benefit-harm balance, values, resources, feasibility;
 - COI management is traceable when relevant.
+
+## SR claim judgment: formal existence vs substantive validity
+For all clinical practice guidelines, SR/NMA claim judgment must separate:
+
+**Formal SR claim**
+- whether the guideline states that an SR/NMA was performed;
+- whether search databases, search dates or periods, included-study counts,
+  meta-analysis, forest plots, and effect estimates are reported.
+
+**Substantive SR validity**
+- whether prespecified PICO and outcome-specific study selection are traceable;
+- whether the primary-study unit is clear and independent;
+- whether existing SR/NMA, primary studies, RCTs, observational studies, case
+  series, and reviews are not confused as the same evidence unit;
+- whether duplicate primary-study counting through overlapping reviews is
+  assessed;
+- whether design-specific RoB and observational confounding are assessed;
+- whether outcome-specific certainty and SoF/Evidence Profile are present;
+- whether EtD or equivalent judgment connects evidence limits to direction and
+  strength.
+
+Do not conclude "SR claim supported" or "mostly supported" from databases,
+study counts, meta-analysis, and effect estimates alone. Use wording such as:
+"SR claim is formally present, but substantive SR validity is
+uncertain/compromised because observational meta-analysis, evidence-unit
+independence, design-specific RoB, outcome-specific certainty, and EtD
+connection are not adequately traceable."
+
+Japanese wording may state: "SRを行ったという形式的記載はあるが、観察研究メタ解析の交絡調整、一次研究単位の独立性、研究デザイン別RoB、アウトカム別certainty、EtD接続が追跡できず、実質的なSR妥当性には重大な懸念が残る。"
 
 ## Study-design counting triage
 For all clinical practice guidelines, statements such as "RCTs, observational
@@ -119,6 +150,41 @@ Prioritize sentinel audit when observational meta-analysis:
 Do not lower trust automatically for observational meta-analysis when adjusted
 estimates, confounding, RoB, directness, precision, and inconsistency are
 handled transparently.
+
+## Mandatory observational meta-analysis scan
+Every sentinel deep audit must report whether observational or non-randomized
+studies are included and meta-analyzed. This scan is mandatory even when the
+main defect under review is different.
+
+Check:
+- observational, non-randomized comparative, cohort, case-control, registry, or
+  similar studies included;
+- whether they are meta-analyzed;
+- whether the synthesis is used for comparative treatment effect or causal
+  inference, versus descriptive incidence/prognosis;
+- whether crude event counts, crude OR/RR, means, SDs, or simple group totals
+  are pooled;
+- whether adjusted OR/RR/HR or equivalent estimates are used;
+- whether propensity score methods, multivariable adjustment, stratification,
+  sensitivity analyses, or other confounding strategies are described;
+- whether adjustment factors differ across studies and are acknowledged;
+- whether ROBINS-I or equivalent non-randomized-study RoB is used;
+- whether severity, facility, indication bias, treatment-selection bias, and
+  prognostic factors are considered;
+- whether the limitation is reflected in certainty and EtD.
+
+Use labels:
+- Observational meta-analysis present: yes / no / unclear
+- Adjustment status: adjusted / unadjusted / unclear / not applicable
+- Alert required: yes / no / unclear
+
+If adjustment is absent or unclear, include a final warning even if the rating
+is not automatically lowered. Rating is lowered when the unadjusted or
+adjustment-unclear synthesis supports major outcomes, High/A-like certainty,
+strong recommendation, or the whole-CPG conclusion.
+
+Mandatory warning wording:
+"観察研究のメタ解析について、交絡因子を調整した効果推定値に基づく統合かどうかが確認できない。粗イベント数または未調整効果量の統合であれば、比較治療効果の推定としては信頼性が低く、この点はCPG全体のエビデンスから推奨への接続における重要な警告である。"
 
 ## Flawed synthesis trigger triage
 For all clinical practice guidelines, the following phrases or structures are
@@ -256,6 +322,33 @@ classify and assess the following when relevant:
 - **EtD reflection**: whether these limitations change recommendation
   direction, strength, conditions, exceptions, or no-recommendation wording.
 
+## SR conceptual failure gate
+For all clinical practice guidelines, treat repeated or major confusion of
+evidence units as **SR conceptual failure**, not merely incomplete traceability,
+when the evidence chain:
+1. places existing SR/NMA, primary RCTs, observational studies, case series, and
+   review articles in the same hierarchy;
+2. lacks PICO-based primary-study organization;
+3. treats existing SR/NMA and primary studies as the same evidence unit;
+4. does not assess duplicate primary-study counting through overlapping reviews;
+5. lacks design-specific RoB;
+6. does not assess confounding for observational evidence;
+7. lacks outcome-specific certainty or fails to reflect design, RoB,
+   confounding, and imprecision;
+8. lacks SoF/Evidence Profile or equivalent transparent evidence summary;
+9. connects directly to recommendation direction/strength without EtD.
+
+Use this judgment sentence when supported:
+"既存SR/NMA、RCT、観察研究、症例集積、レビュー論文を、PICO・一次研究単位・RoB・outcome別certainty・EtD接続なしに混ぜて扱っている場合、それは単なるtraceability不足ではなく、SRの基本概念の破綻である。"
+
+Rating cap:
+- isolated and limitation-aware: B− or B/C boundary may be appropriate;
+- repeated across major recommendations: generally C;
+- directly supporting High/A-like certainty or strong recommendation: consider
+  C or C−;
+- claiming SR/GRADE/Minds while no substantive SR process exists: consider C−
+  or D.
+
 ---
 
 ## Practical verifiability, not complete reproducibility
@@ -293,6 +386,12 @@ Look for:
 - existing meta-analysis tables treated as SR/GRADE evidence without overlap, quality, PICO, currency, and SoF checks;
 - study-design counts used as evidence appraisal or recommendation justification;
 - primary studies and existing SR/meta-analyses counted as the same evidence unit;
+- formal SR claim treated as substantively valid merely because databases,
+  included studies, meta-analysis, and effect estimates are present;
+- observational meta-analysis adjustment status not scanned;
+- adjustment-unclear observational meta-analysis omitted from the final warning;
+- SR conceptual failure rated clean B despite repetition or direct link to
+  certainty/strength;
 - Minds/GRADE claims accepted without outcome-specific traceability;
 - observational meta-analysis used without confounding and adjusted-effect checks;
 - subgroup findings interpreted without interaction, prespecification, event count, and precision checks;
@@ -376,6 +475,11 @@ major red flag. An observational meta-analysis should not be downgraded
 automatically when adjusted estimates, confounding, RoB, directness, precision,
 and inconsistency are transparently handled.
 
+If observational meta-analysis is present but adjustment status is unclear,
+record an alert in the final conclusion. Do not automatically lower the whole
+CPG rating unless the adjustment-unclear synthesis is used for major outcomes,
+High/A-like certainty, strong recommendation, or the whole-CPG conclusion.
+
 ---
 
 ## Search strategy audit
@@ -448,7 +552,13 @@ Do not penalize for reporting agreement rates. Penalize only when voting or agre
 - source materials internally inconsistent;
 - study-design counts used as a substitute for SR/GRADE/EtD appraisal;
 - formal Minds/GRADE/SR/meta-analysis claims not supported by outcome-specific traceability;
+- formal SR claim treated as substantive validity without primary-study unit,
+  design-specific RoB, confounding, outcome-specific certainty, SoF, and EtD;
 - crude observational meta-analysis used as recommendation justification for a confounding-sensitive question;
+- adjustment-unclear observational meta-analysis used as a main comparative
+  effect estimate;
+- SR conceptual failure affecting major recommendations or repeated across
+  multiple targets;
 - non-significance misinterpreted as equivalence or non-inferiority;
 - equivalence or non-inferiority claimed without a prespecified margin or clinical threshold and CI-within-margin logic;
 - existing meta-analysis tables used as substitutes for SR/GRADE appraisal;
@@ -510,10 +620,19 @@ publication bias, or duplicate evidence. This is especially important when the
 flawed synthesis directly affects recommendation direction or strength and EtD
 does not explain the limitation.
 
+SR conceptual failure should not remain clean B when it affects major
+recommendations or repeats across the guideline. Use B−/B-C boundary only when
+the problem is isolated and limitations are explicitly reflected in EtD; use C
+or below when evidence-unit confusion, duplicate review-level evidence,
+unadjusted observational pooling, absent design-specific RoB, absent
+outcome-specific certainty, and absent EtD linkage drive certainty, strength,
+or whole-CPG conclusions.
+
 Do not lower rating for these alone: observational evidence, existing SR or
-meta-analysis reference, study-design count reporting, non-significant findings,
-external meta-analysis location, very low certainty, weak/conditional
-recommendation, no recommendation, or incomplete full reproducibility.
+meta-analysis reference, observational meta-analysis presence, study-design
+count reporting, meta-analysis presence, non-significant findings, external
+meta-analysis location, very low certainty, weak/conditional recommendation, no
+recommendation, or incomplete full reproducibility.
 
 Preferred wording:
 - "Non-significance does not establish equivalence or non-inferiority. Without
@@ -549,6 +668,10 @@ Final output must return to the whole CPG:
 - GRADE-ADOLOPMENT judgment if relevant;
 - what can be trusted;
 - what lowers trust;
+- mandatory methodological alerts, including adjustment-unclear observational
+  meta-analysis, SR conceptual failure, evidence-unit confusion,
+  non-significance/equivalence confusion, or high certainty despite unresolved
+  methodological limitations when present;
 - sentinel implication;
 - COI judgment;
 - practical interpretation;
